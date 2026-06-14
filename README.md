@@ -8,7 +8,7 @@ Swatch replaces WooCommerce's default variation dropdowns with accessible colour
 - Per-term colour and custom label, stored as term meta.
 - Drives WooCommerce's native variations form, so price, stock and the add-to-cart button update exactly as with the standard dropdown. Vanilla JavaScript, no jQuery.
 - Keyboard operable and screen-reader labelled, with visible focus and no layout shift.
-- Settings page under WooCommerce → Swatch: enable/disable, default type, size, shape and tooltip.
+- Settings page under WooCommerce → Swatch: enable/disable and default swatch type.
 - Graceful fallback to the standard dropdown when an attribute has no swatch data.
 
 ## Installation

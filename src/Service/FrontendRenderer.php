@@ -58,19 +58,6 @@ final class FrontendRenderer implements HasHooks
             \Swatch\VERSION,
         );
 
-        $vars = $this->settings->all();
-        $size = max(20, min(80, (int) ($vars['size'] ?? 36)));
-        $minW = max(0, min(200, (int) ($vars['button_min_width'] ?? 48)));
-
-        wp_add_inline_style(
-            'swatch',
-            sprintf(
-                '.swatch-group{--swatch-size:%dpx;--swatch-min-width:%dpx;}',
-                $size,
-                $minW,
-            ),
-        );
-
         wp_enqueue_script(
             'swatch',
             $plugin->url('assets/js/swatch.js'),
@@ -78,12 +65,6 @@ final class FrontendRenderer implements HasHooks
             \Swatch\VERSION,
             ['in_footer' => true, 'strategy' => 'defer'],
         );
-
-        $settings = $this->settings->all();
-
-        wp_localize_script('swatch', 'swatchConfig', [
-            'showSelectedLabel' => (bool) ($settings['show_selected_label'] ?? true),
-        ]);
     }
 
     /**
@@ -132,16 +113,6 @@ final class FrontendRenderer implements HasHooks
 
         $selectId = $this->selectId($args, $attribute);
         $swatches = $this->renderGroup($items, $type, $attribute, $selectId);
-
-        /**
-         * Allow other code (e.g. the PRO add-on) to alter the rendered swatch
-         * group or the surrounding dropdown HTML.
-         *
-         * @param string               $swatches Rendered swatch group markup.
-         * @param string               $attribute Attribute name (taxonomy or custom).
-         * @param array<string, mixed> $args      Original dropdown args.
-         */
-        $swatches = (string) apply_filters('swatch/swatch_group_html', $swatches, $attribute, $args);
 
         // Keep the original <select> in the DOM (the JS hides it) so the native
         // variations form keeps functioning; append the swatch group after it.
@@ -212,16 +183,10 @@ final class FrontendRenderer implements HasHooks
      */
     private function renderGroup(array $items, string $type, string $attribute, string $selectId): string
     {
-        $settings = $this->settings->all();
-        $shape    = in_array((string) ($settings['shape'] ?? 'circle'), ['circle', 'square'], true)
-            ? (string) $settings['shape']
-            : 'circle';
-        $tooltip  = (bool) ($settings['show_tooltip'] ?? true);
-
         ob_start();
         ?>
         <div
-            class="swatch-group swatch-group--<?php echo esc_attr($type); ?> swatch-group--<?php echo esc_attr($shape); ?>"
+            class="swatch-group swatch-group--<?php echo esc_attr($type); ?>"
             role="radiogroup"
             aria-label="<?php echo esc_attr(wc_attribute_label($attribute)); ?>"
             data-swatch-for="<?php echo esc_attr($selectId); ?>"
@@ -238,7 +203,7 @@ final class FrontendRenderer implements HasHooks
                     aria-checked="false"
                     data-swatch-value="<?php echo esc_attr($item['value']); ?>"
                     aria-label="<?php echo esc_attr($item['label']); ?>"
-                    <?php if ($tooltip) : ?>title="<?php echo esc_attr($item['label']); ?>"<?php endif; ?>
+                    title="<?php echo esc_attr($item['label']); ?>"
                     <?php if ('' !== $style) : ?>style="<?php echo esc_attr($style); ?>"<?php endif; ?>
                 >
                     <?php if ('button' === $type) : ?>

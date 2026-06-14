@@ -78,21 +78,14 @@
 	pointer-events: none;
 }
 
-/* Colour swatches: square box filled with the term colour. */
+/* Colour swatches: round box filled with the term colour. */
 .swatch--color {
 	position: relative;
 	width: var(--swatch-size);
 	height: var(--swatch-size);
 	min-height: var(--swatch-size);
 	overflow: hidden;
-}
-
-.swatch-group--circle .swatch--color {
 	border-radius: 50%;
-}
-
-.swatch-group--square .swatch--color {
-	border-radius: var(--swatch-radius);
 }
 
 /* Button / label swatches: pill with the term name. */
@@ -109,11 +102,6 @@
 
 .swatch__label {
 	pointer-events: none;
-}
-
-.swatch-group__selected {
-	font-size: 0.875em;
-	opacity: 0.8;
 }
 
 /* The original WooCommerce <select> is kept for the variations form but hidden. */

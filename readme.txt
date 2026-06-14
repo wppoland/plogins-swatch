@@ -26,7 +26,7 @@ The swatches drive WooCommerce's own variations form, so price, stock and the ad
 * Keyboard operable (radiogroup semantics, arrow keys) and screen-reader labelled.
 * Focus-visible rings, sufficient contrast, reduced-motion friendly, no layout shift.
 * Graceful fallback to the standard dropdown when an attribute has no swatch data.
-* Settings page under WooCommerce: enable/disable, default type, size, shape, tooltip.
+* Settings page under WooCommerce: enable/disable and default swatch type.
 
 **Self-contained.** No external services, no account, no third-party dependencies.
 

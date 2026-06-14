@@ -20,8 +20,6 @@
 (function () {
 	'use strict';
 
-	var config = window.swatchConfig || {};
-
 	function hideSelect(select) {
 		// Keep it in the DOM and functional, just visually hidden + out of tab order.
 		select.classList.add('swatch-hidden-select');
@@ -49,32 +47,6 @@
 				first.setAttribute('tabindex', '0');
 			}
 		}
-
-		updateSelectedLabel(group, value);
-	}
-
-	function updateSelectedLabel(group, value) {
-		if (!config.showSelectedLabel) {
-			return;
-		}
-
-		var label = group.querySelector('.swatch-group__selected');
-		var text = '';
-
-		if (value !== '') {
-			var active = group.querySelector('.swatch[data-swatch-value="' + cssEscape(value) + '"]');
-			if (active) {
-				text = active.getAttribute('aria-label') || '';
-			}
-		}
-
-		if (!label) {
-			label = document.createElement('span');
-			label.className = 'swatch-group__selected';
-			group.appendChild(label);
-		}
-
-		label.textContent = text;
 	}
 
 	function cssEscape(value) {
