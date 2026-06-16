@@ -53,6 +53,14 @@ They keep WooCommerce's standard dropdown. Colour swatches with no colours set f
 
 Yes. The front-end is vanilla JavaScript that hooks WooCommerce's own variation events.
 
+= Can shoppers pick variations with a keyboard? =
+
+Yes. Swatches use radiogroup semantics, arrow-key navigation and visible focus rings.
+
+= Does it work on mobile? =
+
+Yes. Swatches stay in the native variations form with touch-friendly targets; no separate mobile app or script framework is required.
+
 == Screenshots ==
 
 1. Colour and button swatches on a single product page.
