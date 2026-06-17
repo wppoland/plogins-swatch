@@ -20,7 +20,7 @@
 	--swatch-min-width: 48px;
 	--swatch-gap: 10px;
 	--swatch-radius: 7px;
-	--swatch-border: #c9ccd1;
+	--swatch-border: #8b8f96;
 	--swatch-border-selected: #1f2328;
 
 	/* The pick accent — a warm vermilion marker ink, the colour of a circle
@@ -242,7 +242,7 @@
 
 @media (prefers-color-scheme: dark) {
 	.swatch-group {
-		--swatch-border: #50575e;
+		--swatch-border: #6b737c;
 		--swatch-border-selected: #f0f0f1;
 		--swatch-fg: #f0f0f1;
 		--swatch-bg: #1d2327;
