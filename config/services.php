@@ -15,6 +15,7 @@ use Swatch\Migrator;
 use Swatch\Service\SwatchData;
 use Swatch\Service\Settings as SettingsStore;
 use Swatch\Service\FrontendRenderer;
+use Swatch\Service\VariationGalleryBridge;
 
 defined('ABSPATH') || exit;
 
@@ -32,6 +33,8 @@ return static function (Container $c): void {
         $c->get(SwatchData::class),
         $c->get(SettingsStore::class),
     ));
+
+    $c->singleton(VariationGalleryBridge::class, static fn (): VariationGalleryBridge => new VariationGalleryBridge());
 
     // Admin (only needed in wp-admin context).
     if (is_admin()) {

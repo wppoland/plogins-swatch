@@ -4,7 +4,7 @@ Tags: woocommerce, variation swatches, color swatches, variations, product attri
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 0.1.0
+Stable tag: 0.1.1
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -73,6 +73,9 @@ Swatch does not connect to any external services. It makes no outbound HTTP requ
 Everything is stored in your own database: the swatch type per attribute, the global defaults and a schema version are kept in the `swatch_attribute_types`, `swatch_settings` and `swatch_db_version` options, and each term's colour and label are stored as the `swatch_color` and `swatch_label` term meta on your WooCommerce attribute terms. The plugin sends no email.
 
 == Changelog ==
+
+= 0.1.1 =
+* Add `swatch/variation_gallery` filter and expose `swatch_variation_gallery` on variation JSON for add-ons.
 
 = 0.1.0 =
 * Initial release.
