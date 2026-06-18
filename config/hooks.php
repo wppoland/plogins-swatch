@@ -14,10 +14,12 @@ declare(strict_types=1);
 use Swatch\Admin\AttributeFields;
 use Swatch\Admin\Settings;
 use Swatch\Service\FrontendRenderer;
+use Swatch\Service\VariationGalleryBridge;
 
 defined('ABSPATH') || exit;
 
 return [
     FrontendRenderer::class,
+    VariationGalleryBridge::class,
     ...(is_admin() ? [Settings::class, AttributeFields::class] : []),
 ];
