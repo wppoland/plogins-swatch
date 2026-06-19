@@ -105,6 +105,21 @@ final class FrontendRenderer implements HasHooks
             return $html;
         }
 
+        /**
+         * Filters swatch items before the product-page group is rendered.
+         *
+         * @param list<array{value:string,label:string,color:string}> $items
+         * @param string               $attribute Attribute taxonomy/name.
+         * @param string               $type      Resolved swatch type.
+         * @param string               $context   Always `product`.
+         * @param array<string, mixed> $args      Original WooCommerce dropdown args.
+         */
+        $items = apply_filters('swatch/swatch_items', $items, $attribute, $type, 'product', $args);
+
+        if (! is_array($items) || [] === $items) {
+            return $html;
+        }
+
         $selectId = $this->selectId($args, $attribute);
         $swatches = $this->markup->renderProductGroup($items, $type, $attribute, $selectId);
 
