@@ -85,7 +85,7 @@ final class SwatchMarkup
             data-swatch-type="<?php echo esc_attr($type); ?>"
         >
             <?php foreach ($items as $item) :
-                echo $this->renderProductSwatch($item, $type);
+                echo $this->renderProductSwatch($item, $type, $attribute);
             endforeach; ?>
         </div>
         <?php
@@ -110,7 +110,7 @@ final class SwatchMarkup
         >
             <?php foreach ($items as $item) :
                 $url = add_query_arg($queryKey, rawurlencode($item['value']), $product->get_permalink());
-                echo $this->renderArchiveSwatch($item, $type, $url);
+                echo $this->renderArchiveSwatch($item, $type, $attribute, $url);
             endforeach; ?>
         </div>
         <?php
@@ -121,7 +121,7 @@ final class SwatchMarkup
     /**
      * @param array{value:string,label:string,color:string} $item
      */
-    private function renderProductSwatch(array $item, string $type): string
+    private function renderProductSwatch(array $item, string $type, string $attribute): string
     {
         $isColor = 'color' === $type && '' !== $item['color'];
         $style   = $isColor ? 'background-color:' . $item['color'] . ';' : '';
@@ -146,13 +146,23 @@ final class SwatchMarkup
         </button>
         <?php
 
-        return (string) ob_get_clean();
+        $html = (string) ob_get_clean();
+
+        /**
+         * Filters a single product-page swatch button before it is printed.
+         *
+         * @param string               $html      Swatch button HTML.
+         * @param array{value:string,label:string,color:string} $item Swatch data.
+         * @param string               $type      Swatch type (color|button).
+         * @param string               $attribute Attribute taxonomy/name.
+         */
+        return (string) apply_filters('swatch/product_swatch_html', $html, $item, $type, $attribute);
     }
 
     /**
      * @param array{value:string,label:string,color:string} $item
      */
-    private function renderArchiveSwatch(array $item, string $type, string $url): string
+    private function renderArchiveSwatch(array $item, string $type, string $attribute, string $url): string
     {
         $isColor = 'color' === $type && '' !== $item['color'];
         $style   = $isColor ? 'background-color:' . $item['color'] . ';' : '';
@@ -176,7 +186,18 @@ final class SwatchMarkup
         </a>
         <?php
 
-        return (string) ob_get_clean();
+        $html = (string) ob_get_clean();
+
+        /**
+         * Filters a single archive-loop swatch link before it is printed.
+         *
+         * @param string               $html      Swatch link HTML.
+         * @param array{value:string,label:string,color:string} $item Swatch data.
+         * @param string               $type      Swatch type (color|button).
+         * @param string               $attribute Attribute taxonomy slug.
+         * @param string               $url       Product URL with pre-selected attribute.
+         */
+        return (string) apply_filters('swatch/archive_swatch_html', $html, $item, $type, $attribute, $url);
     }
 
     public function resolveType(string $attribute): string

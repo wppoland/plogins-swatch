@@ -87,6 +87,21 @@ final class ArchiveRenderer implements HasHooks
             return;
         }
 
+        /**
+         * Filters swatch items before the archive-loop group is rendered.
+         *
+         * @param list<array{value:string,label:string,color:string}> $items
+         * @param string      $attribute Attribute taxonomy slug.
+         * @param string      $type      Resolved swatch type.
+         * @param string      $context   Always `archive`.
+         * @param \WC_Product $product   Variable product in the loop.
+         */
+        $items = apply_filters('swatch/swatch_items', $items, $attribute, $type, 'archive', $product);
+
+        if (! is_array($items) || [] === $items) {
+            return;
+        }
+
         $html = $this->markup->renderArchiveGroup($items, $type, $attribute, $product);
 
         /**
