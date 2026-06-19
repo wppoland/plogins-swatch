@@ -14,7 +14,9 @@ use Swatch\Container;
 use Swatch\Migrator;
 use Swatch\Service\SwatchData;
 use Swatch\Service\Settings as SettingsStore;
+use Swatch\Service\ArchiveRenderer;
 use Swatch\Service\FrontendRenderer;
+use Swatch\Service\SwatchMarkup;
 use Swatch\Service\VariationGalleryBridge;
 
 defined('ABSPATH') || exit;
@@ -28,9 +30,18 @@ return static function (Container $c): void {
     // Reads/writes per-attribute swatch types and per-term colours/labels.
     $c->singleton(SwatchData::class, static fn (): SwatchData => new SwatchData());
 
-    // Front-end: replaces the variation <select> dropdowns with swatches.
-    $c->singleton(FrontendRenderer::class, static fn (): FrontendRenderer => new FrontendRenderer(
+    $c->singleton(SwatchMarkup::class, static fn (): SwatchMarkup => new SwatchMarkup(
         $c->get(SwatchData::class),
+        $c->get(SettingsStore::class),
+    ));
+
+    $c->singleton(FrontendRenderer::class, static fn (): FrontendRenderer => new FrontendRenderer(
+        $c->get(SwatchMarkup::class),
+        $c->get(SettingsStore::class),
+    ));
+
+    $c->singleton(ArchiveRenderer::class, static fn (): ArchiveRenderer => new ArchiveRenderer(
+        $c->get(SwatchMarkup::class),
         $c->get(SettingsStore::class),
     ));
 

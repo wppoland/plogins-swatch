@@ -251,3 +251,25 @@
 		--swatch-ink: var(--wp--preset--color--vivid-red, #ff6a3d);
 	}
 }
+
+/* Archive / catalog loop previews (Swatch Pro enables via swatch/archive_enabled). */
+.swatch-archive {
+	margin-top: 6px;
+}
+
+.swatch-archive .swatch {
+	text-decoration: none;
+}
+
+.swatch-archive .swatch--color,
+.swatch-archive .swatch--button {
+	min-width: var(--swatch-size);
+	width: var(--swatch-size);
+	padding-inline: 0;
+}
+
+.swatch-archive .swatch--button {
+	width: auto;
+	min-width: var(--swatch-min-width);
+	padding-inline: 10px;
+}
