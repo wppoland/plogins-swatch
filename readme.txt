@@ -24,7 +24,7 @@ The full source lives on GitHub at https://github.com/wppoland/swatch if you wan
 * Colour and button/label swatch types.
 * Per-attribute type selection on the global attribute screen.
 * Per-term colour (`sanitize_hex_color`) and custom label, stored as term meta.
-* Wires into WooCommerce's native variations form — no jQuery, vanilla JS.
+* Wires into WooCommerce's native variations form, no jQuery, vanilla JS.
 * Keyboard operable (radiogroup semantics, arrow keys) and screen-reader labelled.
 * Focus-visible rings, sufficient contrast, reduced-motion friendly, no layout shift.
 * Graceful fallback to the standard dropdown when an attribute has no swatch data.
