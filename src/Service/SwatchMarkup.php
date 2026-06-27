@@ -90,7 +90,7 @@ final class SwatchMarkup
             <?php if ('' !== $groupStyle) : ?>style="<?php echo esc_attr($groupStyle); ?>"<?php endif; ?>
         >
             <?php foreach ($items as $item) :
-                echo $this->renderProductSwatch($item, $type, $attribute);
+                echo $this->renderProductSwatch($item, $type, $attribute); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Markup is escaped within renderProductSwatch().
             endforeach; ?>
         </div>
         <?php
@@ -119,7 +119,7 @@ final class SwatchMarkup
         >
             <?php foreach ($items as $item) :
                 $url = add_query_arg($queryKey, rawurlencode($item['value']), $product->get_permalink());
-                echo $this->renderArchiveSwatch($item, $type, $attribute, $url);
+                echo $this->renderArchiveSwatch($item, $type, $attribute, $url); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Markup is escaped within renderArchiveSwatch().
             endforeach; ?>
         </div>
         <?php
