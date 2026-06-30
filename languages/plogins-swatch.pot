@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Swatch - Variation Swatches for WooCommerce 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/swatch\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-swatch\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -12,30 +12,30 @@ msgstr ""
 "POT-Creation-Date: 2026-06-16T20:22:56+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: swatch\n"
+"X-Domain: plogins-swatch\n"
 
 #. Plugin Name of the plugin
-#: swatch.php
+#: plogins-swatch.php
 msgid "Swatch - Variation Swatches for WooCommerce"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: swatch.php
+#: plogins-swatch.php
 msgid "https://plogins.com/swatch/"
 msgstr ""
 
 #. Description of the plugin
-#: swatch.php
+#: plogins-swatch.php
 msgid "Replace variation dropdowns with accessible colour and label swatches."
 msgstr ""
 
 #. Author of the plugin
-#: swatch.php
+#: plogins-swatch.php
 msgid "WPPoland"
 msgstr ""
 
 #. Author URI of the plugin
-#: swatch.php
+#: plogins-swatch.php
 msgid "https://plogins.com/"
 msgstr ""
 
@@ -171,6 +171,6 @@ msgstr ""
 msgid "Products → Attributes"
 msgstr ""
 
-#: swatch.php:47
+#: plogins-swatch.php:47
 msgid "Swatch - Variation Swatches for WooCommerce requires WooCommerce to be active."
 msgstr ""

@@ -1,10 +1,10 @@
-=== Swatch - Variation Swatches for WooCommerce ===
+=== Plogins Swatch for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, variation swatches, color swatches, variations, product attributes
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 0.1.4
+Stable tag: 0.1.5
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -17,7 +17,7 @@ Swatch replaces WooCommerce's default variation `<select>` dropdowns with visual
 
 The swatches drive WooCommerce's own variations form, so price, stock and the add-to-cart button update exactly as they do with the stock dropdowns. Selected and out-of-combination states are reflected automatically.
 
-The full source lives on GitHub at https://github.com/wppoland/swatch if you want to read the code or report a problem.
+The full source lives on GitHub at https://github.com/wppoland/plogins-swatch if you want to read the code or report a problem.
 
 **Features**
 
@@ -43,11 +43,10 @@ The full source lives on GitHub at https://github.com/wppoland/swatch if you wan
 
 = Documentation and links =
 
-* **Documentation** - https://plogins.com/swatch/docs/
-* **Plugin page** - https://plogins.com/swatch/
-* **Source code** - https://github.com/wppoland/swatch
-* **Bug reports and feature requests** - https://github.com/wppoland/swatch/issues
-* **Discussions and questions** - https://github.com/wppoland/swatch/discussions
+* **Documentation** - https://plogins.com/plogins-swatch/docs/
+* **Plugin page** - https://plogins.com/plogins-swatch/
+* **Source code** - https://github.com/wppoland/plogins-swatch
+* **Bug reports and feature requests** - https://github.com/wppoland/plogins-swatch/issues
 
 
 = Does it require WooCommerce? =
@@ -82,6 +81,9 @@ Swatch does not connect to any external services. It makes no outbound HTTP requ
 Everything is stored in your own database: the swatch type per attribute, the global defaults and a schema version are kept in the `swatch_attribute_types`, `swatch_settings` and `swatch_db_version` options, and each term's colour and label are stored as the `swatch_color` and `swatch_label` term meta on your WooCommerce attribute terms. The plugin sends no email.
 
 == Changelog ==
+
+= 0.1.5 =
+* Renamed to Plogins Swatch for WooCommerce for a more distinctive plugin name.
 
 = 0.1.4 =
 * Swatch group filters `swatch/swatch_group_vars` and `swatch/swatch_group_classes` for PRO sizing and shapes.

@@ -65,14 +65,14 @@ final class AttributeFields implements HasHooks
     {
         ?>
         <div class="form-field">
-            <label for="swatch_attribute_type"><?php esc_html_e('Swatch type', 'swatch'); ?></label>
+            <label for="swatch_attribute_type"><?php esc_html_e('Swatch type', 'plogins-swatch'); ?></label>
             <?php wp_nonce_field('swatch_attribute_type', 'swatch_attribute_type_nonce'); ?>
             <select name="swatch_attribute_type" id="swatch_attribute_type">
-                <option value=""><?php esc_html_e('Use plugin default', 'swatch'); ?></option>
-                <option value="button"><?php esc_html_e('Button / label', 'swatch'); ?></option>
-                <option value="color"><?php esc_html_e('Colour', 'swatch'); ?></option>
+                <option value=""><?php esc_html_e('Use plugin default', 'plogins-swatch'); ?></option>
+                <option value="button"><?php esc_html_e('Button / label', 'plogins-swatch'); ?></option>
+                <option value="color"><?php esc_html_e('Colour', 'plogins-swatch'); ?></option>
             </select>
-            <p class="description"><?php esc_html_e('How this attribute renders on the product page. Colour shows colour dots (set a colour on each term); Button shows the term name as a pill.', 'swatch'); ?></p>
+            <p class="description"><?php esc_html_e('How this attribute renders on the product page. Colour shows colour dots (set a colour on each term); Button shows the term name as a pill.', 'plogins-swatch'); ?></p>
         </div>
         <?php
     }
@@ -85,15 +85,15 @@ final class AttributeFields implements HasHooks
         $current     = '' !== $taxonomy ? $this->data->typeFor($taxonomy) : '';
         ?>
         <tr class="form-field">
-            <th scope="row"><label for="swatch_attribute_type"><?php esc_html_e('Swatch type', 'swatch'); ?></label></th>
+            <th scope="row"><label for="swatch_attribute_type"><?php esc_html_e('Swatch type', 'plogins-swatch'); ?></label></th>
             <td>
                 <?php wp_nonce_field('swatch_attribute_type', 'swatch_attribute_type_nonce'); ?>
                 <select name="swatch_attribute_type" id="swatch_attribute_type">
-                    <option value="" <?php selected($current, ''); ?>><?php esc_html_e('Use plugin default', 'swatch'); ?></option>
-                    <option value="button" <?php selected($current, 'button'); ?>><?php esc_html_e('Button / label', 'swatch'); ?></option>
-                    <option value="color" <?php selected($current, 'color'); ?>><?php esc_html_e('Colour', 'swatch'); ?></option>
+                    <option value="" <?php selected($current, ''); ?>><?php esc_html_e('Use plugin default', 'plogins-swatch'); ?></option>
+                    <option value="button" <?php selected($current, 'button'); ?>><?php esc_html_e('Button / label', 'plogins-swatch'); ?></option>
+                    <option value="color" <?php selected($current, 'color'); ?>><?php esc_html_e('Colour', 'plogins-swatch'); ?></option>
                 </select>
-                <p class="description"><?php esc_html_e('How this attribute renders on the product page.', 'swatch'); ?></p>
+                <p class="description"><?php esc_html_e('How this attribute renders on the product page.', 'plogins-swatch'); ?></p>
             </td>
         </tr>
         <?php
@@ -130,15 +130,15 @@ final class AttributeFields implements HasHooks
     {
         ?>
         <div class="form-field">
-            <label for="swatch_color"><?php esc_html_e('Swatch colour', 'swatch'); ?></label>
+            <label for="swatch_color"><?php esc_html_e('Swatch colour', 'plogins-swatch'); ?></label>
             <?php wp_nonce_field('swatch_term_fields', 'swatch_term_fields_nonce'); ?>
             <input type="color" name="swatch_color" id="swatch_color" value="#000000" />
-            <p class="description"><?php esc_html_e('Used when this attribute is shown as colour swatches.', 'swatch'); ?></p>
+            <p class="description"><?php esc_html_e('Used when this attribute is shown as colour swatches.', 'plogins-swatch'); ?></p>
         </div>
         <div class="form-field">
-            <label for="swatch_label"><?php esc_html_e('Swatch label', 'swatch'); ?></label>
+            <label for="swatch_label"><?php esc_html_e('Swatch label', 'plogins-swatch'); ?></label>
             <input type="text" name="swatch_label" id="swatch_label" value="" />
-            <p class="description"><?php esc_html_e('Optional short label for button swatches. Defaults to the term name.', 'swatch'); ?></p>
+            <p class="description"><?php esc_html_e('Optional short label for button swatches. Defaults to the term name.', 'plogins-swatch'); ?></p>
         </div>
         <?php
     }
@@ -153,18 +153,18 @@ final class AttributeFields implements HasHooks
         $label  = $termId > 0 ? $this->data->labelForTerm($termId) : '';
         ?>
         <tr class="form-field">
-            <th scope="row"><label for="swatch_color"><?php esc_html_e('Swatch colour', 'swatch'); ?></label></th>
+            <th scope="row"><label for="swatch_color"><?php esc_html_e('Swatch colour', 'plogins-swatch'); ?></label></th>
             <td>
                 <?php wp_nonce_field('swatch_term_fields', 'swatch_term_fields_nonce'); ?>
                 <input type="color" name="swatch_color" id="swatch_color" value="<?php echo esc_attr('' !== $color ? $color : '#000000'); ?>" />
-                <p class="description"><?php esc_html_e('Used when this attribute is shown as colour swatches.', 'swatch'); ?></p>
+                <p class="description"><?php esc_html_e('Used when this attribute is shown as colour swatches.', 'plogins-swatch'); ?></p>
             </td>
         </tr>
         <tr class="form-field">
-            <th scope="row"><label for="swatch_label"><?php esc_html_e('Swatch label', 'swatch'); ?></label></th>
+            <th scope="row"><label for="swatch_label"><?php esc_html_e('Swatch label', 'plogins-swatch'); ?></label></th>
             <td>
                 <input type="text" name="swatch_label" id="swatch_label" value="<?php echo esc_attr($label); ?>" />
-                <p class="description"><?php esc_html_e('Optional short label for button swatches. Defaults to the term name.', 'swatch'); ?></p>
+                <p class="description"><?php esc_html_e('Optional short label for button swatches. Defaults to the term name.', 'plogins-swatch'); ?></p>
             </td>
         </tr>
         <?php

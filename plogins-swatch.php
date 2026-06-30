@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:       Swatch - Variation Swatches for WooCommerce
- * Plugin URI:        https://plogins.com/swatch/
+ * Plugin Name:       Plogins Swatch for WooCommerce
+ * Plugin URI:        https://plogins.com/plogins-swatch/
  * Description:        Replace variation dropdowns with accessible colour and label swatches.
- * Version:           0.1.4
+ * Version:           0.1.5
  * Requires at least: 6.5
  * Requires PHP:      8.1
  * Requires Plugins:  woocommerce
@@ -11,7 +11,7 @@
  * Author URI:        https://wppoland.com
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       swatch
+ * Text Domain:       plogins-swatch
  * Domain Path:       /languages
  * WC requires at least: 8.0
  *
@@ -24,7 +24,7 @@ namespace Swatch;
 
 defined('ABSPATH') || exit;
 
-const VERSION     = '0.1.4';
+const VERSION     = '0.1.5';
 const PLUGIN_FILE = __FILE__;
 
 define('SWATCH_DIR', plugin_dir_path(__FILE__));
@@ -44,7 +44,7 @@ add_action('plugins_loaded', static function (): void {
     if (! class_exists('WooCommerce')) {
         add_action('admin_notices', static function (): void {
             echo '<div class="notice notice-error"><p>';
-            echo esc_html__('Swatch - Variation Swatches for WooCommerce requires WooCommerce to be active.', 'swatch');
+            echo esc_html__('Plogins Swatch for WooCommerce requires WooCommerce to be active.', 'plogins-swatch');
             echo '</p></div>';
         });
         return;
