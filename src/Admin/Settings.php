@@ -55,8 +55,8 @@ final class Settings implements HasHooks
     {
         add_submenu_page(
             'woocommerce',
-            __('Swatch Settings', 'swatch'),
-            __('Swatch', 'swatch'),
+            __('Swatch Settings', 'plogins-swatch'),
+            __('Swatch', 'plogins-swatch'),
             'manage_woocommerce',
             self::PAGE,
             [$this, 'renderPage'],
@@ -95,22 +95,22 @@ final class Settings implements HasHooks
         <div class="wrap swatch-settings">
             <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
 
-            <p class="swatch-intro"><?php esc_html_e('Swatch turns WooCommerce variation dropdowns into accessible colour dots and labelled buttons, so shoppers pick a variation in one tap instead of scanning a select menu. It works out of the box, the settings below are only for fine-tuning.', 'swatch'); ?></p>
+            <p class="swatch-intro"><?php esc_html_e('Swatch turns WooCommerce variation dropdowns into accessible colour dots and labelled buttons, so shoppers pick a variation in one tap instead of scanning a select menu. It works out of the box, the settings below are only for fine-tuning.', 'plogins-swatch'); ?></p>
 
             <form method="post" action="options.php">
                 <?php settings_fields(self::PAGE); ?>
 
                 <section class="swatch-section">
-                    <h2><?php esc_html_e('Storefront display', 'swatch'); ?></h2>
-                    <p class="swatch-section__hint"><?php esc_html_e('Controls whether swatches appear on single product pages, and what an unconfigured attribute looks like.', 'swatch'); ?></p>
+                    <h2><?php esc_html_e('Storefront display', 'plogins-swatch'); ?></h2>
+                    <p class="swatch-section__hint"><?php esc_html_e('Controls whether swatches appear on single product pages, and what an unconfigured attribute looks like.', 'plogins-swatch'); ?></p>
 
                     <table class="form-table" role="presentation">
                         <tbody>
                             <tr>
                                 <th scope="row">
-                                    <?php esc_html_e('Enable swatches', 'swatch'); ?>
+                                    <?php esc_html_e('Enable swatches', 'plogins-swatch'); ?>
                                     <?php if ((bool) ($defaults['enabled'] ?? true) === true) : ?>
-                                        <span class="swatch-default-tag"><?php esc_html_e('On by default', 'swatch'); ?></span>
+                                        <span class="swatch-default-tag"><?php esc_html_e('On by default', 'plogins-swatch'); ?></span>
                                     <?php endif; ?>
                                 </th>
                                 <td>
@@ -122,34 +122,34 @@ final class Settings implements HasHooks
                                             value="1"
                                             <?php checked($enabled, true); ?>
                                         />
-                                        <?php esc_html_e('Show swatches on product pages.', 'swatch'); ?>
+                                        <?php esc_html_e('Show swatches on product pages.', 'plogins-swatch'); ?>
                                     </label>
-                                    <p class="description"><?php esc_html_e('When off, shoppers see WooCommerce’s standard variation dropdowns and no swatch styles or scripts load, nothing is lost, the look just reverts to default. Your per-term colours and labels are kept.', 'swatch'); ?></p>
+                                    <p class="description"><?php esc_html_e('When off, shoppers see WooCommerce’s standard variation dropdowns and no swatch styles or scripts load, nothing is lost, the look just reverts to default. Your per-term colours and labels are kept.', 'plogins-swatch'); ?></p>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">
-                                    <label for="swatch_default_type"><?php esc_html_e('Default swatch type', 'swatch'); ?></label>
+                                    <label for="swatch_default_type"><?php esc_html_e('Default swatch type', 'plogins-swatch'); ?></label>
                                 </th>
                                 <td>
                                     <select id="swatch_default_type" name="<?php echo esc_attr($optionName); ?>[default_type]" aria-describedby="swatch_default_type_desc">
-                                        <option value="button" <?php selected($type, 'button'); ?>><?php esc_html_e('Button / label', 'swatch'); ?></option>
-                                        <option value="color" <?php selected($type, 'color'); ?>><?php esc_html_e('Colour', 'swatch'); ?></option>
+                                        <option value="button" <?php selected($type, 'button'); ?>><?php esc_html_e('Button / label', 'plogins-swatch'); ?></option>
+                                        <option value="color" <?php selected($type, 'color'); ?>><?php esc_html_e('Colour', 'plogins-swatch'); ?></option>
                                     </select>
                                     <?php if ($type === (string) ($defaults['default_type'] ?? 'button')) : ?>
-                                        <span class="swatch-default-tag"><?php esc_html_e('Default', 'swatch'); ?></span>
+                                        <span class="swatch-default-tag"><?php esc_html_e('Default', 'plogins-swatch'); ?></span>
                                     <?php endif; ?>
 
                                     <div class="swatch-preview" aria-hidden="true">
-                                        <span class="swatch-preview__label"><?php esc_html_e('Colour:', 'swatch'); ?></span>
+                                        <span class="swatch-preview__label"><?php esc_html_e('Colour:', 'plogins-swatch'); ?></span>
                                         <span class="swatch-preview__chip swatch-preview__chip--blue"></span>
                                         <span class="swatch-preview__chip swatch-preview__chip--green"></span>
-                                        <span class="swatch-preview__label" style="margin-left:8px;"><?php esc_html_e('Button:', 'swatch'); ?></span>
-                                        <span class="swatch-preview__pill"><?php esc_html_e('Small', 'swatch'); ?></span>
-                                        <span class="swatch-preview__pill"><?php esc_html_e('Large', 'swatch'); ?></span>
+                                        <span class="swatch-preview__label" style="margin-left:8px;"><?php esc_html_e('Button:', 'plogins-swatch'); ?></span>
+                                        <span class="swatch-preview__pill"><?php esc_html_e('Small', 'plogins-swatch'); ?></span>
+                                        <span class="swatch-preview__pill"><?php esc_html_e('Large', 'plogins-swatch'); ?></span>
                                     </div>
 
-                                    <p class="description" id="swatch_default_type_desc"><?php esc_html_e('Applied to any attribute you have not given its own type. “Colour” renders colour dots (you set a colour per term); “Button / label” renders the term name as a pill. Either way, an attribute with no colours configured falls back to the dropdown automatically, so this choice never breaks a product.', 'swatch'); ?></p>
+                                    <p class="description" id="swatch_default_type_desc"><?php esc_html_e('Applied to any attribute you have not given its own type. “Colour” renders colour dots (you set a colour per term); “Button / label” renders the term name as a pill. Either way, an attribute with no colours configured falls back to the dropdown automatically, so this choice never breaks a product.', 'plogins-swatch'); ?></p>
                                 </td>
                             </tr>
                         </tbody>
@@ -157,14 +157,14 @@ final class Settings implements HasHooks
                 </section>
 
                 <section class="swatch-section">
-                    <h2><?php esc_html_e('Per-attribute setup', 'swatch'); ?></h2>
-                    <p class="swatch-section__hint"><?php esc_html_e('Colours and labels live with each attribute, not here, so they stay correct as your catalogue grows.', 'swatch'); ?></p>
+                    <h2><?php esc_html_e('Per-attribute setup', 'plogins-swatch'); ?></h2>
+                    <p class="swatch-section__hint"><?php esc_html_e('Colours and labels live with each attribute, not here, so they stay correct as your catalogue grows.', 'plogins-swatch'); ?></p>
                     <p class="description">
                         <?php
                         printf(
                             /* translators: %s: link to the WooCommerce Attributes screen. */
-                            esc_html__('Set a swatch colour or label on each term under %s. Override the default type per attribute on the same screen. Anything left unset uses the default above.', 'swatch'),
-                            '<a href="' . esc_url(admin_url('edit.php?post_type=product&page=product_attributes')) . '">' . esc_html__('Products → Attributes', 'swatch') . '</a>'
+                            esc_html__('Set a swatch colour or label on each term under %s. Override the default type per attribute on the same screen. Anything left unset uses the default above.', 'plogins-swatch'),
+                            '<a href="' . esc_url(admin_url('edit.php?post_type=product&page=product_attributes')) . '">' . esc_html__('Products → Attributes', 'plogins-swatch') . '</a>'
                         );
                         ?>
                     </p>
