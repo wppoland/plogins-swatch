@@ -5,32 +5,33 @@ msgstr ""
 "Project-Id-Version: Swatch - Variation Swatches for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-swatch\n"
 "POT-Creation-Date: 2026-06-16T20:22:56+00:00\n"
-"PO-Revision-Date: 2026-06-15 10:00+0000\n"
-"Last-Translator: WPPoland <hello@plogins.com>\n"
-"Language-Team: Polish <pl_PL@li.org>\n"
-"Language: pl_PL\n"
+"PO-Revision-Date: 2026-06-16T20:22:56+00:00\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Domain: plogins-swatch\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
 #: plogins-swatch.php
 msgid "Swatch - Variation Swatches for WooCommerce"
-msgstr "Swatch - próbniki wariantów dla WooCommerce"
+msgstr "Swatch – Variations-Swatches für WooCommerce"
 
 #. Plugin URI of the plugin
 #: plogins-swatch.php
 msgid "https://plogins.com/swatch/"
-msgstr "https://plogins.com/swatch/"
+msgstr "https://plogins.com/de/swatch/"
 
 #. Description of the plugin
 #: plogins-swatch.php
 msgid "Replace variation dropdowns with accessible colour and label swatches."
 msgstr ""
-"Zastąp listy rozwijane wariantów dostępnymi próbnikami kolorów i etykiet."
+"Ersetze Variations-Dropdown-Menüs durch zugängliche Farb- und "
+"Beschriftungsfelder."
 
 #. Author of the plugin
 #: plogins-swatch.php
@@ -44,60 +45,60 @@ msgstr "https://plogins.com/"
 
 #: src/Admin/AttributeFields.php:68 src/Admin/AttributeFields.php:88
 msgid "Swatch type"
-msgstr "Typ próbnika"
+msgstr "Mustertyp"
 
 #: src/Admin/AttributeFields.php:71 src/Admin/AttributeFields.php:92
 msgid "Use plugin default"
-msgstr "Użyj ustawienia domyślnego wtyczki"
+msgstr "Verwende die Plugin-Standardeinstellung"
 
 #: src/Admin/AttributeFields.php:72 src/Admin/AttributeFields.php:93
 #: src/Admin/Settings.php:136
 msgid "Button / label"
-msgstr "Przycisk / etykieta"
+msgstr "Button/Beschriftung"
 
 #: src/Admin/AttributeFields.php:73 src/Admin/AttributeFields.php:94
 #: src/Admin/Settings.php:137
 msgid "Colour"
-msgstr "Kolor"
+msgstr "Farbe"
 
 #: src/Admin/AttributeFields.php:75
 msgid ""
 "How this attribute renders on the product page. Colour shows colour dots "
 "(set a colour on each term); Button shows the term name as a pill."
 msgstr ""
-"Jak ten atrybut wyświetla się na stronie produktu. Kolor pokazuje kółka z "
-"kolorami (ustaw kolor dla każdego terminu); Przycisk pokazuje nazwę terminu "
-"w formie pigułki."
+"Wie dieses Attribut auf der Produktseite dargestellt wird. Farbe zeigt "
+"Farbpunkte (lege für jeden Begriff eine Farbe fest); Die Schaltfläche zeigt "
+"den Begriffsnamen als Pille an."
 
 #: src/Admin/AttributeFields.php:96
 msgid "How this attribute renders on the product page."
-msgstr "Jak ten atrybut wyświetla się na stronie produktu."
+msgstr "Wie dieses Attribut auf der Produktseite dargestellt wird."
 
 #: src/Admin/AttributeFields.php:133 src/Admin/AttributeFields.php:156
 msgid "Swatch colour"
-msgstr "Kolor próbnika"
+msgstr "Musterfarbe"
 
 #: src/Admin/AttributeFields.php:136 src/Admin/AttributeFields.php:160
 msgid "Used when this attribute is shown as colour swatches."
-msgstr "Używany, gdy ten atrybut jest wyświetlany jako próbniki kolorów."
+msgstr "Wird verwendet, wenn dieses Attribut als Farbfelder angezeigt wird."
 
 #: src/Admin/AttributeFields.php:139 src/Admin/AttributeFields.php:164
 msgid "Swatch label"
-msgstr "Etykieta próbnika"
+msgstr "Musteretikett"
 
 #: src/Admin/AttributeFields.php:141 src/Admin/AttributeFields.php:167
 msgid "Optional short label for button swatches. Defaults to the term name."
 msgstr ""
-"Opcjonalna krótka etykieta dla próbników w formie przycisków. Domyślnie "
-"używana jest nazwa terminu."
+"Optionales Kurzetikett für Knopfmuster. Standardmäßig wird der Begriffsname "
+"verwendet."
 
 #: src/Admin/Settings.php:58
 msgid "Swatch Settings"
-msgstr "Ustawienia Swatch"
+msgstr "Farbfeldeinstellungen"
 
 #: src/Admin/Settings.php:59
 msgid "Swatch"
-msgstr "Swatch"
+msgstr "Muster"
 
 #: src/Admin/Settings.php:98
 msgid ""
@@ -106,34 +107,34 @@ msgid ""
 "scanning a select menu. It works out of the box, the settings below are only"
 " for fine-tuning."
 msgstr ""
-"Swatch zamienia menu rozwijane odmian WooCommerce w dostępne kolorowe kropki"
-" i oznaczone przyciski, dzięki czemu kupujący wybierają odmianę jednym "
-"dotknięciem, zamiast skanować wybrane menu. Działa od razu po wyjęciu z "
-"pudełka, poniższe ustawienia służą jedynie do dostrojenia."
+"Swatch verwandelt WooCommerce-Variations-Dropdown-Menüs in zugängliche "
+"Farbpunkte und beschriftete Schaltflächen, sodass Käufer eine Variation mit "
+"einem Fingertipp auswählen können, anstatt ein Auswahlmenü zu scannen. Es "
+"funktioniert sofort, die Einstellungen unten dienen nur der Feinabstimmung."
 
 #: src/Admin/Settings.php:104
 msgid "Storefront display"
-msgstr "Wyświetlanie w sklepie"
+msgstr "Schaufensterdisplay"
 
 #: src/Admin/Settings.php:105
 msgid ""
 "Controls whether swatches appear on single product pages, and what an "
 "unconfigured attribute looks like."
 msgstr ""
-"Kontroluje, czy próbki pojawiają się na stronach pojedynczych produktów i "
-"jak wygląda nieskonfigurowany atrybut."
+"Steuert, ob Farbfelder auf einzelnen Produktseiten angezeigt werden und wie "
+"ein nicht konfiguriertes Attribut aussieht."
 
 #: src/Admin/Settings.php:111
 msgid "Enable swatches"
-msgstr "Włącz próbniki"
+msgstr "Aktiviere Farbfelder"
 
 #: src/Admin/Settings.php:113
 msgid "On by default"
-msgstr "Domyślnie włączone"
+msgstr "Standardmäßig aktiviert"
 
 #: src/Admin/Settings.php:125
 msgid "Show swatches on product pages."
-msgstr "Pokaż próbki na stronach produktów."
+msgstr "Zeige Farbfelder auf Produktseiten an."
 
 #: src/Admin/Settings.php:127
 msgid ""
@@ -141,34 +142,35 @@ msgid ""
 "swatch styles or scripts load, nothing is lost, the look just reverts to "
 "default. Your per-term colours and labels are kept."
 msgstr ""
-"Gdy ta opcja jest wyłączona, kupujący widzą menu rozwijane standardowych "
-"odmian WooCommerce i nie ładują się żadne style ani skrypty, nic nie zostaje"
-" utracone, wygląd po prostu powraca do ustawień domyślnych. Twoje kolory i "
-"etykiety przypisane do poszczególnych terminów zostaną zachowane."
+"Wenn diese Option deaktiviert ist, sehen Käufer die Dropdown-Listen für "
+"Standardvarianten von WooCommerce und es werden keine Musterstile oder "
+"Skripte geladen. Es geht nichts verloren, das Erscheinungsbild wird "
+"lediglich auf die Standardeinstellungen zurückgesetzt. Deine pro Begriff "
+"festgelegten Farben und Bezeichnungen bleiben erhalten."
 
 #: src/Admin/Settings.php:132
 msgid "Default swatch type"
-msgstr "Domyślny typ próbnika"
+msgstr "Standard-Farbfeldtyp"
 
 #: src/Admin/Settings.php:140
 msgid "Default"
-msgstr "Domyślny"
+msgstr "Standard"
 
 #: src/Admin/Settings.php:144
 msgid "Colour:"
-msgstr "Kolor:"
+msgstr "Farbe:"
 
 #: src/Admin/Settings.php:147
 msgid "Button:"
-msgstr "Przycisk:"
+msgstr "Schaltfläche:"
 
 #: src/Admin/Settings.php:148
 msgid "Small"
-msgstr "Mały"
+msgstr "Klein"
 
 #: src/Admin/Settings.php:149
 msgid "Large"
-msgstr "Duży"
+msgstr "Groß"
 
 #: src/Admin/Settings.php:152
 msgid ""
@@ -177,23 +179,23 @@ msgid ""
 "name as a pill. Either way, an attribute with no colours configured falls "
 "back to the dropdown automatically, so this choice never breaks a product."
 msgstr ""
-"Stosowane do dowolnego atrybutu, któremu nie nadałeś własnego typu. „Kolor” "
-"renderuje kolorowe kropki (ustawiasz kolor na termin); „Przycisk / etykieta”"
-" wyświetla nazwę terminu w formie pigułki. Tak czy inaczej, atrybut bez "
-"skonfigurowanych kolorów automatycznie powraca do listy rozwijanej, więc ten"
-" wybór nigdy nie psuje produktu."
+"Wird auf jedes Attribut angewendet, dem du keinen eigenen Typ zugewiesen "
+"haben. „Farbe“ stellt Farbpunkte dar (Du legst eine Farbe pro Begriff fest);"
+" „Button/Label“ gibt den Begriffsnamen als Pille wieder. In jedem Fall fällt"
+" ein Attribut ohne konfigurierte Farben automatisch auf das Dropdown-Menü "
+"zurück, sodass diese Auswahl niemals ein Produkt beschädigt."
 
 #: src/Admin/Settings.php:160
 msgid "Per-attribute setup"
-msgstr "Konfiguracja według atrybutu"
+msgstr "Einrichtung pro Attribut"
 
 #: src/Admin/Settings.php:161
 msgid ""
 "Colours and labels live with each attribute, not here, so they stay correct "
 "as your catalogue grows."
 msgstr ""
-"Kolory i etykiety są zgodne z każdym atrybutem, a nie tutaj, więc pozostają "
-"prawidłowe w miarę powiększania się katalogu."
+"Farben und Beschriftungen sind für jedes Attribut vorhanden, nicht hier, "
+"sodass sie korrekt bleiben, wenn dein Katalog wächst."
 
 #. translators: %s: link to the WooCommerce Attributes screen.
 #: src/Admin/Settings.php:166
@@ -203,42 +205,19 @@ msgid ""
 "type per attribute on the same screen. Anything left unset uses the default "
 "above."
 msgstr ""
-"Ustaw kolor próbki lub etykietę dla każdego terminu w %s. Zastąp domyślny "
-"typ według atrybutu na tym samym ekranie. Wszystko, co pozostanie "
-"nieskonfigurowane, używa ustawień domyślnych powyżej."
+"Lege für jeden Begriff unter %s eine Farbfeldfarbe oder Beschriftung fest. "
+"Überschreibe den Standardtyp pro Attribut auf demselben Bildschirm. Alles, "
+"was nicht konfiguriert ist, verwendet die oben angegebene "
+"Standardeinstellung."
 
 #: src/Admin/Settings.php:167
 msgid "Products → Attributes"
-msgstr "Produkty → Atrybuty"
+msgstr "Produkte → Attribute"
 
 #: plogins-swatch.php:47
 msgid ""
 "Swatch - Variation Swatches for WooCommerce requires WooCommerce to be "
 "active."
 msgstr ""
-"Swatch - próbniki wariantów dla WooCommerce wymaga aktywnego WooCommerce."
-
-#~ msgid ""
-#~ "Swatch replaces the default WooCommerce variation selects with accessible "
-#~ "colour or label swatches. Set a colour or label per attribute term on the "
-#~ "global attribute screens (Products → Attributes → Configure terms), then "
-#~ "choose the default look here."
-#~ msgstr ""
-#~ "Swatch zastępuje domyślne listy wyboru wariantów WooCommerce dostępnymi "
-#~ "próbnikami kolorów lub etykiet. Ustaw kolor lub etykietę dla każdego terminu"
-#~ " atrybutu na ekranach atrybutów globalnych (Produkty → Atrybuty → Konfiguruj"
-#~ " terminy), a następnie wybierz tutaj domyślny wygląd."
-
-#~ msgid "Replace variation dropdowns with swatches on single product pages."
-#~ msgstr ""
-#~ "Zastąp listy rozwijane wariantów próbnikami na stronach pojedynczego "
-#~ "produktu."
-
-#~ msgid ""
-#~ "Used for any attribute you have not given an explicit type. Attributes with "
-#~ "no colours configured automatically fall back to the dropdown, so this is "
-#~ "safe to leave on “Colour”."
-#~ msgstr ""
-#~ "Używany dla każdego atrybutu, któremu nie nadano wprost typu. Atrybuty bez "
-#~ "skonfigurowanych kolorów automatycznie wracają do listy rozwijanej, więc "
-#~ "można bezpiecznie pozostawić ustawienie „Kolor”."
+"Swatch – Variation Swatches für WooCommerce erfordert, dass WooCommerce "
+"aktiv ist."
