@@ -1,0 +1,88 @@
+# wp.org Stable Readme translation (de_DE)
+msgid ""
+msgstr ""
+"Project-Id-Version: swatch Stable Readme\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: plogins-i18n\n"
+
+msgid "Requires Plugins: woocommerce"
+msgstr "Erfordert Plugins: woocommerce"
+
+msgid "Replace WooCommerce variation dropdowns with accessible colour and label swatches that wire straight into the native variations form."
+msgstr "Ersetze WooCommerce-Variations-Dropdown-Menüs durch zugängliche Farb- und Beschriftungsfelder, die direkt mit dem nativen Variationsformular verknüpft werden."
+
+msgid "Swatch replaces WooCommerce's default variation `<select>` dropdowns with visual, accessible swatches on single product pages. Choose a swatch type per attribute (colour dots or button/label pills) and assign a colour or label per term."
+msgstr "Swatch ersetzt die Standard-Dropdown-Menüs „<select>“ von WooCommerce durch visuelle, zugängliche Farbfelder auf einzelnen Produktseiten. Wähle einen Farbfeldtyp pro Attribut (Farbpunkte oder Schaltflächen-/Beschriftungspillen) und weise pro Begriff eine Farbe oder Beschriftung zu."
+
+msgid "The swatches drive WooCommerce's own variations form, so price, stock and the add-to-cart button update exactly as they do with the stock dropdowns. Selected and out-of-combination states are reflected automatically."
+msgstr "Die Farbfelder steuern das eigene Variationsformular von WooCommerce, sodass Preis, Lagerbestand und die Schaltfläche „Zum Warenkorb hinzufügen“ genauso aktualisiert werden wie die Bestands-Dropdowns. Ausgewählte und nicht kombinierte Zustände werden automatisch wiedergegeben."
+
+msgid "The full source lives on GitHub at https://github.com/wppoland/plogins-swatch if you want to read the code or report a problem."
+msgstr "Die vollständige Quelle befindet sich auf GitHub unter https://github.com/wppoland/plogins-swatch, wenn du den Code lesen oder ein Problem melden möchten."
+
+msgid "<strong>Features</strong>"
+msgstr "<strong>Funktionen</strong>"
+
+msgid "* Colour and button/label swatch types.\n* Per-attribute type selection on the global attribute screen.\n* Per-term colour (`sanitize_hex_color`) and custom label, stored as term meta.\n* Wires into WooCommerce's native variations form, no jQuery, vanilla JS.\n* Keyboard operable (radiogroup semantics, arrow keys) and screen-reader labelled.\n* Focus-visible rings, sufficient contrast, reduced-motion friendly, no layout shift.\n* Graceful fallback to the standard dropdown when an attribute has no swatch data.\n* Settings page under WooCommerce: enable/disable and default swatch type."
+msgstr "* Farb- und Schaltflächen-/Beschriftungsmustertypen.\n* Auswahl des Typs pro Attribut auf dem globalen Attributbildschirm.\n* Farbe pro Begriff („sanitize_hex_color“) und benutzerdefinierte Beschriftung, gespeichert als Begriffsmeta.\n* Verbindungen in die native Variationsform von WooCommerce, kein jQuery, Vanilla JS.\n* Tastaturbedienbar (Radiogruppensemantik, Pfeiltasten) und Bildschirmlesegerät beschriftet.\n* Im Fokus sichtbare Ringe, ausreichender Kontrast, bewegungsreduziert, keine Layoutverschiebung.\n* Eleganter Rückgriff auf das Standard-Dropdown-Menü, wenn ein Attribut keine Farbfelddaten enthält.\n* Einstellungsseite unter WooCommerce: Aktivieren/Deaktivieren und Standard-Farbfeldtyp."
+
+msgid "<strong>Self-contained.</strong> No external services, no account, no third-party dependencies."
+msgstr "<strong>Eigenständig.</strong> Keine externen Dienste, kein Konto, keine Abhängigkeiten von Drittanbietern."
+
+msgid "1. Upload the plugin to `/wp-content/plugins/swatch`, or install via Plugins → Add New.\n2. Activate it. WooCommerce must be active.\n3. Go to WooCommerce → Swatch to tune the defaults.\n4. On Products → Attributes, set a swatch colour or label on each attribute term."
+msgstr "1. Lade das Plugin nach „/wp-content/plugins/swatch“ hoch oder installiere es über Plugins → Neu hinzufügen.\n2. Aktiviere es. WooCommerce muss aktiv sein.\n3. Gehe zu WooCommerce → Swatch, um die Standardeinstellungen anzupassen.\n4. Lege unter Produkte → Attribute eine Musterfarbe oder Beschriftung für jeden Attributbegriff fest."
+
+msgid "* <strong>Documentation</strong> - https://plogins.com/plogins-swatch/docs/\n* <strong>Plugin page</strong> - https://plogins.com/plogins-swatch/\n* <strong>Source code</strong> - https://github.com/wppoland/plogins-swatch\n* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-swatch/issues"
+msgstr "* <strong>Dokumentation</strong> - https://plogins.com/de/plogins-swatch/docs/\n* <strong>Plugin-Seite</strong> - https://plogins.com/de/plogins-swatch/\n* <strong>Quellcode</strong> – https://github.com/wppoland/plogins-swatch\n* <strong>Fehlerberichte und Funktionsanfragen</strong> – https://github.com/wppoland/plogins-swatch/issues"
+
+msgid "Yes. Swatch extends WooCommerce's variable products and does nothing without it."
+msgstr "Ja. Swatch erweitert die variablen Produkte von WooCommerce und macht nichts ohne."
+
+msgid "They keep WooCommerce's standard dropdown. Colour swatches with no colours set fall back to the dropdown automatically, so nothing ever breaks."
+msgstr "Du behalten das Standard-Dropdown-Menü von WooCommerce bei. Farbfelder, für die keine Farben festgelegt sind, werden automatisch in das Dropdown-Menü verschoben, sodass nichts kaputt geht."
+
+msgid "Yes. The front-end is vanilla JavaScript that hooks WooCommerce's own variation events."
+msgstr "Ja. Das Frontend ist Vanilla-JavaScript, das die eigenen Variationsereignisse von WooCommerce einbindet."
+
+msgid "Yes. Swatches use radiogroup semantics, arrow-key navigation and visible focus rings."
+msgstr "Ja. Farbfelder nutzen Radiogruppensemantik, Pfeiltastennavigation und sichtbare Fokusringe."
+
+msgid "Yes. Swatches stay in the native variations form with touch-friendly targets; no separate mobile app or script framework is required."
+msgstr "Ja. Farbfelder bleiben in der ursprünglichen Variationsform mit berührungsempfindlichen Zielen; Es ist keine separate mobile App oder ein Skript-Framework erforderlich."
+
+msgid "Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data."
+msgstr "Ja. Dieses Plugin ist mit WordPress Multisite kompatibel. Aktiviere es im Netzwerk oder auf einzelnen Websites. Jede Site behält ihre eigenen Einstellungen und Daten."
+
+msgid "1. Colour and button swatches on a single product page.\n2. The Swatch settings screen under the WooCommerce menu."
+msgstr "1. Farb- und Schaltflächenmuster auf einer einzigen Produktseite.\n2. Der Swatch-Einstellungsbildschirm im WooCommerce-Menü."
+
+msgid "Swatch does not connect to any external services. It makes no outbound HTTP requests, loads no remote scripts, fonts or CDN assets, and sends no telemetry or analytics. There is no account or API key."
+msgstr "Swatch stellt keine Verbindung zu externen Diensten her. Es werden keine ausgehenden HTTP-Anfragen gestellt, keine Remote-Skripte, Schriftarten oder CDN-Assets geladen und keine Telemetriedaten oder Analysen gesendet. Es gibt kein Konto oder API-Schlüssel."
+
+msgid "Everything is stored in your own database: the swatch type per attribute, the global defaults and a schema version are kept in the `swatch_attribute_types`, `swatch_settings` and `swatch_db_version` options, and each term's colour and label are stored as the `swatch_color` and `swatch_label` term meta on your WooCommerce attribute terms. The plugin sends no email."
+msgstr "Alles wird in deiner eigenen Datenbank gespeichert: Der Farbfeldtyp pro Attribut, die globalen Standardeinstellungen und eine Schemaversion werden in den Optionen „swatch_attribute_types“, „swatch_settings“ und „swatch_db_version“ gespeichert, und die Farbe und Beschriftung jedes Begriffs wird als Begriffsmeta „swatch_color“ und „swatch_label“ in deinen WooCommerce-Attributbegriffen gespeichert. Das Plugin sendet keine E-Mail."
+
+msgid "* First stable release."
+msgstr "* Erste stabile Version."
+
+msgid "* Renamed to Plogins Swatch for WooCommerce for a more distinctive plugin name."
+msgstr "* Für einen eindeutigeren Plugin-Namen in Plogins Swatch für WooCommerce umbenannt."
+
+msgid "* Swatch group filters `swatch/swatch_group_vars` and `swatch/swatch_group_classes` for PRO sizing and shapes."
+msgstr "* Swatch-Gruppenfilter „swatch/swatch_group_vars“ und „swatch/swatch_group_classes“ für PRO-Größen und -Formen."
+
+msgid "* Per-swatch filters (`swatch/product_swatch_html`, `swatch/archive_swatch_html`) and `swatch/swatch_items` for PRO tooltips and add-ons."
+msgstr "* Filter pro Farbfeld („swatch/product_swatch_html“, „swatch/archive_swatch_html“) und „swatch/swatch_items“ für PRO-Tooltips und Add-ons."
+
+msgid "* Add optional archive-loop swatch preview via `swatch/archive_enabled` and `swatch/archive_html` filters for add-ons."
+msgstr "* Füge eine optionale Archivschleifen-Farbfeldvorschau über die Filter „swatch/archive_enabled“ und „swatch/archive_html“ für Add-ons hinzu."
+
+msgid "* Add `swatch/variation_gallery` filter and expose `swatch_variation_gallery` on variation JSON for add-ons."
+msgstr "* Füge den Filter „swatch/variation_gallery“ hinzu und stelle „swatch_variation_gallery“ im Variations-JSON für Add-ons bereit."
+
+msgid "* Initial release."
+msgstr "* Erstveröffentlichung."
+
