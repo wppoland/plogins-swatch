@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Plogins Swatch - Variation Swatches for WooCommerce
+ * Plugin Name:       Swatch - Variation Swatches for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-swatch/
  * Description:        Replace variation dropdowns with accessible colour and label swatches.
  * Version:           1.0.2

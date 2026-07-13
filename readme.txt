@@ -1,4 +1,4 @@
-=== Plogins Swatch - Variation Swatches for WooCommerce ===
+=== Swatch - Variation Swatches for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, variation swatches, color swatches, variations, product attributes
 Requires at least: 6.5
