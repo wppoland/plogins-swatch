@@ -55,7 +55,7 @@ Ja. Swatch erweitert die variablen Produkte von WooCommerce und macht ohne WooCo
 
 = What happens to attributes I have not configured? =
 
-Sie behalten das Standard-Dropdown von WooCommerce. Farbfelder ohne festgelegte Farben fallen automatisch auf das Dropdown zurück, sodass nie etwas kaputtgeht.
+Du behalten das Standard-Dropdown von WooCommerce. Farbfelder ohne festgelegte Farben fallen automatisch auf das Dropdown zurück, sodass nie etwas kaputtgeht.
 
 = Does it work without jQuery? =
 
