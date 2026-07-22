@@ -54,7 +54,7 @@ msgstr "Verwende die Plugin-Standardeinstellung"
 #: src/Admin/AttributeFields.php:72 src/Admin/AttributeFields.php:93
 #: src/Admin/Settings.php:136
 msgid "Button / label"
-msgstr "Button/Beschriftung"
+msgstr "Knopf/Beschriftung"
 
 #: src/Admin/AttributeFields.php:73 src/Admin/AttributeFields.php:94
 #: src/Admin/Settings.php:137
