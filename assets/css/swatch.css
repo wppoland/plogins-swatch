@@ -1,8 +1,8 @@
 /**
- * Swatch — front-end styles.
+ * Swatch, front-end styles.
  *
  * The shopper's moment here is the *pick*: the click that commits to a colour.
- * Swatch borrows the gesture from a paint-chip sample card — when you choose a
+ * Swatch borrows the gesture from a paint-chip sample card, when you choose a
  * colour you circle it. So the selected swatch lifts off the card and a warm
  * vermilion "marker" ring strokes itself around the chip, the way you'd ring
  * your choice on a sample fan. One earned micro-interaction; everything else is
@@ -23,7 +23,7 @@
 	--swatch-border: #8b8f96;
 	--swatch-border-selected: #1f2328;
 
-	/* The pick accent — a warm vermilion marker ink, the colour of a circle
+	/* The pick accent, a warm vermilion marker ink, the colour of a circle
 	   drawn around a chosen chip on a sample card. Inherits the theme's own link
 	   colour first where the theme exposes it, so it sits inside the store. */
 	--swatch-ink: var(--wp--preset--color--vivid-red, #e2542c);
@@ -32,7 +32,7 @@
 
 	--swatch-fg: #1f2328;
 	--swatch-bg: #fff;
-	/* The "card" the chips sit on — used for the lift shadow contrast. */
+	/* The "card" the chips sit on, used for the lift shadow contrast. */
 	--swatch-card: var(--wp--preset--color--base, #fff);
 
 	display: flex;
@@ -145,7 +145,7 @@
 }
 
 /* Colour swatches: round chip filled with the term colour. The ring lives
-   outside the chip box (inset: -6px) so overflow stays visible — the marker
+   outside the chip box (inset: -6px) so overflow stays visible, the marker
    circle is meant to sit around the chip, not be clipped to it. */
 .swatch--color {
 	width: var(--swatch-size);
@@ -156,7 +156,7 @@
 	background-clip: padding-box;
 }
 
-/* Picked colour chip earns a small "dab" notch — a confident centre mark, like
+/* Picked colour chip earns a small "dab" notch, a confident centre mark, like
    pressing the chip down on the card. Hidden for button swatches (the ring +
    label already carry the state). */
 .swatch--color.is-selected::after {
