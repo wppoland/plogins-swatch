@@ -1,17 +1,17 @@
 /**
- * Swatch — admin settings styles.
+ * Swatch, admin settings styles.
  *
  * Native wp-admin first: this only dresses the Swatch settings page, scoped to
  * `.swatch-settings` so it never leaks onto other screens. The one distinctive
- * touch is a thin vermilion accent bar on each section card — the same
- * paint-chip "marker ink" the storefront swatches use — kept to a UI accent
+ * touch is a thin vermilion accent bar on each section card, the same
+ * paint-chip "marker ink" the storefront swatches use, kept to a UI accent
  * role only.
  *
  * Contrast (WCAG, computed against the wp-admin surface):
  *   - Accent bar  #e2542c on #fff = 3.79:1  (UI element, AA needs 3:1)  PASS
  *   - Accent text #c2410c on #fff = 5.18:1  (text, AA needs 4.5:1)      PASS
  *                 #c2410c on #f0f0f1 = 4.55:1                            PASS
- *   - Body copy uses WP's own #1d2327 / #3c434a — unchanged.
+ *   - Body copy uses WP's own #1d2327 / #3c434a, unchanged.
  */
 
 .swatch-settings .swatch-intro {
@@ -21,14 +21,14 @@
 	color: #3c434a;
 }
 
-/* Section cards — native WP "postbox" feel, with one accent edge. */
+/* Section cards, native WP "postbox" feel, with one accent edge. */
 .swatch-settings .swatch-section {
 	max-width: 46rem;
 	margin: 0 0 20px;
 	padding: 4px 24px 8px;
 	background: #fff;
 	border: 1px solid #c3c4c7;
-	border-left: 4px solid #e2542c; /* 3.79:1 vs #fff — UI accent */
+	border-left: 4px solid #e2542c; /* 3.79:1 vs #fff, UI accent */
 	border-radius: 4px;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
 }
@@ -57,14 +57,14 @@
 	line-height: 1.6;
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
-	color: #c2410c; /* 5.18:1 vs #fff — AA text */
+	color: #c2410c; /* 5.18:1 vs #fff, AA text */
 	background: rgba(226, 84, 44, 0.1);
 	border-radius: 9px;
 	vertical-align: middle;
 }
 
 /* Inline "what it looks like" preview chips, so the type choice is shown, not
-   just named. Purely decorative — aria-hidden in the markup. */
+   just named. Purely decorative, aria-hidden in the markup. */
 .swatch-settings .swatch-preview {
 	display: inline-flex;
 	align-items: center;
@@ -110,16 +110,18 @@
 }
 
 /* ------------------------------------------------------------------ *
- * PRO upsell — dismissible banner, sidebar promo, "what PRO adds"
+ * PRO upsell, dismissible banner, sidebar promo, "what PRO adds"
  * locked cards. Pure advertising (no disabled inputs), scoped to
- * .swatch-settings, using the plugin's own vermilion "marker ink"
- * accent. The buttons use the darker --swatch-admin-accent-text
- * (#c2410c, white text = 5.18:1 — clears WCAG AA); the lighter accent
- * (#e2542c) is decorative only.
+ * .swatch-settings so nothing leaks into the rest of wp-admin.
+ *
+ * Accent contrast (WCAG, on #fff):
+ *   Decorative accent  #e2542c, borders, rules, lock glyphs (non-text).
+ *   Button/text accent #c2410c, behind WHITE button text: 5.18:1, clears AA.
  * ------------------------------------------------------------------ */
+
 .swatch-settings {
-	--swatch-admin-accent: #e2542c;
-	--swatch-admin-accent-text: #c2410c;
+	--swatch-admin-accent: #e2542c;      /* decorative vermilion */
+	--swatch-admin-accent-text: #c2410c; /* darker for white-on-accent CTAs and text */
 	--swatch-pro-muted: #646970;
 	--swatch-pro-radius: 8px;
 	--swatch-pro-radius-sm: 6px;
@@ -137,7 +139,7 @@
 	display: flex;
 	align-items: center;
 	gap: 14px;
-	margin: 0 0 var(--swatch-pro-gap);
+	margin: 1em 0 var(--swatch-pro-gap);
 	padding: 12px 16px;
 	border: 1px solid color-mix(in srgb, var(--swatch-admin-accent) 30%, #dcdcde);
 	border-inline-start: 4px solid var(--swatch-admin-accent);
@@ -156,7 +158,7 @@
 .swatch-settings .swatch-pro-banner__dismiss { flex: 0 0 auto; font-size: 18px; line-height: 1; text-decoration: none; color: var(--swatch-pro-muted); padding: 4px; border-radius: 4px; }
 .swatch-settings .swatch-pro-banner__dismiss:hover { color: #1d2327; background: rgba(0, 0, 0, .05); }
 
-/* Accent CTA buttons (override WP blue with the readable dark vermilion accent) */
+/* Accent CTA buttons (override WP blue with the readable dark accent) */
 .swatch-settings .swatch-pro-banner__cta.button-primary,
 .swatch-settings .swatch-pro-aside__cta.button-primary {
 	background: var(--swatch-admin-accent-text); border-color: color-mix(in srgb, var(--swatch-admin-accent-text) 80%, #000); color: #fff; text-shadow: none; box-shadow: none;

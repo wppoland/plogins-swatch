@@ -39,53 +39,47 @@ msgstr ""
 msgid "https://plogins.com/"
 msgstr ""
 
-#: src/Admin/AttributeFields.php:68
-#: src/Admin/AttributeFields.php:88
+#: src/Admin/AttributeFields.php:68 src/Admin/AttributeFields.php:88
 msgid "Swatch type"
 msgstr ""
 
-#: src/Admin/AttributeFields.php:71
-#: src/Admin/AttributeFields.php:92
+#: src/Admin/AttributeFields.php:71 src/Admin/AttributeFields.php:92
 msgid "Use plugin default"
 msgstr ""
 
-#: src/Admin/AttributeFields.php:72
-#: src/Admin/AttributeFields.php:93
+#: src/Admin/AttributeFields.php:72 src/Admin/AttributeFields.php:93
 #: src/Admin/Settings.php:136
 msgid "Button / label"
 msgstr ""
 
-#: src/Admin/AttributeFields.php:73
-#: src/Admin/AttributeFields.php:94
+#: src/Admin/AttributeFields.php:73 src/Admin/AttributeFields.php:94
 #: src/Admin/Settings.php:137
 msgid "Colour"
 msgstr ""
 
 #: src/Admin/AttributeFields.php:75
-msgid "How this attribute renders on the product page. Colour shows colour dots (set a colour on each term); Button shows the term name as a pill."
+msgid ""
+"How this attribute renders on the product page. Colour shows colour dots "
+"(set a colour on each term); Button shows the term name as a pill."
 msgstr ""
 
 #: src/Admin/AttributeFields.php:96
 msgid "How this attribute renders on the product page."
 msgstr ""
 
-#: src/Admin/AttributeFields.php:133
-#: src/Admin/AttributeFields.php:156
+#: src/Admin/AttributeFields.php:133 src/Admin/AttributeFields.php:156
 msgid "Swatch colour"
 msgstr ""
 
-#: src/Admin/AttributeFields.php:136
-#: src/Admin/AttributeFields.php:160
+#: src/Admin/AttributeFields.php:136 src/Admin/AttributeFields.php:160
 msgid "Used when this attribute is shown as colour swatches."
 msgstr ""
 
-#: src/Admin/AttributeFields.php:139
-#: src/Admin/AttributeFields.php:164
+#: src/Admin/AttributeFields.php:139 src/Admin/AttributeFields.php:164
 msgid "Swatch label"
 msgstr ""
 
-#: src/Admin/AttributeFields.php:141
-#: src/Admin/AttributeFields.php:167
+#: src/Admin/AttributeFields.php:141 src/Admin/AttributeFields.php:167
 msgid "Optional short label for button swatches. Defaults to the term name."
 msgstr ""
 
@@ -98,7 +92,11 @@ msgid "Swatch"
 msgstr ""
 
 #: src/Admin/Settings.php:98
-msgid "Swatch turns WooCommerce variation dropdowns into accessible colour dots and labelled buttons, so shoppers pick a variation in one tap instead of scanning a select menu. It works out of the box, the settings below are only for fine-tuning."
+msgid ""
+"Swatch turns WooCommerce variation dropdowns into accessible colour dots and "
+"labelled buttons, so shoppers pick a variation in one tap instead of "
+"scanning a select menu. It works out of the box, the settings below are only "
+"for fine-tuning."
 msgstr ""
 
 #: src/Admin/Settings.php:104
@@ -106,7 +104,9 @@ msgid "Storefront display"
 msgstr ""
 
 #: src/Admin/Settings.php:105
-msgid "Controls whether swatches appear on single product pages, and what an unconfigured attribute looks like."
+msgid ""
+"Controls whether swatches appear on single product pages, and what an "
+"unconfigured attribute looks like."
 msgstr ""
 
 #: src/Admin/Settings.php:111
@@ -122,7 +122,10 @@ msgid "Show swatches on product pages."
 msgstr ""
 
 #: src/Admin/Settings.php:127
-msgid "When off, shoppers see WooCommerce’s standard variation dropdowns and no swatch styles or scripts load, nothing is lost, the look just reverts to default. Your per-term colours and labels are kept."
+msgid ""
+"When off, shoppers see WooCommerce’s standard variation dropdowns and no "
+"swatch styles or scripts load, nothing is lost, the look just reverts to "
+"default. Your per-term colours and labels are kept."
 msgstr ""
 
 #: src/Admin/Settings.php:132
@@ -150,7 +153,11 @@ msgid "Large"
 msgstr ""
 
 #: src/Admin/Settings.php:152
-msgid "Applied to any attribute you have not given its own type. “Colour” renders colour dots (you set a colour per term); “Button / label” renders the term name as a pill. Either way, an attribute with no colours configured falls back to the dropdown automatically, so this choice never breaks a product."
+msgid ""
+"Applied to any attribute you have not given its own type. “Colour” renders "
+"colour dots (you set a colour per term); “Button / label” renders the term "
+"name as a pill. Either way, an attribute with no colours configured falls "
+"back to the dropdown automatically, so this choice never breaks a product."
 msgstr ""
 
 #: src/Admin/Settings.php:160
@@ -158,13 +165,18 @@ msgid "Per-attribute setup"
 msgstr ""
 
 #: src/Admin/Settings.php:161
-msgid "Colours and labels live with each attribute, not here, so they stay correct as your catalogue grows."
+msgid ""
+"Colours and labels live with each attribute, not here, so they stay correct "
+"as your catalogue grows."
 msgstr ""
 
 #. translators: %s: link to the WooCommerce Attributes screen.
 #: src/Admin/Settings.php:166
 #, php-format
-msgid "Set a swatch colour or label on each term under %s. Override the default type per attribute on the same screen. Anything left unset uses the default above."
+msgid ""
+"Set a swatch colour or label on each term under %s. Override the default "
+"type per attribute on the same screen. Anything left unset uses the default "
+"above."
 msgstr ""
 
 #: src/Admin/Settings.php:167
@@ -172,5 +184,67 @@ msgid "Products → Attributes"
 msgstr ""
 
 #: plogins-swatch.php:47
-msgid "Swatch - Variation Swatches for WooCommerce requires WooCommerce to be active."
+msgid ""
+"Swatch - Variation Swatches for WooCommerce requires WooCommerce to be "
+"active."
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr ""
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr ""
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
 msgstr ""

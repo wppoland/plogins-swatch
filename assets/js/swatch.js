@@ -1,5 +1,5 @@
 /**
- * Swatch — front-end behaviour.
+ * Swatch, front-end behaviour.
  *
  * Wires the rendered swatch groups to WooCommerce's native variations form:
  *   - clicking a swatch sets the matching hidden <select> value and dispatches a

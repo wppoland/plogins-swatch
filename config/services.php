@@ -1,7 +1,7 @@
 <?php
 /**
  * Service wiring. Returns a closure that registers every service in the
- * container. Swatch is self-contained — all logic lives in these services.
+ * container. Swatch is self-contained, all logic lives in these services.
  *
  * @package Swatch
  */
