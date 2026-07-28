@@ -119,7 +119,7 @@ final class SwatchData
     }
 
     /**
-     * Custom button label stored against a term (empty string when none — the
+     * Custom button label stored against a term (empty string when none, the
      * renderer then uses the term name).
      */
     public function labelForTerm(int $termId): string

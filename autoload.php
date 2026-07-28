@@ -2,7 +2,7 @@
 /**
  * Autoloading: prefer Composer's optimized classmap when present, otherwise fall
  * back to a minimal PSR-4 autoloader so the plugin still boots if vendor/ is
- * absent. Swatch is self-contained — it has no runtime Composer dependencies.
+ * absent. Swatch is self-contained, it has no runtime Composer dependencies.
  *
  * @package Swatch
  */

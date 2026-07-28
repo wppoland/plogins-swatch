@@ -19,7 +19,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: plogins-swatch.php
 msgid "Swatch - Variation Swatches for WooCommerce"
-msgstr "Swatch – Variations-Swatches für WooCommerce"
+msgstr "Swatch, Variations-Swatches für WooCommerce"
 
 #. Plugin URI of the plugin
 #: plogins-swatch.php
@@ -219,7 +219,7 @@ msgid ""
 "Swatch - Variation Swatches for WooCommerce requires WooCommerce to be "
 "active."
 msgstr ""
-"Swatch – Variation Swatches für WooCommerce erfordert, dass WooCommerce "
+"Swatch, Variation Swatches für WooCommerce erfordert, dass WooCommerce "
 "aktiv ist."
 
 #: src/Admin/ProUpsell.php:78

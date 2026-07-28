@@ -45,8 +45,8 @@ Der vollständige Quellcode liegt auf GitHub unter https://github.com/wppoland/p
 
 * <strong>Dokumentation</strong> - https://plogins.com/de/plogins-swatch/docs/
 * <strong>Plugin-Seite</strong> - https://plogins.com/de/plogins-swatch/
-* <strong>Quellcode</strong> – https://github.com/wppoland/plogins-swatch
-* <strong>Fehlerberichte und Funktionswünsche</strong> – https://github.com/wppoland/plogins-swatch/issues
+* <strong>Quellcode</strong>, https://github.com/wppoland/plogins-swatch
+* <strong>Fehlerberichte und Funktionswünsche</strong>, https://github.com/wppoland/plogins-swatch/issues
 
 
 = Does it require WooCommerce? =
