@@ -102,10 +102,10 @@ msgstr "Muster"
 
 #: src/Admin/Settings.php:98
 msgid ""
-"Swatch turns WooCommerce variation dropdowns into accessible colour dots and"
-" labelled buttons, so shoppers pick a variation in one tap instead of "
-"scanning a select menu. It works out of the box, the settings below are only"
-" for fine-tuning."
+"Swatch turns WooCommerce variation dropdowns into accessible colour dots and "
+"labelled buttons, so shoppers pick a variation in one tap instead of "
+"scanning a select menu. It works out of the box, the settings below are only "
+"for fine-tuning."
 msgstr ""
 "Swatch verwandelt WooCommerce-Variations-Dropdown-Menüs in zugängliche "
 "Farbpunkte und beschriftete Schaltflächen, sodass Käufer eine Variation mit "
@@ -180,9 +180,9 @@ msgid ""
 "back to the dropdown automatically, so this choice never breaks a product."
 msgstr ""
 "Wird auf jedes Attribut angewendet, dem du keinen eigenen Typ zugewiesen "
-"haben. „Farbe“ stellt Farbpunkte dar (Du legst eine Farbe pro Begriff fest);"
-" „Button/Label“ gibt den Begriffsnamen als Pille wieder. In jedem Fall fällt"
-" ein Attribut ohne konfigurierte Farben automatisch auf das Dropdown-Menü "
+"haben. „Farbe“ stellt Farbpunkte dar (Du legst eine Farbe pro Begriff fest); "
+"„Button/Label“ gibt den Begriffsnamen als Pille wieder. In jedem Fall fällt "
+"ein Attribut ohne konfigurierte Farben automatisch auf das Dropdown-Menü "
 "zurück, sodass diese Auswahl niemals ein Produkt beschädigt."
 
 #: src/Admin/Settings.php:160
@@ -221,3 +221,63 @@ msgid ""
 msgstr ""
 "Swatch – Variation Swatches für WooCommerce erfordert, dass WooCommerce "
 "aktiv ist."
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Demnächst"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Demnächst"
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr "ab %d zł/Jahr"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "ab %1$s%2$d/Jahr"
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr "Auf PRO upgraden"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr "Zugriff verweigert."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr "Mehr erreichen mit %s"
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr "Diesen Hinweis ausblenden"
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr "Alle PRO-Funktionen freischalten"
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr "eine Lizenz, alle PRO-Funktionen"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
+msgstr "Was %s ergänzt"
