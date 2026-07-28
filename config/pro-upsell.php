@@ -17,8 +17,8 @@ return [
     'currency'   => 'EUR',
     'price_pln'  => 85,
     'lead'       => [
-        'en' => 'Image swatches, per-variation galleries, archive swatches, rich tooltips and custom sizing — feature-complete PRO.',
-        'pl' => 'Próbki obrazkowe, galeria per wariant, próbki na listach, tooltipy i rozmiary — kompletna wersja PRO.',
+        'en' => 'Image swatches, per-variation galleries, archive swatches, rich tooltips and custom sizing. Feature-complete PRO.',
+        'pl' => 'Próbki obrazkowe, galeria per wariant, próbki na listach, tooltipy i rozmiary. Kompletna wersja PRO.',
     ],
     'features'   => [
         [
