@@ -17,7 +17,7 @@ Swatch replaces WooCommerce's default variation `<select>` dropdowns with visual
 
 The swatches drive WooCommerce's own variations form, so price, stock and the add-to-cart button update exactly as they do with the stock dropdowns. Selected and out-of-combination states are reflected automatically.
 
-The full source lives on GitHub at https://github.com/wppoland/plogins-swatch if you want to read the code or report a problem.
+The full source lives on GitHub at [github.com/wppoland/plogins-swatch](https://github.com/wppoland/plogins-swatch) if you want to read the code or report a problem.
 
 **Features**
 
@@ -43,10 +43,10 @@ The full source lives on GitHub at https://github.com/wppoland/plogins-swatch if
 
 = Documentation and links =
 
-* **Documentation** - https://plogins.com/plogins-swatch/docs/
-* **Plugin page** - https://plogins.com/plogins-swatch/
-* **Source code** - https://github.com/wppoland/plogins-swatch
-* **Bug reports and feature requests** - https://github.com/wppoland/plogins-swatch/issues
+* **Documentation**: [plogins.com/plogins-swatch/docs/](https://plogins.com/plogins-swatch/docs/)
+* **Plugin page**: [plogins.com/plogins-swatch/](https://plogins.com/plogins-swatch/)
+* **Source code**: [github.com/wppoland/plogins-swatch](https://github.com/wppoland/plogins-swatch)
+* **Bug reports and feature requests**: [github.com/wppoland/plogins-swatch/issues](https://github.com/wppoland/plogins-swatch/issues)
 
 
 = Does it require WooCommerce? =
