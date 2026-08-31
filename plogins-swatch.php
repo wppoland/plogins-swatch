@@ -25,7 +25,7 @@ namespace Swatch;
 
 defined('ABSPATH') || exit;
 
-const VERSION     = '1.0.4';
+const VERSION     = '1.0.5';
 const PLUGIN_FILE = __FILE__;
 
 define('SWATCH_DIR', plugin_dir_path(__FILE__));
