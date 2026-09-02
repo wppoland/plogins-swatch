@@ -87,7 +87,7 @@ Everything is stored in your own database: the swatch type per attribute, the gl
 
 == Translations ==
 
-Plogins Swatch includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-swatch`, so WordPress.org language packs can also override or extend these bundled translations.
+Plogins Swatch is fully translatable and ships the `plogins-swatch.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
 
