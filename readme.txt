@@ -55,7 +55,7 @@ Yes. Swatch extends WooCommerce's variable products and does nothing without it.
 
 = What happens to attributes I have not configured? =
 
-They keep WooCommerce's standard dropdown. Colour swatches with no colours set fall back to the dropdown automatically, so nothing ever breaks.
+They get the plugin's default swatch type (button swatches out of the box), the same as any attribute you have not given its own type. Only a colour attribute with no colours configured falls back to the dropdown automatically.
 
 = Does it work without jQuery? =
 
