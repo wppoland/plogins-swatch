@@ -52,6 +52,19 @@ final class Settings
     }
 
     /**
+     * Whether swatches also render in the shop loop.
+     *
+     * The archive renderer has always been in this plugin. Until 1.0.8 it was
+     * held shut by a hardcoded `false` that only the paid add-on ever flipped,
+     * which makes it a built-in feature the plugin refused to run. It is a
+     * setting now, off by default because it changes how the shop page looks.
+     */
+    public function archiveEnabled(): bool
+    {
+        return (bool) $this->get('archive_enabled', false);
+    }
+
+    /**
      * Forget the cached settings (used after a save in the same request).
      */
     public function flush(): void

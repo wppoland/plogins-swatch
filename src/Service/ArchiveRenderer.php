@@ -63,10 +63,10 @@ final class ArchiveRenderer implements HasHooks
         /**
          * Whether archive swatches should render for this product.
          *
-         * @param bool         $enabled Default false.
+         * @param bool         $enabled The merchant's own setting.
          * @param \WC_Product  $product Variable product in the loop.
          */
-        if (! apply_filters('swatch/archive_enabled', false, $product)) {
+        if (! apply_filters('swatch/archive_enabled', $this->settings->archiveEnabled(), $product)) {
             return;
         }
 

@@ -21,4 +21,5 @@ return [
 
     // Default swatch type for attributes with no explicit type set: 'color' or 'button'.
     'default_type' => 'button',
+    'archive_enabled' => false,
 ];
