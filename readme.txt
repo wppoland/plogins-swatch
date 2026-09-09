@@ -4,7 +4,7 @@ Tags: woocommerce, variation swatches, color swatches, variations, product attri
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -90,6 +90,10 @@ Everything is stored in your own database: the swatch type per attribute, the gl
 Plogins Swatch is fully translatable and ships the `plogins-swatch.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.8 =
+* New: **Swatches in the shop loop**, a setting on the Swatch screen. The archive renderer was always in this plugin, complete and working, but it was held shut by a hardcoded value that only the paid add-on ever flipped. That makes it a built-in feature the plugin refused to run, which the WordPress.org guidelines do not allow, so it is a setting now. Off by default, because it changes how your shop page looks.
+* Colour and label swatches render in listings exactly as they do on the product page. Image swatches in listings are what the paid edition adds on top.
 
 = 1.0.7 =
 * Renamed to Plogins Swatch - Variation Swatches for WooCommerce so the name leads with the brand rather than a generic word, which is what the WordPress.org plugin review team asks for. The plugin slug is unchanged.

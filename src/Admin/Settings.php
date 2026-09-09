@@ -135,7 +135,25 @@ final class Settings implements HasHooks
                                         />
                                         <?php esc_html_e('Show swatches on product pages.', 'plogins-swatch'); ?>
                                     </label>
-                                    <p class="description"><?php esc_html_e('When off, shoppers see WooCommerce’s standard variation dropdowns and no swatch styles or scripts load, nothing is lost, the look just reverts to default. Your per-term colours and labels are kept.', 'plogins-swatch'); ?></p>
+                                    <p class="description"><?php esc_html_e('When off, shoppers see the standard WooCommerce variation dropdowns and no swatch styles or scripts load, nothing is lost, the look just reverts to default. Your per-term colours and labels are kept.', 'plogins-swatch'); ?></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <?php esc_html_e('Swatches in the shop loop', 'plogins-swatch'); ?>
+                                </th>
+                                <td>
+                                    <label for="swatch_archive_enabled">
+                                        <input
+                                            type="checkbox"
+                                            id="swatch_archive_enabled"
+                                            name="<?php echo esc_attr($optionName); ?>[archive_enabled]"
+                                            value="1"
+                                            <?php checked((bool) ($settings['archive_enabled'] ?? false), true); ?>
+                                        />
+                                        <?php esc_html_e('Also show swatches under products in shop and category listings.', 'plogins-swatch'); ?>
+                                    </label>
+                                    <p class="description"><?php esc_html_e('Off by default because it changes how your shop page looks. Colour and label swatches render here exactly as they do on the product page.', 'plogins-swatch'); ?></p>
                                 </td>
                             </tr>
                             <tr>
@@ -213,6 +231,7 @@ final class Settings implements HasHooks
 
         $sanitized = array_merge($defaults, [
             'enabled'      => ! empty($raw['enabled']),
+            'archive_enabled' => ! empty($raw['archive_enabled']),
             'default_type' => $type,
         ]);
 
