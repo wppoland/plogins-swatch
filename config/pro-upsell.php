@@ -16,7 +16,7 @@ return [
     'price_from' => 19,
     'currency'   => 'EUR',
     'lead'       => [
-        'en' => 'Image swatches, per-variation galleries, archive swatches, rich tooltips and custom sizing. Feature-complete PRO.',
+        'en' => 'Image swatches on the product page and in the shop loop, per-variation galleries, rich tooltips and custom sizing. Feature-complete PRO.',
         'pl' => 'Próbki obrazkowe, galeria per wariant, próbki na listach, tooltipy i rozmiary. Kompletna wersja PRO.',
     ],
     'features'   => [
@@ -29,7 +29,7 @@ return [
             'pl' => ['title' => 'Galeria per wariant', 'desc' => 'Dodatkowe obrazy galerii per wariant z paskiem miniatur pod główną galerią.'],
         ],
         [
-            'en' => ['title' => 'Archive swatches', 'desc' => 'Show swatches on shop, category, tag and search listings with links to the product and selected option.'],
+            'en' => ['title' => 'Image swatches in the shop loop', 'desc' => 'Swap the colour chip for the term image on shop, category, tag and search listings. The loop swatches themselves are free since Swatch 1.0.8; this adds the image.'],
             'pl' => ['title' => 'Próbki na listach', 'desc' => 'Próbki na liście sklepu, kategorii, tagów i wyszukiwania z linkiem do produktu z wybraną opcją.'],
         ],
         [
