@@ -57,6 +57,14 @@ final class Settings implements HasHooks
             [],
             \Swatch\VERSION,
         );
+
+        wp_enqueue_script(
+            'swatch-admin',
+            \Swatch\Plugin::instance()->url('assets/js/admin.js'),
+            [],
+            \Swatch\VERSION,
+            ['in_footer' => true, 'strategy' => 'defer'],
+        );
     }
 
     public function addMenuPage(): void
@@ -131,14 +139,24 @@ final class Settings implements HasHooks
                                             id="swatch_enabled"
                                             name="<?php echo esc_attr($optionName); ?>[enabled]"
                                             value="1"
+                                            aria-describedby="swatch_enabled_desc"
+                                            data-swatch-master
                                             <?php checked($enabled, true); ?>
                                         />
                                         <?php esc_html_e('Show swatches on product pages.', 'plogins-swatch'); ?>
                                     </label>
-                                    <p class="description"><?php esc_html_e('When off, shoppers see the standard WooCommerce variation dropdowns and no swatch styles or scripts load, nothing is lost, the look just reverts to default. Your per-term colours and labels are kept.', 'plogins-swatch'); ?></p>
+                                    <p class="description" id="swatch_enabled_desc"><?php esc_html_e('When off, shoppers see the standard WooCommerce variation dropdowns and no swatch styles or scripts load, nothing is lost, the look just reverts to default. Your per-term colours and labels are kept.', 'plogins-swatch'); ?></p>
                                 </td>
                             </tr>
-                            <tr>
+                            <?php
+                            /*
+                             * The shop-loop switch is downstream of the master switch: with
+                             * swatches off, ticking it changes nothing on the storefront. The
+                             * row says so out loud (server-rendered, so it is right with
+                             * JavaScript off too) and reads as inactive until swatches are on.
+                             */
+                            ?>
+                            <tr class="swatch-dependent<?php echo $enabled ? '' : ' is-inactive'; ?>" data-swatch-dependent>
                                 <th scope="row">
                                     <?php esc_html_e('Swatches in the shop loop', 'plogins-swatch'); ?>
                                 </th>
@@ -149,11 +167,15 @@ final class Settings implements HasHooks
                                             id="swatch_archive_enabled"
                                             name="<?php echo esc_attr($optionName); ?>[archive_enabled]"
                                             value="1"
+                                            aria-describedby="swatch_archive_enabled_desc"
                                             <?php checked((bool) ($settings['archive_enabled'] ?? false), true); ?>
                                         />
                                         <?php esc_html_e('Also show swatches under products in shop and category listings.', 'plogins-swatch'); ?>
                                     </label>
-                                    <p class="description"><?php esc_html_e('Off by default because it changes how your shop page looks. Colour and label swatches render here exactly as they do on the product page.', 'plogins-swatch'); ?></p>
+                                    <p class="description" id="swatch_archive_enabled_desc"><?php esc_html_e('Off by default because it changes how your shop page looks. Colour and label swatches render here exactly as they do on the product page.', 'plogins-swatch'); ?></p>
+                                    <p class="swatch-dependency" data-swatch-dependency role="status" <?php echo $enabled ? 'hidden' : ''; ?>>
+                                        <?php esc_html_e('Swatches are off above, so nothing renders in the shop loop yet. This choice is still saved and takes effect the moment you switch swatches on.', 'plogins-swatch'); ?>
+                                    </p>
                                 </td>
                             </tr>
                             <tr>
