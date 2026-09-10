@@ -4,7 +4,7 @@ Tags: woocommerce, variation swatches, color swatches, variations, product attri
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -90,6 +90,10 @@ Everything is stored in your own database: the swatch type per attribute, the gl
 Plogins Swatch is fully translatable and ships the `plogins-swatch.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.9 =
+* Changed: **Swatches in the shop loop** now shows that it hangs off the master switch above it. With **Enable swatches** off, the row goes quiet and says the listings will not render swatches yet, rather than taking a tick that does nothing. The state is rendered from the saved settings, so it is correct with JavaScript switched off, and the box stays reachable and saveable either way.
+* Changed: both switches in that section tie their help text to the checkbox with `aria-describedby`, so a screen reader reads the explanation with the control.
 
 = 1.0.8 =
 * New: **Swatches in the shop loop**, a setting on the Swatch screen. The archive renderer was always in this plugin, complete and working, but it was held shut by a hardcoded value that only the paid add-on ever flipped. That makes it a built-in feature the plugin refused to run, which the WordPress.org guidelines do not allow, so it is a setting now. Off by default, because it changes how your shop page looks.
