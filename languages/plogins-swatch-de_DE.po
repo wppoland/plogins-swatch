@@ -16,32 +16,12 @@ msgstr ""
 "X-Domain: plogins-swatch\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
-#. Plugin Name of the plugin
-#: plogins-swatch.php
-msgid "Swatch - Variation Swatches for WooCommerce"
-msgstr "Swatch, Variations-Swatches für WooCommerce"
-
-#. Plugin URI of the plugin
-#: plogins-swatch.php
-msgid "https://plogins.com/swatch/"
-msgstr "https://plogins.com/de/swatch/"
-
 #. Description of the plugin
 #: plogins-swatch.php
 msgid "Replace variation dropdowns with accessible colour and label swatches."
 msgstr ""
 "Ersetze Variations-Dropdown-Menüs durch zugängliche Farb- und "
 "Beschriftungsfelder."
-
-#. Author of the plugin
-#: plogins-swatch.php
-msgid "WPPoland"
-msgstr "WPPoland"
-
-#. Author URI of the plugin
-#: plogins-swatch.php
-msgid "https://plogins.com/"
-msgstr "https://plogins.com/"
 
 #: src/Admin/AttributeFields.php:68 src/Admin/AttributeFields.php:88
 msgid "Swatch type"
@@ -52,12 +32,12 @@ msgid "Use plugin default"
 msgstr "Verwende die Plugin-Standardeinstellung"
 
 #: src/Admin/AttributeFields.php:72 src/Admin/AttributeFields.php:93
-#: src/Admin/Settings.php:136
+#: src/Admin/Settings.php:187
 msgid "Button / label"
 msgstr "Knopf/Beschriftung"
 
 #: src/Admin/AttributeFields.php:73 src/Admin/AttributeFields.php:94
-#: src/Admin/Settings.php:137
+#: src/Admin/Settings.php:188
 msgid "Colour"
 msgstr "Farbe"
 
@@ -92,15 +72,15 @@ msgstr ""
 "Optionales Kurzetikett für Knopfmuster. Standardmäßig wird der Begriffsname "
 "verwendet."
 
-#: src/Admin/Settings.php:58
+#: src/Admin/Settings.php:74
 msgid "Swatch Settings"
 msgstr "Farbfeldeinstellungen"
 
-#: src/Admin/Settings.php:59
+#: src/Admin/Settings.php:75
 msgid "Swatch"
 msgstr "Muster"
 
-#: src/Admin/Settings.php:98
+#: src/Admin/Settings.php:116
 msgid ""
 "Swatch turns WooCommerce variation dropdowns into accessible colour dots and "
 "labelled buttons, so shoppers pick a variation in one tap instead of "
@@ -112,11 +92,11 @@ msgstr ""
 "einem Fingertipp auswählen können, anstatt ein Auswahlmenü zu scannen. Es "
 "funktioniert sofort, die Einstellungen unten dienen nur der Feinabstimmung."
 
-#: src/Admin/Settings.php:104
+#: src/Admin/Settings.php:123
 msgid "Storefront display"
 msgstr "Schaufensterdisplay"
 
-#: src/Admin/Settings.php:105
+#: src/Admin/Settings.php:124
 msgid ""
 "Controls whether swatches appear on single product pages, and what an "
 "unconfigured attribute looks like."
@@ -124,55 +104,43 @@ msgstr ""
 "Steuert, ob Farbfelder auf einzelnen Produktseiten angezeigt werden und wie "
 "ein nicht konfiguriertes Attribut aussieht."
 
-#: src/Admin/Settings.php:111
+#: src/Admin/Settings.php:130
 msgid "Enable swatches"
 msgstr "Aktiviere Farbfelder"
 
-#: src/Admin/Settings.php:113
+#: src/Admin/Settings.php:132
 msgid "On by default"
 msgstr "Standardmäßig aktiviert"
 
-#: src/Admin/Settings.php:125
+#: src/Admin/Settings.php:146
 msgid "Show swatches on product pages."
 msgstr "Zeige Farbfelder auf Produktseiten an."
 
-#: src/Admin/Settings.php:127
-msgid ""
-"When off, shoppers see WooCommerce’s standard variation dropdowns and no "
-"swatch styles or scripts load, nothing is lost, the look just reverts to "
-"default. Your per-term colours and labels are kept."
-msgstr ""
-"Wenn diese Option deaktiviert ist, sehen Käufer die Dropdown-Listen für "
-"Standardvarianten von WooCommerce und es werden keine Musterstile oder "
-"Skripte geladen. Es geht nichts verloren, das Erscheinungsbild wird "
-"lediglich auf die Standardeinstellungen zurückgesetzt. Deine pro Begriff "
-"festgelegten Farben und Bezeichnungen bleiben erhalten."
-
-#: src/Admin/Settings.php:132
+#: src/Admin/Settings.php:183
 msgid "Default swatch type"
 msgstr "Standard-Farbfeldtyp"
 
-#: src/Admin/Settings.php:140
+#: src/Admin/Settings.php:191
 msgid "Default"
 msgstr "Standard"
 
-#: src/Admin/Settings.php:144
+#: src/Admin/Settings.php:195
 msgid "Colour:"
 msgstr "Farbe:"
 
-#: src/Admin/Settings.php:147
+#: src/Admin/Settings.php:198
 msgid "Button:"
 msgstr "Schaltfläche:"
 
-#: src/Admin/Settings.php:148
+#: src/Admin/Settings.php:199
 msgid "Small"
 msgstr "Klein"
 
-#: src/Admin/Settings.php:149
+#: src/Admin/Settings.php:200
 msgid "Large"
 msgstr "Groß"
 
-#: src/Admin/Settings.php:152
+#: src/Admin/Settings.php:203
 msgid ""
 "Applied to any attribute you have not given its own type. “Colour” renders "
 "colour dots (you set a colour per term); “Button / label” renders the term "
@@ -185,11 +153,11 @@ msgstr ""
 "ein Attribut ohne konfigurierte Farben automatisch auf das Dropdown-Menü "
 "zurück, sodass diese Auswahl niemals ein Produkt beschädigt."
 
-#: src/Admin/Settings.php:160
+#: src/Admin/Settings.php:211
 msgid "Per-attribute setup"
 msgstr "Einrichtung pro Attribut"
 
-#: src/Admin/Settings.php:161
+#: src/Admin/Settings.php:212
 msgid ""
 "Colours and labels live with each attribute, not here, so they stay correct "
 "as your catalogue grows."
@@ -198,7 +166,7 @@ msgstr ""
 "sodass sie korrekt bleiben, wenn dein Katalog wächst."
 
 #. translators: %s: link to the WooCommerce Attributes screen.
-#: src/Admin/Settings.php:166
+#: src/Admin/Settings.php:217
 #, php-format
 msgid ""
 "Set a swatch colour or label on each term under %s. Override the default "
@@ -210,17 +178,9 @@ msgstr ""
 "was nicht konfiguriert ist, verwendet die oben angegebene "
 "Standardeinstellung."
 
-#: src/Admin/Settings.php:167
-msgid "Products → Attributes"
-msgstr "Produkte → Attribute"
-
-#: plogins-swatch.php:47
-msgid ""
-"Swatch - Variation Swatches for WooCommerce requires WooCommerce to be "
-"active."
-msgstr ""
-"Swatch, Variation Swatches für WooCommerce erfordert, dass WooCommerce "
-"aktiv ist."
+#: src/Admin/Settings.php:218
+msgid "Products > Attributes"
+msgstr "Produkte > Attribute"
 
 #: src/Admin/ProUpsell.php:78
 msgid "Wkrótce"
@@ -230,54 +190,110 @@ msgstr "Demnächst"
 msgid "Coming soon"
 msgstr "Demnächst"
 
-#. translators: %d: yearly price in PLN
-#: src/Admin/ProUpsell.php:83
-#, php-format
-msgid "od %d zł/rok"
-msgstr "ab %d zł/Jahr"
-
 #. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:88
+#: src/Admin/ProUpsell.php:84
 #, php-format
 msgid "from %1$s%2$d/yr"
 msgstr "ab %1$s%2$d/Jahr"
 
-#: src/Admin/ProUpsell.php:97
+#: src/Admin/ProUpsell.php:93
 msgid "Upgrade to PRO"
 msgstr "Auf PRO upgraden"
 
-#: src/Admin/ProUpsell.php:98
+#: src/Admin/ProUpsell.php:94
 msgid "Powiadom mnie"
 msgstr "Benachrichtige mich"
 
-#: src/Admin/ProUpsell.php:98
+#: src/Admin/ProUpsell.php:94
 msgid "Get notified"
 msgstr "Benachrichtige mich"
 
-#: src/Admin/ProUpsell.php:128
+#: src/Admin/ProUpsell.php:124
 msgid "Permission denied."
 msgstr "Zugriff verweigert."
 
 #. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:158
+#: src/Admin/ProUpsell.php:154
 #, php-format
 msgid "Do more with %s"
 msgstr "Mehr erreichen mit %s"
 
-#: src/Admin/ProUpsell.php:165
+#: src/Admin/ProUpsell.php:161
 msgid "Dismiss this notice"
 msgstr "Diesen Hinweis ausblenden"
 
-#: src/Admin/ProUpsell.php:182
+#: src/Admin/ProUpsell.php:178
 msgid "Unlock every PRO feature"
 msgstr "Alle PRO-Funktionen freischalten"
 
-#: src/Admin/ProUpsell.php:195
+#: src/Admin/ProUpsell.php:191
 msgid "one licence, every PRO feature"
 msgstr "eine Lizenz, alle PRO-Funktionen"
 
 #. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:214
+#: src/Admin/ProUpsell.php:210
 #, php-format
 msgid "What %s adds"
 msgstr "Was %s ergänzt"
+
+#. Plugin Name of the plugin
+#: plogins-swatch.php
+msgid "Plogins Swatch - Variation Swatches for WooCommerce"
+msgstr "Plogins Swatch - Variantenfelder für WooCommerce"
+
+#. Plugin URI of the plugin
+#: plogins-swatch.php
+msgid "https://plogins.com/plogins-swatch/"
+msgstr "https://plogins.com/plogins-swatch/"
+
+#. Author of the plugin
+#: plogins-swatch.php
+msgid "WPPoland.com"
+msgstr "WPPoland.com"
+
+#. Author URI of the plugin
+#: plogins-swatch.php
+msgid "https://wppoland.com"
+msgstr "https://wppoland.com"
+
+#: plogins-swatch.php:48
+msgid "Plogins Swatch for WooCommerce requires WooCommerce to be active."
+msgstr "Plogins Swatch for WooCommerce setzt ein aktives WooCommerce voraus."
+
+#: src/Admin/Settings.php:148
+msgid ""
+"When off, shoppers see the standard WooCommerce variation dropdowns and no "
+"swatch styles or scripts load, nothing is lost, the look just reverts to "
+"default. Your per-term colours and labels are kept."
+msgstr ""
+"Ist die Option aus, sehen Kunden die normalen Varianten-Auswahllisten von "
+"WooCommerce, und weder Styles noch Skripte der Felder werden geladen. Es "
+"geht nichts verloren, die Darstellung fällt nur auf den Standard zurück, und "
+"die je Begriff gespeicherten Farben und Beschriftungen bleiben erhalten."
+
+#: src/Admin/Settings.php:161
+msgid "Swatches in the shop loop"
+msgstr "Felder in den Produktlisten"
+
+#: src/Admin/Settings.php:173
+msgid "Also show swatches under products in shop and category listings."
+msgstr ""
+"Felder auch unter den Produkten auf der Shop-Seite und in Kategorielisten "
+"anzeigen."
+
+#: src/Admin/Settings.php:175
+msgid ""
+"Off by default because it changes how your shop page looks. Colour and label "
+"swatches render here exactly as they do on the product page."
+msgstr ""
+"Standardmäßig aus, weil es das Aussehen deiner Shop-Seite verändert. Farb- "
+"und Textfelder werden hier genauso dargestellt wie auf der Produktseite."
+
+#: src/Admin/Settings.php:177
+msgid ""
+"Swatches are off above, so nothing renders in the shop loop yet. This choice "
+"is still saved and takes effect the moment you switch swatches on."
+msgstr ""
+"Die Felder sind oben ausgeschaltet, in den Produktlisten erscheint also noch "
+"nichts. Diese Auswahl wird trotzdem gespeichert und greift, sobald du die "
+"Felder einschaltest."

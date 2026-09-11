@@ -13,7 +13,7 @@ use Swatch\Service\SwatchData;
  * Admin fields for assigning swatch data to global product attributes:
  *
  *  - A "Swatch type" selector on the Add/Edit global attribute screen
- *    (Products → Attributes), stored per taxonomy.
+ *    (Products > Attributes), stored per taxonomy.
  *  - "Swatch colour" and "Swatch label" fields on each attribute term's
  *    add/edit screen, stored as term meta.
  *
