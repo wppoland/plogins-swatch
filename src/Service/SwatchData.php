@@ -54,7 +54,7 @@ final class SwatchData
     }
 
     /**
-     * All configured attribute → type mappings.
+     * All configured attribute > type mappings.
      *
      * @return array<string, string>
      */

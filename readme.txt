@@ -4,7 +4,7 @@ Tags: woocommerce, variation swatches, color swatches, variations, product attri
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.11
+Stable tag: 1.0.12
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -28,16 +28,17 @@ The full source lives on GitHub at [github.com/wppoland/plogins-swatch](https://
 * Keyboard operable (radiogroup semantics, arrow keys) and screen-reader labelled.
 * Focus-visible rings, sufficient contrast, reduced-motion friendly, no layout shift.
 * Graceful fallback to the standard dropdown when an attribute has no swatch data.
-* Settings page under WooCommerce: enable/disable and default swatch type.
+* Swatches in shop and category listings too, off by default so your shop page does not change without you asking.
+* Settings page under WooCommerce: enable/disable, default swatch type and the shop-listing switch.
 
 **Self-contained.** No external services, no account, no third-party dependencies.
 
 == Installation ==
 
-1. Upload the plugin to `/wp-content/plugins/swatch`, or install via Plugins → Add New.
+1. Install from **Plugins > Add New** by searching for *Plogins Swatch*, or upload the `plogins-swatch` folder to `/wp-content/plugins/`.
 2. Activate it. WooCommerce must be active.
-3. Go to WooCommerce → Swatch to tune the defaults.
-4. On Products → Attributes, set a swatch colour or label on each attribute term.
+3. Go to WooCommerce > Swatch to tune the defaults.
+4. On Products > Attributes, set a swatch colour or label on each attribute term.
 
 == Frequently Asked Questions ==
 
@@ -90,6 +91,12 @@ Everything is stored in your own database: the swatch type per attribute, the gl
 Plogins Swatch is fully translatable and ships the `plogins-swatch.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.12 =
+* Fixed: the installation steps told you to upload a `swatch` folder. The package has unpacked to `plogins-swatch` since the build started taking the folder name from the text domain, so following the readme put the plugin somewhere WordPress would not find it.
+* Fixed: the link to the attributes screen had an arrow glyph inside the translated string, which made the arrow every translator's problem rather than the layout's.
+* Changed: the features list now mentions swatches in shop and category listings. They arrived in 1.0.8 and the description never said so.
+* Changed: Polish, German and Spanish are complete again at 52 of 52 strings. Ten strings, the whole shop-listing section among them, had no translation in any locale.
 
 = 1.0.11 =
 * Fixed: deleting the plugin left the per-user "dismiss" flag from the PRO notice in the database. Uninstall now removes it for every user, not just the one who dismissed it.

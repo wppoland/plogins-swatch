@@ -215,7 +215,7 @@ final class Settings implements HasHooks
                         printf(
                             /* translators: %s: link to the WooCommerce Attributes screen. */
                             esc_html__('Set a swatch colour or label on each term under %s. Override the default type per attribute on the same screen. Anything left unset uses the default above.', 'plogins-swatch'),
-                            '<a href="' . esc_url(admin_url('edit.php?post_type=product&page=product_attributes')) . '">' . esc_html__('Products → Attributes', 'plogins-swatch') . '</a>'
+                            '<a href="' . esc_url(admin_url('edit.php?post_type=product&page=product_attributes')) . '">' . esc_html__('Products > Attributes', 'plogins-swatch') . '</a>'
                         );
                         ?>
                     </p>
