@@ -34,10 +34,10 @@ Der vollständige Quellcode liegt auf GitHub unter https://github.com/wppoland/p
 
 == Installation ==
 
-1. Lade das Plugin nach `/wp-content/plugins/swatch` hoch oder installiere es über Plugins → Installieren.
+1. Lade das Plugin nach `/wp-content/plugins/swatch` hoch oder installiere es über Plugins > Installieren.
 2. Aktiviere es. WooCommerce muss aktiv sein.
-3. Gehe zu WooCommerce → Swatch, um die Standardeinstellungen anzupassen.
-4. Lege unter Produkte → Attribute eine Farbfeld-Farbe oder ein Label für jeden Attributbegriff fest.
+3. Gehe zu WooCommerce > Swatch, um die Standardeinstellungen anzupassen.
+4. Lege unter Produkte > Attribute eine Farbfeld-Farbe oder ein Label für jeden Attributbegriff fest.
 
 == Frequently Asked Questions ==
 
