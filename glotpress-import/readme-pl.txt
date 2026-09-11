@@ -34,10 +34,10 @@ Pełny kod źródłowy jest dostępny na GitHubie pod adresem https://github.com
 
 == Installation ==
 
-1. Prześlij wtyczkę do `/wp-content/plugins/swatch` lub zainstaluj przez Wtyczki → Dodaj nową.
+1. Prześlij wtyczkę do `/wp-content/plugins/swatch` lub zainstaluj przez Wtyczki > Dodaj nową.
 2. Włącz ją. WooCommerce musi być aktywne.
-3. Przejdź do WooCommerce → Swatch, aby dostroić ustawienia domyślne.
-4. W Produkty → Atrybuty ustaw kolor próbki lub etykietę dla każdego terminu atrybutu.
+3. Przejdź do WooCommerce > Swatch, aby dostroić ustawienia domyślne.
+4. W Produkty > Atrybuty ustaw kolor próbki lub etykietę dla każdego terminu atrybutu.
 
 == Frequently Asked Questions ==
 
