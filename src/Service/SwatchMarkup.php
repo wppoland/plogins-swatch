@@ -11,6 +11,53 @@ defined('ABSPATH') || exit;
  */
 final class SwatchMarkup
 {
+    /**
+     * Everything the swatch markup is allowed to contain once it has been
+     * through the filters add-ons hook into.
+     *
+     * The renderers below escape every value they write, but each one ends in an
+     * `apply_filters()` call, so what finally reaches the page is whatever the
+     * last callback returned. That is the markup this allowlist describes, and
+     * why it is applied at the echo rather than at the build: escaping late is
+     * the only point where the string is known to be final.
+     *
+     * `img` is here for Swatch Pro's image swatches, which replace a button's
+     * contents through `swatch/swatch_group_html`.
+     *
+     * @return array<string, array<string, bool>>
+     */
+    public static function allowedHtml(): array
+    {
+        $attributes = [
+            'class'       => true,
+            'style'       => true,
+            'title'       => true,
+            'role'        => true,
+            'tabindex'    => true,
+            'aria-label'  => true,
+            'aria-hidden' => true,
+            'aria-checked' => true,
+            'data-*'      => true,
+        ];
+
+        return [
+            'div'    => $attributes,
+            'span'   => $attributes,
+            'button' => $attributes + ['type' => true, 'disabled' => true],
+            'a'      => $attributes + ['href' => true, 'rel' => true],
+            'img'    => $attributes + [
+                'src'      => true,
+                'srcset'   => true,
+                'sizes'    => true,
+                'alt'      => true,
+                'width'    => true,
+                'height'   => true,
+                'loading'  => true,
+                'decoding' => true,
+            ],
+        ];
+    }
+
     public function __construct(
         private readonly SwatchData $data,
         private readonly Settings $settings,
@@ -90,7 +137,7 @@ final class SwatchMarkup
             <?php if ('' !== $groupStyle) : ?>style="<?php echo esc_attr($groupStyle); ?>"<?php endif; ?>
         >
             <?php foreach ($items as $item) :
-                echo $this->renderProductSwatch($item, $type, $attribute); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Markup is escaped within renderProductSwatch().
+                echo wp_kses($this->renderProductSwatch($item, $type, $attribute), self::allowedHtml());
             endforeach; ?>
         </div>
         <?php
@@ -119,7 +166,7 @@ final class SwatchMarkup
         >
             <?php foreach ($items as $item) :
                 $url = add_query_arg($queryKey, rawurlencode($item['value']), $product->get_permalink());
-                echo $this->renderArchiveSwatch($item, $type, $attribute, $url); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Markup is escaped within renderArchiveSwatch().
+                echo wp_kses($this->renderArchiveSwatch($item, $type, $attribute, $url), self::allowedHtml());
             endforeach; ?>
         </div>
         <?php
