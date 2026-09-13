@@ -93,7 +93,7 @@ Plogins Swatch is fully translatable and ships the `plogins-swatch.pot` template
 == Changelog ==
 
 = 1.0.14 =
-* Security: swatch markup is now passed through `wp_kses()` with an explicit allowlist at the point it is printed. Every renderer escapes the values it writes, but each one ends in a filter, so what actually reached the page was whatever the last callback returned. An add-on, or anything else hooking those filters, could put unescaped markup on a storefront page. The allowlist covers the elements and attributes the swatches use, including `img` for the paid edition's image swatches and `data-*` for the values the script reads.
+* Security (low): swatch markup is now passed through `wp_kses()` with an explicit allowlist at the point it is printed. Every renderer escapes the values it writes, but each one ends in a filter, so what actually reached the page was whatever the last callback returned. An add-on, or anything else hooking those filters, could put unescaped markup on a storefront page. The allowlist covers the elements and attributes the swatches use, including `img` for the paid edition's image swatches and `data-*` for the values the script reads.
 * Note: an inline colour that is not a hex value is dropped by WordPress when the markup is filtered, so a callback returning `rgb(...)` loses that colour. Colours saved on an attribute term are unaffected: they go through `sanitize_hex_color()` on the way in and on the way out.
 
 = 1.0.13 =
@@ -155,3 +155,8 @@ Plogins Swatch is fully translatable and ships the `plogins-swatch.pot` template
 
 = 0.1.0 =
 * Initial release.
+
+== Upgrade Notice ==
+
+= 1.0.14 =
+Security release. A default installation is not exposed: the markup only becomes unsafe if another plugin hooks one of the swatch filters and returns unescaped HTML. Update, nothing else to do.
