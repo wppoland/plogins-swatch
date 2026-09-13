@@ -4,7 +4,7 @@ Tags: woocommerce, variation swatches, color swatches, variations, product attri
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.13
+Stable tag: 1.0.14
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -91,6 +91,10 @@ Everything is stored in your own database: the swatch type per attribute, the gl
 Plogins Swatch is fully translatable and ships the `plogins-swatch.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.14 =
+* Security: swatch markup is now passed through `wp_kses()` with an explicit allowlist at the point it is printed. Every renderer escapes the values it writes, but each one ends in a filter, so what actually reached the page was whatever the last callback returned. An add-on, or anything else hooking those filters, could put unescaped markup on a storefront page. The allowlist covers the elements and attributes the swatches use, including `img` for the paid edition's image swatches and `data-*` for the values the script reads.
+* Note: an inline colour that is not a hex value is dropped by WordPress when the markup is filtered, so a callback returning `rgb(...)` loses that colour. Colours saved on an attribute term are unaffected: they go through `sanitize_hex_color()` on the way in and on the way out.
 
 = 1.0.13 =
 * Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.

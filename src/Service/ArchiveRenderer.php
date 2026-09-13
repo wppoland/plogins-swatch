@@ -117,8 +117,7 @@ final class ArchiveRenderer implements HasHooks
             return;
         }
 
-        // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Markup is built and escaped in SwatchMarkup; add-ons filter the same contract.
-        echo $html;
+        echo wp_kses($html, SwatchMarkup::allowedHtml());
     }
 
     private function resolveAttribute(\WC_Product_Variable $product): ?string
