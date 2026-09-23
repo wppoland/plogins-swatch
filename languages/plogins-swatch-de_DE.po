@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Swatch - Variation Swatches for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-swatch\n"
-"POT-Creation-Date: 2026-06-16T20:22:56+00:00\n"
+"POT-Creation-Date: 2026-09-11T16:58:28+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:22:56+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: German <de@li.org>\n"
@@ -16,12 +16,36 @@ msgstr ""
 "X-Domain: plogins-swatch\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
+#. Plugin Name of the plugin
+#: plogins-swatch.php
+msgid "Plogins Swatch - Variation Swatches for WooCommerce"
+msgstr "Plogins Swatch - Variantenfelder für WooCommerce"
+
+#. Plugin URI of the plugin
+#: plogins-swatch.php
+msgid "https://plogins.com/plogins-swatch/"
+msgstr "https://plogins.com/plogins-swatch/"
+
 #. Description of the plugin
 #: plogins-swatch.php
 msgid "Replace variation dropdowns with accessible colour and label swatches."
 msgstr ""
 "Ersetze Variations-Dropdown-Menüs durch zugängliche Farb- und "
 "Beschriftungsfelder."
+
+#. Author of the plugin
+#: plogins-swatch.php
+msgid "WPPoland.com"
+msgstr "WPPoland.com"
+
+#. Author URI of the plugin
+#: plogins-swatch.php
+msgid "https://wppoland.com"
+msgstr "https://wppoland.com"
+
+#: plogins-swatch.php:48
+msgid "Plogins Swatch for WooCommerce requires WooCommerce to be active."
+msgstr "Plogins Swatch for WooCommerce setzt ein aktives WooCommerce voraus."
 
 #: src/Admin/AttributeFields.php:68 src/Admin/AttributeFields.php:88
 msgid "Swatch type"
@@ -72,6 +96,60 @@ msgstr ""
 "Optionales Kurzetikett für Knopfmuster. Standardmäßig wird der Begriffsname "
 "verwendet."
 
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Demnächst"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Demnächst"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:84
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "ab %1$s%2$d/Jahr"
+
+#: src/Admin/ProUpsell.php:93
+msgid "Upgrade to PRO"
+msgstr "Auf PRO upgraden"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Powiadom mnie"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Get notified"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:124
+msgid "Permission denied."
+msgstr "Zugriff verweigert."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:154
+#, php-format
+msgid "Do more with %s"
+msgstr "Mehr erreichen mit %s"
+
+#: src/Admin/ProUpsell.php:161
+msgid "Dismiss this notice"
+msgstr "Diesen Hinweis ausblenden"
+
+#: src/Admin/ProUpsell.php:178
+msgid "Unlock every PRO feature"
+msgstr "Alle PRO-Funktionen freischalten"
+
+#: src/Admin/ProUpsell.php:191
+msgid "one licence, every PRO feature"
+msgstr "eine Lizenz, alle PRO-Funktionen"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:210
+#, php-format
+msgid "What %s adds"
+msgstr "Was %s ergänzt"
+
 #: src/Admin/Settings.php:74
 msgid "Swatch Settings"
 msgstr "Farbfeldeinstellungen"
@@ -115,6 +193,44 @@ msgstr "Standardmäßig aktiviert"
 #: src/Admin/Settings.php:146
 msgid "Show swatches on product pages."
 msgstr "Zeige Farbfelder auf Produktseiten an."
+
+#: src/Admin/Settings.php:148
+msgid ""
+"When off, shoppers see the standard WooCommerce variation dropdowns and no "
+"swatch styles or scripts load, nothing is lost, the look just reverts to "
+"default. Your per-term colours and labels are kept."
+msgstr ""
+"Ist die Option aus, sehen Kunden die normalen Varianten-Auswahllisten von "
+"WooCommerce, und weder Styles noch Skripte der Felder werden geladen. Es "
+"geht nichts verloren, die Darstellung fällt nur auf den Standard zurück, und "
+"die je Begriff gespeicherten Farben und Beschriftungen bleiben erhalten."
+
+#: src/Admin/Settings.php:161
+msgid "Swatches in the shop loop"
+msgstr "Felder in den Produktlisten"
+
+#: src/Admin/Settings.php:173
+msgid "Also show swatches under products in shop and category listings."
+msgstr ""
+"Felder auch unter den Produkten auf der Shop-Seite und in Kategorielisten "
+"anzeigen."
+
+#: src/Admin/Settings.php:175
+msgid ""
+"Off by default because it changes how your shop page looks. Colour and label "
+"swatches render here exactly as they do on the product page."
+msgstr ""
+"Standardmäßig aus, weil es das Aussehen deiner Shop-Seite verändert. Farb- "
+"und Textfelder werden hier genauso dargestellt wie auf der Produktseite."
+
+#: src/Admin/Settings.php:177
+msgid ""
+"Swatches are off above, so nothing renders in the shop loop yet. This choice "
+"is still saved and takes effect the moment you switch swatches on."
+msgstr ""
+"Die Felder sind oben ausgeschaltet, in den Produktlisten erscheint also noch "
+"nichts. Diese Auswahl wird trotzdem gespeichert und greift, sobald du die "
+"Felder einschaltest."
 
 #: src/Admin/Settings.php:183
 msgid "Default swatch type"
@@ -181,119 +297,3 @@ msgstr ""
 #: src/Admin/Settings.php:218
 msgid "Products > Attributes"
 msgstr "Produkte > Attribute"
-
-#: src/Admin/ProUpsell.php:78
-msgid "Wkrótce"
-msgstr "Demnächst"
-
-#: src/Admin/ProUpsell.php:78
-msgid "Coming soon"
-msgstr "Demnächst"
-
-#. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:84
-#, php-format
-msgid "from %1$s%2$d/yr"
-msgstr "ab %1$s%2$d/Jahr"
-
-#: src/Admin/ProUpsell.php:93
-msgid "Upgrade to PRO"
-msgstr "Auf PRO upgraden"
-
-#: src/Admin/ProUpsell.php:94
-msgid "Powiadom mnie"
-msgstr "Benachrichtige mich"
-
-#: src/Admin/ProUpsell.php:94
-msgid "Get notified"
-msgstr "Benachrichtige mich"
-
-#: src/Admin/ProUpsell.php:124
-msgid "Permission denied."
-msgstr "Zugriff verweigert."
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:154
-#, php-format
-msgid "Do more with %s"
-msgstr "Mehr erreichen mit %s"
-
-#: src/Admin/ProUpsell.php:161
-msgid "Dismiss this notice"
-msgstr "Diesen Hinweis ausblenden"
-
-#: src/Admin/ProUpsell.php:178
-msgid "Unlock every PRO feature"
-msgstr "Alle PRO-Funktionen freischalten"
-
-#: src/Admin/ProUpsell.php:191
-msgid "one licence, every PRO feature"
-msgstr "eine Lizenz, alle PRO-Funktionen"
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:210
-#, php-format
-msgid "What %s adds"
-msgstr "Was %s ergänzt"
-
-#. Plugin Name of the plugin
-#: plogins-swatch.php
-msgid "Plogins Swatch - Variation Swatches for WooCommerce"
-msgstr "Plogins Swatch - Variantenfelder für WooCommerce"
-
-#. Plugin URI of the plugin
-#: plogins-swatch.php
-msgid "https://plogins.com/plogins-swatch/"
-msgstr "https://plogins.com/plogins-swatch/"
-
-#. Author of the plugin
-#: plogins-swatch.php
-msgid "WPPoland.com"
-msgstr "WPPoland.com"
-
-#. Author URI of the plugin
-#: plogins-swatch.php
-msgid "https://wppoland.com"
-msgstr "https://wppoland.com"
-
-#: plogins-swatch.php:48
-msgid "Plogins Swatch for WooCommerce requires WooCommerce to be active."
-msgstr "Plogins Swatch for WooCommerce setzt ein aktives WooCommerce voraus."
-
-#: src/Admin/Settings.php:148
-msgid ""
-"When off, shoppers see the standard WooCommerce variation dropdowns and no "
-"swatch styles or scripts load, nothing is lost, the look just reverts to "
-"default. Your per-term colours and labels are kept."
-msgstr ""
-"Ist die Option aus, sehen Kunden die normalen Varianten-Auswahllisten von "
-"WooCommerce, und weder Styles noch Skripte der Felder werden geladen. Es "
-"geht nichts verloren, die Darstellung fällt nur auf den Standard zurück, und "
-"die je Begriff gespeicherten Farben und Beschriftungen bleiben erhalten."
-
-#: src/Admin/Settings.php:161
-msgid "Swatches in the shop loop"
-msgstr "Felder in den Produktlisten"
-
-#: src/Admin/Settings.php:173
-msgid "Also show swatches under products in shop and category listings."
-msgstr ""
-"Felder auch unter den Produkten auf der Shop-Seite und in Kategorielisten "
-"anzeigen."
-
-#: src/Admin/Settings.php:175
-msgid ""
-"Off by default because it changes how your shop page looks. Colour and label "
-"swatches render here exactly as they do on the product page."
-msgstr ""
-"Standardmäßig aus, weil es das Aussehen deiner Shop-Seite verändert. Farb- "
-"und Textfelder werden hier genauso dargestellt wie auf der Produktseite."
-
-#: src/Admin/Settings.php:177
-msgid ""
-"Swatches are off above, so nothing renders in the shop loop yet. This choice "
-"is still saved and takes effect the moment you switch swatches on."
-msgstr ""
-"Die Felder sind oben ausgeschaltet, in den Produktlisten erscheint also noch "
-"nichts. Diese Auswahl wird trotzdem gespeichert und greift, sobald du die "
-"Felder einschaltest."

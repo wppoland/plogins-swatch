@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Swatch - Variation Swatches for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-swatch\n"
-"POT-Creation-Date: 2026-06-16T20:22:56+00:00\n"
+"POT-Creation-Date: 2026-09-11T16:58:28+00:00\n"
 "PO-Revision-Date: 2026-06-15 10:00+0000\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -17,11 +17,35 @@ msgstr ""
 "X-Domain: plogins-swatch\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
+#. Plugin Name of the plugin
+#: plogins-swatch.php
+msgid "Plogins Swatch - Variation Swatches for WooCommerce"
+msgstr "Plogins Swatch - próbki wariantów dla WooCommerce"
+
+#. Plugin URI of the plugin
+#: plogins-swatch.php
+msgid "https://plogins.com/plogins-swatch/"
+msgstr "https://plogins.com/plogins-swatch/"
+
 #. Description of the plugin
 #: plogins-swatch.php
 msgid "Replace variation dropdowns with accessible colour and label swatches."
 msgstr ""
 "Zastąp listy rozwijane wariantów dostępnymi próbnikami kolorów i etykiet."
+
+#. Author of the plugin
+#: plogins-swatch.php
+msgid "WPPoland.com"
+msgstr "WPPoland.com"
+
+#. Author URI of the plugin
+#: plogins-swatch.php
+msgid "https://wppoland.com"
+msgstr "https://wppoland.com"
+
+#: plogins-swatch.php:48
+msgid "Plogins Swatch for WooCommerce requires WooCommerce to be active."
+msgstr "Plogins Swatch for WooCommerce wymaga aktywnej wtyczki WooCommerce."
 
 #: src/Admin/AttributeFields.php:68 src/Admin/AttributeFields.php:88
 msgid "Swatch type"
@@ -72,6 +96,60 @@ msgstr ""
 "Opcjonalna krótka etykieta dla próbników w formie przycisków. Domyślnie "
 "używana jest nazwa terminu."
 
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Wkrótce"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Wkrótce"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:84
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "od %1$s%2$d/rok"
+
+#: src/Admin/ProUpsell.php:93
+msgid "Upgrade to PRO"
+msgstr "Przejdź na PRO"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Powiadom mnie"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Get notified"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:124
+msgid "Permission denied."
+msgstr "Brak uprawnień."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:154
+#, php-format
+msgid "Do more with %s"
+msgstr "Zrób więcej dzięki %s"
+
+#: src/Admin/ProUpsell.php:161
+msgid "Dismiss this notice"
+msgstr "Odrzuć to powiadomienie"
+
+#: src/Admin/ProUpsell.php:178
+msgid "Unlock every PRO feature"
+msgstr "Odblokuj wszystkie funkcje PRO"
+
+#: src/Admin/ProUpsell.php:191
+msgid "one licence, every PRO feature"
+msgstr "jedna licencja, wszystkie funkcje PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:210
+#, php-format
+msgid "What %s adds"
+msgstr "Co dodaje %s"
+
 #: src/Admin/Settings.php:74
 msgid "Swatch Settings"
 msgstr "Ustawienia Swatch"
@@ -115,6 +193,42 @@ msgstr "Domyślnie włączone"
 #: src/Admin/Settings.php:146
 msgid "Show swatches on product pages."
 msgstr "Pokaż próbki na stronach produktów."
+
+#: src/Admin/Settings.php:148
+msgid ""
+"When off, shoppers see the standard WooCommerce variation dropdowns and no "
+"swatch styles or scripts load, nothing is lost, the look just reverts to "
+"default. Your per-term colours and labels are kept."
+msgstr ""
+"Po wyłączeniu klienci widzą standardowe listy rozwijane wariantów "
+"WooCommerce, a style i skrypty próbek nie są wczytywane. Nic nie ginie, "
+"wygląd wraca do domyślnego, a kolory i etykiety zapisane przy terminach "
+"zostają."
+
+#: src/Admin/Settings.php:161
+msgid "Swatches in the shop loop"
+msgstr "Próbki na listach produktów"
+
+#: src/Admin/Settings.php:173
+msgid "Also show swatches under products in shop and category listings."
+msgstr "Pokazuj próbki także pod produktami na stronie sklepu i w kategoriach."
+
+#: src/Admin/Settings.php:175
+msgid ""
+"Off by default because it changes how your shop page looks. Colour and label "
+"swatches render here exactly as they do on the product page."
+msgstr ""
+"Domyślnie wyłączone, bo zmienia wygląd strony sklepu. Próbki kolorów i "
+"etykiet wyświetlają się tu dokładnie tak jak na stronie produktu."
+
+#: src/Admin/Settings.php:177
+msgid ""
+"Swatches are off above, so nothing renders in the shop loop yet. This choice "
+"is still saved and takes effect the moment you switch swatches on."
+msgstr ""
+"Próbki są wyłączone powyżej, więc na listach produktów nic się jeszcze nie "
+"pojawi. Ten wybór i tak zostaje zapisany i zadziała w chwili włączenia "
+"próbek."
 
 #: src/Admin/Settings.php:183
 msgid "Default swatch type"
@@ -180,117 +294,3 @@ msgstr ""
 #: src/Admin/Settings.php:218
 msgid "Products > Attributes"
 msgstr "Produkty > Atrybuty"
-
-#: src/Admin/ProUpsell.php:78
-msgid "Wkrótce"
-msgstr "Wkrótce"
-
-#: src/Admin/ProUpsell.php:78
-msgid "Coming soon"
-msgstr "Wkrótce"
-
-#. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:84
-#, php-format
-msgid "from %1$s%2$d/yr"
-msgstr "od %1$s%2$d/rok"
-
-#: src/Admin/ProUpsell.php:93
-msgid "Upgrade to PRO"
-msgstr "Przejdź na PRO"
-
-#: src/Admin/ProUpsell.php:94
-msgid "Powiadom mnie"
-msgstr "Powiadom mnie"
-
-#: src/Admin/ProUpsell.php:94
-msgid "Get notified"
-msgstr "Powiadom mnie"
-
-#: src/Admin/ProUpsell.php:124
-msgid "Permission denied."
-msgstr "Brak uprawnień."
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:154
-#, php-format
-msgid "Do more with %s"
-msgstr "Zrób więcej dzięki %s"
-
-#: src/Admin/ProUpsell.php:161
-msgid "Dismiss this notice"
-msgstr "Odrzuć to powiadomienie"
-
-#: src/Admin/ProUpsell.php:178
-msgid "Unlock every PRO feature"
-msgstr "Odblokuj wszystkie funkcje PRO"
-
-#: src/Admin/ProUpsell.php:191
-msgid "one licence, every PRO feature"
-msgstr "jedna licencja, wszystkie funkcje PRO"
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:210
-#, php-format
-msgid "What %s adds"
-msgstr "Co dodaje %s"
-
-#. Plugin Name of the plugin
-#: plogins-swatch.php
-msgid "Plogins Swatch - Variation Swatches for WooCommerce"
-msgstr "Plogins Swatch - próbki wariantów dla WooCommerce"
-
-#. Plugin URI of the plugin
-#: plogins-swatch.php
-msgid "https://plogins.com/plogins-swatch/"
-msgstr "https://plogins.com/plogins-swatch/"
-
-#. Author of the plugin
-#: plogins-swatch.php
-msgid "WPPoland.com"
-msgstr "WPPoland.com"
-
-#. Author URI of the plugin
-#: plogins-swatch.php
-msgid "https://wppoland.com"
-msgstr "https://wppoland.com"
-
-#: plogins-swatch.php:48
-msgid "Plogins Swatch for WooCommerce requires WooCommerce to be active."
-msgstr "Plogins Swatch for WooCommerce wymaga aktywnej wtyczki WooCommerce."
-
-#: src/Admin/Settings.php:148
-msgid ""
-"When off, shoppers see the standard WooCommerce variation dropdowns and no "
-"swatch styles or scripts load, nothing is lost, the look just reverts to "
-"default. Your per-term colours and labels are kept."
-msgstr ""
-"Po wyłączeniu klienci widzą standardowe listy rozwijane wariantów "
-"WooCommerce, a style i skrypty próbek nie są wczytywane. Nic nie ginie, "
-"wygląd wraca do domyślnego, a kolory i etykiety zapisane przy terminach "
-"zostają."
-
-#: src/Admin/Settings.php:161
-msgid "Swatches in the shop loop"
-msgstr "Próbki na listach produktów"
-
-#: src/Admin/Settings.php:173
-msgid "Also show swatches under products in shop and category listings."
-msgstr "Pokazuj próbki także pod produktami na stronie sklepu i w kategoriach."
-
-#: src/Admin/Settings.php:175
-msgid ""
-"Off by default because it changes how your shop page looks. Colour and label "
-"swatches render here exactly as they do on the product page."
-msgstr ""
-"Domyślnie wyłączone, bo zmienia wygląd strony sklepu. Próbki kolorów i "
-"etykiet wyświetlają się tu dokładnie tak jak na stronie produktu."
-
-#: src/Admin/Settings.php:177
-msgid ""
-"Swatches are off above, so nothing renders in the shop loop yet. This choice "
-"is still saved and takes effect the moment you switch swatches on."
-msgstr ""
-"Próbki są wyłączone powyżej, więc na listach produktów nic się jeszcze nie "
-"pojawi. Ten wybór i tak zostaje zapisany i zadziała w chwili włączenia "
-"próbek."

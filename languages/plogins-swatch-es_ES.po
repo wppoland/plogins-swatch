@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Swatch - Variation Swatches for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-swatch\n"
-"POT-Creation-Date: 2026-06-16T20:22:56+00:00\n"
+"POT-Creation-Date: 2026-09-11T16:58:28+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:22:56+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -16,12 +16,36 @@ msgstr ""
 "X-Domain: plogins-swatch\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
+#. Plugin Name of the plugin
+#: plogins-swatch.php
+msgid "Plogins Swatch - Variation Swatches for WooCommerce"
+msgstr "Plogins Swatch - muestras de variaciones para WooCommerce"
+
+#. Plugin URI of the plugin
+#: plogins-swatch.php
+msgid "https://plogins.com/plogins-swatch/"
+msgstr "https://plogins.com/plogins-swatch/"
+
 #. Description of the plugin
 #: plogins-swatch.php
 msgid "Replace variation dropdowns with accessible colour and label swatches."
 msgstr ""
 "Reemplace los menús desplegables de variaciones con muestras de etiquetas y "
 "colores accesibles."
+
+#. Author of the plugin
+#: plogins-swatch.php
+msgid "WPPoland.com"
+msgstr "WPPoland.com"
+
+#. Author URI of the plugin
+#: plogins-swatch.php
+msgid "https://wppoland.com"
+msgstr "https://wppoland.com"
+
+#: plogins-swatch.php:48
+msgid "Plogins Swatch for WooCommerce requires WooCommerce to be active."
+msgstr "Plogins Swatch for WooCommerce necesita que WooCommerce esté activo."
 
 #: src/Admin/AttributeFields.php:68 src/Admin/AttributeFields.php:88
 msgid "Swatch type"
@@ -72,6 +96,60 @@ msgstr ""
 "Etiqueta corta opcional para muestras de botones. El valor predeterminado es "
 "el nombre del término."
 
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Próximamente"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Próximamente"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:84
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "desde %1$s%2$d/año"
+
+#: src/Admin/ProUpsell.php:93
+msgid "Upgrade to PRO"
+msgstr "Mejora a PRO"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Powiadom mnie"
+msgstr "Avísame"
+
+#: src/Admin/ProUpsell.php:94
+msgid "Get notified"
+msgstr "Avísame"
+
+#: src/Admin/ProUpsell.php:124
+msgid "Permission denied."
+msgstr "Permiso denegado."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:154
+#, php-format
+msgid "Do more with %s"
+msgstr "Haz más con %s"
+
+#: src/Admin/ProUpsell.php:161
+msgid "Dismiss this notice"
+msgstr "Descartar este aviso"
+
+#: src/Admin/ProUpsell.php:178
+msgid "Unlock every PRO feature"
+msgstr "Desbloquea todas las funciones PRO"
+
+#: src/Admin/ProUpsell.php:191
+msgid "one licence, every PRO feature"
+msgstr "una licencia, todas las funciones PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:210
+#, php-format
+msgid "What %s adds"
+msgstr "Lo que añade %s"
+
 #: src/Admin/Settings.php:74
 msgid "Swatch Settings"
 msgstr "Configuración de muestra"
@@ -116,6 +194,45 @@ msgstr "Activado de forma predeterminada"
 #: src/Admin/Settings.php:146
 msgid "Show swatches on product pages."
 msgstr "Muestre muestras en las páginas de productos."
+
+#: src/Admin/Settings.php:148
+msgid ""
+"When off, shoppers see the standard WooCommerce variation dropdowns and no "
+"swatch styles or scripts load, nothing is lost, the look just reverts to "
+"default. Your per-term colours and labels are kept."
+msgstr ""
+"Cuando está desactivado, los clientes ven los desplegables de variaciones "
+"estándar de WooCommerce y no se cargan ni los estilos ni los scripts de las "
+"muestras. No se pierde nada, el aspecto vuelve al predeterminado y se "
+"conservan los colores y las etiquetas guardados en cada término."
+
+#: src/Admin/Settings.php:161
+msgid "Swatches in the shop loop"
+msgstr "Muestras en los listados de productos"
+
+#: src/Admin/Settings.php:173
+msgid "Also show swatches under products in shop and category listings."
+msgstr ""
+"Mostrar también las muestras debajo de los productos en la tienda y en los "
+"listados de categorías."
+
+#: src/Admin/Settings.php:175
+msgid ""
+"Off by default because it changes how your shop page looks. Colour and label "
+"swatches render here exactly as they do on the product page."
+msgstr ""
+"Desactivado por defecto porque cambia el aspecto de la página de tu tienda. "
+"Las muestras de color y de etiqueta se muestran aquí igual que en la página "
+"del producto."
+
+#: src/Admin/Settings.php:177
+msgid ""
+"Swatches are off above, so nothing renders in the shop loop yet. This choice "
+"is still saved and takes effect the moment you switch swatches on."
+msgstr ""
+"Las muestras están desactivadas arriba, así que en los listados todavía no "
+"se muestra nada. Esta opción se guarda igualmente y se aplica en cuanto "
+"actives las muestras."
 
 #: src/Admin/Settings.php:183
 msgid "Default swatch type"
@@ -182,120 +299,3 @@ msgstr ""
 #: src/Admin/Settings.php:218
 msgid "Products > Attributes"
 msgstr "Productos > Atributos"
-
-#: src/Admin/ProUpsell.php:78
-msgid "Wkrótce"
-msgstr "Próximamente"
-
-#: src/Admin/ProUpsell.php:78
-msgid "Coming soon"
-msgstr "Próximamente"
-
-#. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:84
-#, php-format
-msgid "from %1$s%2$d/yr"
-msgstr "desde %1$s%2$d/año"
-
-#: src/Admin/ProUpsell.php:93
-msgid "Upgrade to PRO"
-msgstr "Mejora a PRO"
-
-#: src/Admin/ProUpsell.php:94
-msgid "Powiadom mnie"
-msgstr "Avísame"
-
-#: src/Admin/ProUpsell.php:94
-msgid "Get notified"
-msgstr "Avísame"
-
-#: src/Admin/ProUpsell.php:124
-msgid "Permission denied."
-msgstr "Permiso denegado."
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:154
-#, php-format
-msgid "Do more with %s"
-msgstr "Haz más con %s"
-
-#: src/Admin/ProUpsell.php:161
-msgid "Dismiss this notice"
-msgstr "Descartar este aviso"
-
-#: src/Admin/ProUpsell.php:178
-msgid "Unlock every PRO feature"
-msgstr "Desbloquea todas las funciones PRO"
-
-#: src/Admin/ProUpsell.php:191
-msgid "one licence, every PRO feature"
-msgstr "una licencia, todas las funciones PRO"
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:210
-#, php-format
-msgid "What %s adds"
-msgstr "Lo que añade %s"
-
-#. Plugin Name of the plugin
-#: plogins-swatch.php
-msgid "Plogins Swatch - Variation Swatches for WooCommerce"
-msgstr "Plogins Swatch - muestras de variaciones para WooCommerce"
-
-#. Plugin URI of the plugin
-#: plogins-swatch.php
-msgid "https://plogins.com/plogins-swatch/"
-msgstr "https://plogins.com/plogins-swatch/"
-
-#. Author of the plugin
-#: plogins-swatch.php
-msgid "WPPoland.com"
-msgstr "WPPoland.com"
-
-#. Author URI of the plugin
-#: plogins-swatch.php
-msgid "https://wppoland.com"
-msgstr "https://wppoland.com"
-
-#: plogins-swatch.php:48
-msgid "Plogins Swatch for WooCommerce requires WooCommerce to be active."
-msgstr "Plogins Swatch for WooCommerce necesita que WooCommerce esté activo."
-
-#: src/Admin/Settings.php:148
-msgid ""
-"When off, shoppers see the standard WooCommerce variation dropdowns and no "
-"swatch styles or scripts load, nothing is lost, the look just reverts to "
-"default. Your per-term colours and labels are kept."
-msgstr ""
-"Cuando está desactivado, los clientes ven los desplegables de variaciones "
-"estándar de WooCommerce y no se cargan ni los estilos ni los scripts de las "
-"muestras. No se pierde nada, el aspecto vuelve al predeterminado y se "
-"conservan los colores y las etiquetas guardados en cada término."
-
-#: src/Admin/Settings.php:161
-msgid "Swatches in the shop loop"
-msgstr "Muestras en los listados de productos"
-
-#: src/Admin/Settings.php:173
-msgid "Also show swatches under products in shop and category listings."
-msgstr ""
-"Mostrar también las muestras debajo de los productos en la tienda y en los "
-"listados de categorías."
-
-#: src/Admin/Settings.php:175
-msgid ""
-"Off by default because it changes how your shop page looks. Colour and label "
-"swatches render here exactly as they do on the product page."
-msgstr ""
-"Desactivado por defecto porque cambia el aspecto de la página de tu tienda. "
-"Las muestras de color y de etiqueta se muestran aquí igual que en la página "
-"del producto."
-
-#: src/Admin/Settings.php:177
-msgid ""
-"Swatches are off above, so nothing renders in the shop loop yet. This choice "
-"is still saved and takes effect the moment you switch swatches on."
-msgstr ""
-"Las muestras están desactivadas arriba, así que en los listados todavía no "
-"se muestra nada. Esta opción se guarda igualmente y se aplica en cuanto "
-"actives las muestras."
