@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Swatch - Variation Swatches for WooCommerce 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-swatch\n"
-"POT-Creation-Date: 2026-06-16T20:22:56+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/swatch\n"
+"POT-Creation-Date: 2026-09-26T04:48:59+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:22:56+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -19,12 +19,12 @@ msgstr ""
 #. Plugin Name of the plugin
 #: plogins-swatch.php
 msgid "Swatch - Variation Swatches for WooCommerce"
-msgstr "Swatch - Muestras de variación para WooCommerce"
+msgstr "Swatch - muestras de variaciones para WooCommerce"
 
 #. Plugin URI of the plugin
 #: plogins-swatch.php
-msgid "https://plogins.com/swatch/"
-msgstr "https://plogins.com/es/swatch/"
+msgid "https://plogins.com/plogins-swatch/"
+msgstr "https://plogins.com/plogins-swatch/"
 
 #. Description of the plugin
 #: plogins-swatch.php
@@ -35,13 +35,17 @@ msgstr ""
 
 #. Author of the plugin
 #: plogins-swatch.php
-msgid "WPPoland"
-msgstr "WPPoland"
+msgid "WPPoland.com"
+msgstr "WPPoland.com"
 
 #. Author URI of the plugin
 #: plogins-swatch.php
-msgid "https://plogins.com/"
-msgstr "https://plogins.com/"
+msgid "https://wppoland.com"
+msgstr "https://wppoland.com"
+
+#: plogins-swatch.php:48
+msgid "Plogins Swatch for WooCommerce requires WooCommerce to be active."
+msgstr "Plogins Swatch for WooCommerce necesita que WooCommerce esté activo."
 
 #: src/Admin/AttributeFields.php:68 src/Admin/AttributeFields.php:88
 msgid "Swatch type"
@@ -52,12 +56,12 @@ msgid "Use plugin default"
 msgstr "Usar el valor predeterminado del plugin"
 
 #: src/Admin/AttributeFields.php:72 src/Admin/AttributeFields.php:93
-#: src/Admin/Settings.php:136
+#: src/Admin/Settings.php:187
 msgid "Button / label"
 msgstr "Botón/etiqueta"
 
 #: src/Admin/AttributeFields.php:73 src/Admin/AttributeFields.php:94
-#: src/Admin/Settings.php:137
+#: src/Admin/Settings.php:188
 msgid "Colour"
 msgstr "Color"
 
@@ -92,15 +96,69 @@ msgstr ""
 "Etiqueta corta opcional para muestras de botones. El valor predeterminado es "
 "el nombre del término."
 
-#: src/Admin/Settings.php:58
+#: src/Admin/ProUpsell.php:85
+msgid "Wkrótce"
+msgstr "Próximamente"
+
+#: src/Admin/ProUpsell.php:85
+msgid "Coming soon"
+msgstr "Próximamente"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:91
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "desde %1$s%2$d/año"
+
+#: src/Admin/ProUpsell.php:100
+msgid "Upgrade to PRO"
+msgstr "Mejora a PRO"
+
+#: src/Admin/ProUpsell.php:101
+msgid "Powiadom mnie"
+msgstr "Avísame"
+
+#: src/Admin/ProUpsell.php:101
+msgid "Get notified"
+msgstr "Avísame"
+
+#: src/Admin/ProUpsell.php:131
+msgid "Permission denied."
+msgstr "Permiso denegado."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:161
+#, php-format
+msgid "Do more with %s"
+msgstr "Haz más con %s"
+
+#: src/Admin/ProUpsell.php:168
+msgid "Dismiss this notice"
+msgstr "Descartar este aviso"
+
+#: src/Admin/ProUpsell.php:190
+msgid "Unlock every PRO feature"
+msgstr "Desbloquea todas las funciones PRO"
+
+#: src/Admin/ProUpsell.php:203
+msgid "one licence, every PRO feature"
+msgstr "una licencia, todas las funciones PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:222
+#, php-format
+msgid "What %s adds"
+msgstr "Lo que añade %s"
+
+#: src/Admin/Settings.php:74
 msgid "Swatch Settings"
 msgstr "Configuración de muestra"
 
-#: src/Admin/Settings.php:59
+#: src/Admin/Settings.php:75
 msgid "Swatch"
 msgstr "Swatch"
 
-#: src/Admin/Settings.php:98
+#: src/Admin/Settings.php:116
 msgid ""
 "Swatch turns WooCommerce variation dropdowns into accessible colour dots and "
 "labelled buttons, so shoppers pick a variation in one tap instead of "
@@ -113,11 +171,11 @@ msgstr ""
 "selección. Funciona desde el primer momento, las configuraciones a "
 "continuación son solo para ajustes finos."
 
-#: src/Admin/Settings.php:104
+#: src/Admin/Settings.php:123
 msgid "Storefront display"
 msgstr "escaparate"
 
-#: src/Admin/Settings.php:105
+#: src/Admin/Settings.php:124
 msgid ""
 "Controls whether swatches appear on single product pages, and what an "
 "unconfigured attribute looks like."
@@ -125,54 +183,82 @@ msgstr ""
 "Controla si aparecen muestras en páginas de productos individuales y cómo se "
 "ve un atributo no configurado."
 
-#: src/Admin/Settings.php:111
+#: src/Admin/Settings.php:130
 msgid "Enable swatches"
 msgstr "Habilitar muestras"
 
-#: src/Admin/Settings.php:113
+#: src/Admin/Settings.php:132
 msgid "On by default"
 msgstr "Activado de forma predeterminada"
 
-#: src/Admin/Settings.php:125
+#: src/Admin/Settings.php:146
 msgid "Show swatches on product pages."
 msgstr "Muestre muestras en las páginas de productos."
 
-#: src/Admin/Settings.php:127
+#: src/Admin/Settings.php:148
 msgid ""
-"When off, shoppers see WooCommerce’s standard variation dropdowns and no "
+"When off, shoppers see the standard WooCommerce variation dropdowns and no "
 "swatch styles or scripts load, nothing is lost, the look just reverts to "
 "default. Your per-term colours and labels are kept."
 msgstr ""
-"Cuando está desactivado, los compradores ven los menús desplegables de "
-"variación estándar de WooCommerce y no se cargan estilos de muestra ni "
-"scripts, no se pierde nada, la apariencia simplemente vuelve a la "
-"predeterminada. Se conservan los colores y etiquetas por término."
+"Cuando está desactivado, los clientes ven los desplegables de variaciones "
+"estándar de WooCommerce y no se cargan ni los estilos ni los scripts de las "
+"muestras. No se pierde nada, el aspecto vuelve al predeterminado y se "
+"conservan los colores y las etiquetas guardados en cada término."
 
-#: src/Admin/Settings.php:132
+#: src/Admin/Settings.php:161
+msgid "Swatches in the shop loop"
+msgstr "Muestras en los listados de productos"
+
+#: src/Admin/Settings.php:173
+msgid "Also show swatches under products in shop and category listings."
+msgstr ""
+"Mostrar también las muestras debajo de los productos en la tienda y en los "
+"listados de categorías."
+
+#: src/Admin/Settings.php:175
+msgid ""
+"Off by default because it changes how your shop page looks. Colour and label "
+"swatches render here exactly as they do on the product page."
+msgstr ""
+"Desactivado por defecto porque cambia el aspecto de la página de tu tienda. "
+"Las muestras de color y de etiqueta se muestran aquí igual que en la página "
+"del producto."
+
+#: src/Admin/Settings.php:177
+msgid ""
+"Swatches are off above, so nothing renders in the shop loop yet. This choice "
+"is still saved and takes effect the moment you switch swatches on."
+msgstr ""
+"Las muestras están desactivadas arriba, así que en los listados todavía no "
+"se muestra nada. Esta opción se guarda igualmente y se aplica en cuanto "
+"actives las muestras."
+
+#: src/Admin/Settings.php:183
 msgid "Default swatch type"
 msgstr "Tipo de muestra predeterminado"
 
-#: src/Admin/Settings.php:140
+#: src/Admin/Settings.php:191
 msgid "Default"
 msgstr "Por defecto"
 
-#: src/Admin/Settings.php:144
+#: src/Admin/Settings.php:195
 msgid "Colour:"
 msgstr "Color:"
 
-#: src/Admin/Settings.php:147
+#: src/Admin/Settings.php:198
 msgid "Button:"
 msgstr "Botón:"
 
-#: src/Admin/Settings.php:148
+#: src/Admin/Settings.php:199
 msgid "Small"
 msgstr "Pequeño"
 
-#: src/Admin/Settings.php:149
+#: src/Admin/Settings.php:200
 msgid "Large"
 msgstr "Grande"
 
-#: src/Admin/Settings.php:152
+#: src/Admin/Settings.php:203
 msgid ""
 "Applied to any attribute you have not given its own type. “Colour” renders "
 "colour dots (you set a colour per term); “Button / label” renders the term "
@@ -186,11 +272,11 @@ msgstr ""
 "automáticamente al menú desplegable, por lo que esta elección nunca rompe un "
 "producto."
 
-#: src/Admin/Settings.php:160
+#: src/Admin/Settings.php:211
 msgid "Per-attribute setup"
 msgstr "Configuración por atributo"
 
-#: src/Admin/Settings.php:161
+#: src/Admin/Settings.php:212
 msgid ""
 "Colours and labels live with each attribute, not here, so they stay correct "
 "as your catalogue grows."
@@ -199,7 +285,7 @@ msgstr ""
 "mantienen correctos a medida que crece su catálogo."
 
 #. translators: %s: link to the WooCommerce Attributes screen.
-#: src/Admin/Settings.php:166
+#: src/Admin/Settings.php:217
 #, php-format
 msgid ""
 "Set a swatch colour or label on each term under %s. Override the default "
@@ -210,74 +296,6 @@ msgstr ""
 "el tipo predeterminado por atributo en la misma pantalla. Todo lo que no "
 "esté configurado utiliza el valor predeterminado anterior."
 
-#: src/Admin/Settings.php:167
-msgid "Products → Attributes"
-msgstr "Productos → Atributos"
-
-#: plogins-swatch.php:47
-msgid ""
-"Swatch - Variation Swatches for WooCommerce requires WooCommerce to be "
-"active."
-msgstr ""
-"Swatch: las muestras de variación para WooCommerce requieren que WooCommerce "
-"esté activo."
-
-#: src/Admin/ProUpsell.php:78
-msgid "Wkrótce"
-msgstr "Próximamente"
-
-#: src/Admin/ProUpsell.php:78
-msgid "Coming soon"
-msgstr "Próximamente"
-
-#. translators: %d: yearly price in PLN
-#: src/Admin/ProUpsell.php:83
-#, php-format
-msgid "od %d zł/rok"
-msgstr "desde %d zł/año"
-
-#. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:88
-#, php-format
-msgid "from %1$s%2$d/yr"
-msgstr "desde %1$s%2$d/año"
-
-#: src/Admin/ProUpsell.php:97
-msgid "Upgrade to PRO"
-msgstr "Mejora a PRO"
-
-#: src/Admin/ProUpsell.php:98
-msgid "Powiadom mnie"
-msgstr "Avísame"
-
-#: src/Admin/ProUpsell.php:98
-msgid "Get notified"
-msgstr "Avísame"
-
-#: src/Admin/ProUpsell.php:128
-msgid "Permission denied."
-msgstr "Permiso denegado."
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:158
-#, php-format
-msgid "Do more with %s"
-msgstr "Haz más con %s"
-
-#: src/Admin/ProUpsell.php:165
-msgid "Dismiss this notice"
-msgstr "Descartar este aviso"
-
-#: src/Admin/ProUpsell.php:182
-msgid "Unlock every PRO feature"
-msgstr "Desbloquea todas las funciones PRO"
-
-#: src/Admin/ProUpsell.php:195
-msgid "one licence, every PRO feature"
-msgstr "una licencia, todas las funciones PRO"
-
-#. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:214
-#, php-format
-msgid "What %s adds"
-msgstr "Lo que añade %s"
+#: src/Admin/Settings.php:218
+msgid "Products > Attributes"
+msgstr "Productos > Atributos"
