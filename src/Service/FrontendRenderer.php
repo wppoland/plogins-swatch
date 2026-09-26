@@ -134,7 +134,9 @@ final class FrontendRenderer implements HasHooks
          */
         $swatches = (string) apply_filters('swatch/swatch_group_html', $swatches, $attribute, $args);
 
-        return $html . $swatches;
+        // WooCommerce echoes what this filter returns, so this is the last point
+        // at which the markup is known to be final. Same reason as the echo sites.
+        return $html . wp_kses($swatches, SwatchMarkup::allowedHtml());
     }
 
     /**

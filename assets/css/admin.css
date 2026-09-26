@@ -109,6 +109,70 @@
 	font-size: 12px;
 }
 
+/* Dependent control -------------------------------------------------- *
+ * "Swatches in the shop loop" only bites while the master switch above is
+ * on. Rather than let a merchant tick a box that does nothing, the row goes
+ * quiet (grey rail + grey surface, no text dimming, so every label keeps its
+ * native contrast) and a note explains itself. Both states are rendered
+ * server-side, the script only keeps them in step as you click.
+ *
+ * Contrast on the inactive surface #f6f7f7:
+ *   Rail   #7c8085  3.70:1  (UI element, AA needs 3:1)   PASS
+ *   Labels WP's own #1d2327 / #50575e, untouched          PASS
+ *   Note   #1d2327 on the #fdf1ee tint = 14.37:1          PASS
+ * ------------------------------------------------------------------- */
+
+.swatch-settings .swatch-dependent > th,
+.swatch-settings .swatch-dependent > td {
+	background-color: transparent;
+}
+
+.swatch-settings .swatch-dependent.is-inactive > th,
+.swatch-settings .swatch-dependent.is-inactive > td {
+	background-color: #f6f7f7;
+}
+
+.swatch-settings .swatch-dependent.is-inactive > th {
+	/* Inset, not a border: a real border would nudge the row 3px sideways. */
+	box-shadow: inset 3px 0 0 #7c8085;
+}
+
+.swatch-settings .swatch-dependency {
+	max-width: 40rem;
+	margin: 8px 0 0;
+	padding: 7px 11px;
+	border-inline-start: 3px solid var(--swatch-admin-accent);
+	border-radius: 4px;
+	background: rgba(226, 84, 44, 0.08);
+	color: #1d2327;
+	font-size: 12.5px;
+	line-height: 1.5;
+}
+
+.swatch-settings .swatch-dependency[hidden] {
+	display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.swatch-settings .swatch-dependent > th,
+	.swatch-settings .swatch-dependent > td {
+		transition: background-color 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	/* Only once the script is in charge, otherwise a no-JS load would paint
+	   the note at zero opacity and never bring it back. */
+	.swatch-settings.is-enhanced .swatch-dependency {
+		opacity: 0;
+		transform: translateY(-3px);
+		transition: opacity 0.2s ease, transform 0.2s ease;
+	}
+
+	.swatch-settings.is-enhanced .swatch-dependency.is-shown {
+		opacity: 1;
+		transform: none;
+	}
+}
+
 /* ------------------------------------------------------------------ *
  * PRO upsell, dismissible banner, sidebar promo, "what PRO adds"
  * locked cards. Pure advertising (no disabled inputs), scoped to

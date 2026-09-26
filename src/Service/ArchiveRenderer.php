@@ -63,10 +63,10 @@ final class ArchiveRenderer implements HasHooks
         /**
          * Whether archive swatches should render for this product.
          *
-         * @param bool         $enabled Default false.
+         * @param bool         $enabled The merchant's own setting.
          * @param \WC_Product  $product Variable product in the loop.
          */
-        if (! apply_filters('swatch/archive_enabled', false, $product)) {
+        if (! apply_filters('swatch/archive_enabled', $this->settings->archiveEnabled(), $product)) {
             return;
         }
 
@@ -117,8 +117,7 @@ final class ArchiveRenderer implements HasHooks
             return;
         }
 
-        // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Markup is built and escaped in SwatchMarkup; add-ons filter the same contract.
-        echo $html;
+        echo wp_kses($html, SwatchMarkup::allowedHtml());
     }
 
     private function resolveAttribute(\WC_Product_Variable $product): ?string

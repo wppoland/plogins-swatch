@@ -1,234 +1,320 @@
-# wp.org Stable Readme translation (pl_PL)
+# Translation of Plugins - Plogins Swatch &#8211; Variation Swatches for WooCommerce - Stable Readme (latest release) in Polish
+# This file is distributed under the same license as the Plugins - Plogins Swatch &#8211; Variation Swatches for WooCommerce - Stable Readme (latest release) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: swatch Stable Readme\n"
-"Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
-"Language-Team: Polish <pl@li.org>\n"
-"Language: pl\n"
+"PO-Revision-Date: +0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: plogins-i18n\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.1.0\n"
+"Language: pl\n"
+"Project-Id-Version: Plugins - Plogins Swatch &#8211; Variation Swatches for WooCommerce - Stable Readme (latest release)\n"
 
-msgid ""
-"Replace WooCommerce variation dropdowns with accessible colour and label "
-"swatches that wire straight into the native variations form."
-msgstr ""
-"Zastąp rozwijane listy odmian WooCommerce dostępnymi próbkami kolorów i "
-"etykiet, które podłączają się bezpośrednio do natywnego formularza odmian."
+#. Short description.
+#, gp-priority: high
+msgid "Replace WooCommerce variation dropdowns with accessible colour and label swatches that wire straight into the native variations form."
+msgstr "Zastąp rozwijane listy odmian WooCommerce dostępnymi próbkami kolorów i etykiet, które podłączają się bezpośrednio do natywnego formularza odmian."
 
-msgid ""
-"Swatch replaces WooCommerce's default variation `<select>` dropdowns with "
-"visual, accessible swatches on single product pages. Choose a swatch type "
-"per attribute (colour dots or button/label pills) and assign a colour or "
-"label per term."
-msgstr ""
-"Swatch zastępuje domyślne rozwijane listy odmian `<select>` w WooCommerce "
-"wizualnymi, dostępnymi próbkami na stronach pojedynczych produktów. Wybierz "
-"typ próbki dla każdego atrybutu (kolorowe kropki albo pigułki z "
-"przyciskami/etykietami) i przypisz kolor lub etykietę do każdego terminu."
+#. Plugin name.
+#, gp-priority: high
+msgid "Plogins Swatch - Variation Swatches for WooCommerce"
+msgstr "Plogins Swatch - Variation Swatches for WooCommerce"
 
-msgid ""
-"The swatches drive WooCommerce's own variations form, so price, stock and "
-"the add-to-cart button update exactly as they do with the stock dropdowns. "
-"Selected and out-of-combination states are reflected automatically."
-msgstr ""
-"Próbki sterują natywnym formularzem odmian WooCommerce, więc cena, stan "
-"magazynowy i przycisk „dodaj do koszyka” aktualizują się dokładnie tak samo "
-"jak przy standardowych listach rozwijanych. Stany wybrane oraz niedostępne w"
-" danej kombinacji są odzwierciedlane automatycznie."
+#. Found in faq paragraph.
+msgid "Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data."
+msgstr "Tak. Ta wtyczka jest kompatybilna z WordPress Multisite. Włącz ją dla całej sieci lub w poszczególnych witrynach; każda witryna zachowuje własne ustawienia i dane."
 
-msgid ""
-"The full source lives on GitHub at https://github.com/wppoland/plogins-"
-"swatch if you want to read the code or report a problem."
-msgstr ""
-"Pełny kod źródłowy jest dostępny na GitHubie pod adresem "
-"https://github.com/wppoland/plogins-swatch, jeśli chcesz przejrzeć kod lub "
-"zgłosić problem."
+#. Found in faq paragraph.
+msgid "Yes. Swatches stay in the native variations form with touch-friendly targets; no separate mobile app or script framework is required."
+msgstr "Tak. Próbki pozostają w natywnym formularzu odmian, z celami wygodnymi w dotyku; nie jest wymagana osobna aplikacja mobilna ani framework skryptowy."
 
+#. Found in faq paragraph.
+msgid "Yes. Swatches use radiogroup semantics, arrow-key navigation and visible focus rings."
+msgstr "Tak. Próbki wykorzystują semantykę radiogroup, nawigację klawiszami strzałek i widoczne obramowanie fokusu."
+
+#. Found in faq paragraph.
+msgid "Yes. The front-end is vanilla JavaScript that hooks WooCommerce's own variation events."
+msgstr "Tak. Front-end to czysty JavaScript, który podpina się pod własne zdarzenia odmian WooCommerce."
+
+#. Found in faq paragraph.
+msgid "They get the plugin's default swatch type (button swatches out of the box), the same as any attribute you have not given its own type. Only a colour attribute with no colours configured falls back to the dropdown automatically."
+msgstr "Dostają domyślny typ próbnika z ustawień wtyczki (na starcie są to przyciski), tak samo jak każdy atrybut, któremu nie nadałeś własnego typu. Tylko atrybut kolorystyczny bez skonfigurowanych kolorów wraca automatycznie do listy rozwijanej."
+
+#. Found in faq paragraph.
+msgid "Yes. Swatch extends WooCommerce's variable products and does nothing without it."
+msgstr "Tak. Swatch rozszerza produkty zmienne WooCommerce i bez niego nic nie robi."
+
+#. Found in faq list item.
+msgid "<strong>Bug reports and feature requests</strong>: <a href=\"https://github.com/wppoland/plogins-swatch/issues\">github.com/wppoland/plogins-swatch/issues</a>"
+msgstr "<strong>Zgłoszenia błędów i propozycje funkcji</strong>: <a href=\"https://github.com/wppoland/plogins-swatch/issues\">github.com/wppoland/plogins-swatch/issues</a>"
+
+#. Found in faq list item.
+msgid "<strong>Source code</strong>: <a href=\"https://github.com/wppoland/plogins-swatch\">github.com/wppoland/plogins-swatch</a>"
+msgstr "<strong>Kod źródłowy</strong>: <a href=\"https://github.com/wppoland/plogins-swatch\">github.com/wppoland/plogins-swatch</a>"
+
+#. Found in faq list item.
+msgid "<strong>Plugin page</strong>: <a href=\"https://plogins.com/plogins-swatch/\">plogins.com/plogins-swatch/</a>"
+msgstr "<strong>Strona wtyczki</strong>: <a href=\"https://plogins.com/plogins-swatch/\">plogins.com/plogins-swatch/</a>"
+
+#. Found in faq list item.
+msgid "<strong>Documentation</strong>: <a href=\"https://plogins.com/plogins-swatch/docs/\">plogins.com/plogins-swatch/docs/</a>"
+msgstr "<strong>Dokumentacja</strong>: <a href=\"https://plogins.com/plogins-swatch/docs/\">plogins.com/plogins-swatch/docs/</a>"
+
+#. Found in faq header.
+msgid "Does this plugin work on WordPress Multisite?"
+msgstr "Czy wtyczka działa na WordPress Multisite?"
+
+#. Found in faq header.
+msgid "Does it work on mobile?"
+msgstr "Czy działa na urządzeniach mobilnych?"
+
+#. Found in faq header.
+msgid "Can shoppers pick variations with a keyboard?"
+msgstr "Czy klient może wybrać wariant klawiaturą?"
+
+#. Found in faq header.
+msgid "Does it work without jQuery?"
+msgstr "Czy działa bez jQuery?"
+
+#. Found in faq header.
+msgid "What happens to attributes I have not configured?"
+msgstr "Co dzieje się z atrybutami, których nie skonfigurowałem?"
+
+#. Found in faq header.
+msgid "Does it require WooCommerce?"
+msgstr "Czy wymaga WooCommerce?"
+
+#. Found in faq header.
+msgid "Documentation and links"
+msgstr "Dokumentacja i odnośniki"
+
+#. Found in installation list item.
+msgid "On Products &gt; Attributes, set a swatch colour or label on each attribute term."
+msgstr "W Produkty &gt; Atrybuty ustaw kolor lub etykietę próbnika na każdym terminie atrybutu."
+
+#. Found in installation list item.
+msgid "Go to WooCommerce &gt; Swatch to tune the defaults."
+msgstr "Przejdź do WooCommerce &gt; Swatch, aby dostroić ustawienia domyślne."
+
+#. Found in installation list item.
+msgid "Activate it. WooCommerce must be active."
+msgstr "Aktywuj wtyczkę. WooCommerce musi być aktywne."
+
+#. Found in installation list item.
+msgid "Install from <strong>Plugins &gt; Add New</strong> by searching for <em>Plogins Swatch</em>, or upload the <code>plogins-swatch</code> folder to <code>/wp-content/plugins/</code>."
+msgstr "Zainstaluj z <strong>Wtyczki &gt; Dodaj nową</strong>, wyszukując <em>Plogins Swatch</em>, albo wgraj katalog <code>plogins-swatch</code> do <code>/wp-content/plugins/</code>."
+
+#. Found in description paragraph.
+msgid "Plogins Swatch is fully translatable and ships the <code>plogins-swatch.pot</code> template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files."
+msgstr "Plogins Swatch jest w pełni przetłumaczalna i zawiera szablon <code>plogins-swatch.pot</code>. Tłumaczenia dostarczają paczki językowe WordPress.org z translate.wordpress.org, gdzie powstają polski, niemiecki i hiszpański; sama paczka wtyczki nie zawiera skompilowanych plików tłumaczeń."
+
+#. Found in description paragraph.
+msgid "Everything is stored in your own database: the swatch type per attribute, the global defaults and a schema version are kept in the <code>swatch_attribute_types</code>, <code>swatch_settings</code> and <code>swatch_db_version</code> options, and each term's colour and label are stored as the <code>swatch_color</code> and <code>swatch_label</code> term meta on your WooCommerce attribute terms. The plugin sends no email."
+msgstr "Wszystko jest przechowywane w Twojej własnej bazie danych: typ próbnika dla atrybutu, ustawienia globalne i wersja schematu trafiają do opcji <code>swatch_attribute_types</code>, <code>swatch_settings</code> i <code>swatch_db_version</code>, a kolor i etykieta każdego terminu są zapisane jako meta terminu <code>swatch_color</code> i <code>swatch_label</code> przy terminach atrybutów WooCommerce. Wtyczka nie wysyła żadnej poczty."
+
+#. Found in description paragraph.
+msgid "Swatch does not connect to any external services. It makes no outbound HTTP requests, loads no remote scripts, fonts or CDN assets, and sends no telemetry or analytics. There is no account or API key."
+msgstr "Swatch nie łączy się z żadnymi usługami zewnętrznymi. Nie wysyła żadnych wychodzących żądań HTTP, nie ładuje zdalnych skryptów, czcionek ani zasobów CDN i nie wysyła żadnej telemetrii ani danych analitycznych. Nie ma konta ani klucza API."
+
+#. Found in description paragraph.
+msgid "<strong>Self-contained.</strong> No external services, no account, no third-party dependencies."
+msgstr "<strong>Samodzielny.</strong> Bez usług zewnętrznych, bez konta, bez zależności od podmiotów trzecich."
+
+#. Found in description paragraph.
 msgid "<strong>Features</strong>"
 msgstr "<strong>Funkcje</strong>"
 
-msgid ""
-"* Colour and button/label swatch types.\n"
-"* Per-attribute type selection on the global attribute screen.\n"
-"* Per-term colour (`sanitize_hex_color`) and custom label, stored as term meta.\n"
-"* Wires into WooCommerce's native variations form, no jQuery, vanilla JS.\n"
-"* Keyboard operable (radiogroup semantics, arrow keys) and screen-reader labelled.\n"
-"* Focus-visible rings, sufficient contrast, reduced-motion friendly, no layout shift.\n"
-"* Graceful fallback to the standard dropdown when an attribute has no swatch data.\n"
-"* Settings page under WooCommerce: enable/disable and default swatch type."
-msgstr ""
-"* Typy próbek: kolory oraz przyciski/etykiety.\n"
-"* Wybór typu dla każdego atrybutu na ekranie atrybutów globalnych.\n"
-"* Kolor dla każdego terminu (`sanitize_hex_color`) i własna etykieta, przechowywane jako meta terminu.\n"
-"* Podłącza się do natywnego formularza odmian WooCommerce, bez jQuery, czysty JavaScript.\n"
-"* Obsługa z klawiatury (semantyka radiogroup, klawisze strzałek) i etykiety dla czytników ekranu.\n"
-"* Widoczne obramowanie fokusu, wystarczający kontrast, tryb ograniczonego ruchu, brak przeskoków układu.\n"
-"* Płynne przejście do standardowej listy rozwijanej, gdy atrybut nie ma danych próbek.\n"
-"* Strona ustawień w WooCommerce: włączanie/wyłączanie i domyślny typ próbki."
+#. Found in description paragraph.
+msgid "The full source lives on GitHub at <a href=\"https://github.com/wppoland/plogins-swatch\">github.com/wppoland/plogins-swatch</a> if you want to read the code or report a problem."
+msgstr "Pełne źródła są na GitHubie, <a href=\"https://github.com/wppoland/plogins-swatch\">github.com/wppoland/plogins-swatch</a>, jeśli chcesz przeczytać kod albo zgłosić problem."
 
-msgid ""
-"<strong>Self-contained.</strong> No external services, no account, no third-"
-"party dependencies."
-msgstr ""
-"<strong>Samodzielny.</strong> Bez usług zewnętrznych, bez konta, bez "
-"zależności od podmiotów trzecich."
+#. Found in description paragraph.
+msgid "The swatches drive WooCommerce's own variations form, so price, stock and the add-to-cart button update exactly as they do with the stock dropdowns. Selected and out-of-combination states are reflected automatically."
+msgstr "Próbki sterują natywnym formularzem odmian WooCommerce, więc cena, stan magazynowy i przycisk „dodaj do koszyka” aktualizują się dokładnie tak samo jak przy standardowych listach rozwijanych. Stany wybrane oraz niedostępne w danej kombinacji są odzwierciedlane automatycznie."
 
-msgid ""
-"1. Upload the plugin to `/wp-content/plugins/swatch`, or install via Plugins → Add New.\n"
-"2. Activate it. WooCommerce must be active.\n"
-"3. Go to WooCommerce → Swatch to tune the defaults.\n"
-"4. On Products → Attributes, set a swatch colour or label on each attribute term."
-msgstr ""
-"1. Prześlij wtyczkę do `/wp-content/plugins/swatch` lub zainstaluj przez Wtyczki → Dodaj nową.\n"
-"2. Włącz ją. WooCommerce musi być aktywne.\n"
-"3. Przejdź do WooCommerce → Swatch, aby dostroić ustawienia domyślne.\n"
-"4. W Produkty → Atrybuty ustaw kolor próbki lub etykietę dla każdego terminu atrybutu."
+#. Found in description paragraph.
+msgid "Swatch replaces WooCommerce's default variation <code>&lt;select&gt;</code> dropdowns with visual, accessible swatches on single product pages. Choose a swatch type per attribute (colour dots or button/label pills) and assign a colour or label per term."
+msgstr "Swatch zastępuje domyślne listy rozwijane <code>&lt;select&gt;</code> dla wariantów WooCommerce widocznymi, dostępnymi próbnikami na stronie produktu. Wybierz typ próbnika dla atrybutu (kropki kolorów albo przyciski z etykietą) i przypisz kolor lub etykietę do każdego terminu."
 
-msgid ""
-"* <strong>Documentation</strong> - https://plogins.com/plogins-swatch/docs/\n"
-"* <strong>Plugin page</strong> - https://plogins.com/plogins-swatch/\n"
-"* <strong>Source code</strong> - https://github.com/wppoland/plogins-swatch\n"
-"* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-swatch/issues"
-msgstr ""
-"* <strong>Dokumentacja</strong> - https://plogins.com/pl/plogins-swatch/docs/\n"
-"* <strong>Strona wtyczki</strong> - https://plogins.com/pl/plogins-swatch/\n"
-"* <strong>Kod źródłowy</strong> - https://github.com/wppoland/plogins-swatch\n"
-"* <strong>Zgłoszenia błędów i propozycje funkcji</strong> - https://github.com/wppoland/plogins-swatch/issues"
+#. Found in description list item.
+msgid "Settings page under WooCommerce: enable/disable, default swatch type and the shop-listing switch."
+msgstr "Strona ustawień w menu WooCommerce: włączanie i wyłączanie, domyślny typ próbnika oraz przełącznik list produktów."
 
-msgid ""
-"Yes. Swatch extends WooCommerce's variable products and does nothing without"
-" it."
-msgstr ""
-"Tak. Swatch rozszerza produkty zmienne WooCommerce i bez niego nic nie robi."
+#. Found in description list item.
+msgid "Swatches in shop and category listings too, off by default so your shop page does not change without you asking."
+msgstr "Próbniki także na listach sklepu i kategorii, domyślnie wyłączone, żeby strona sklepu nie zmieniła się bez Twojej zgody."
 
-msgid ""
-"They keep WooCommerce's standard dropdown. Colour swatches with no colours "
-"set fall back to the dropdown automatically, so nothing ever breaks."
-msgstr ""
-"Zachowują standardową listę rozwijaną WooCommerce. Próbki kolorów bez "
-"ustawionych kolorów automatycznie wracają do listy rozwijanej, więc nic "
-"nigdy się nie psuje."
+#. Found in description list item.
+msgid "Graceful fallback to the standard dropdown when an attribute has no swatch data."
+msgstr "Płynny powrót do standardowej listy rozwijanej, gdy atrybut nie ma danych próbnika."
 
-msgid ""
-"Yes. The front-end is vanilla JavaScript that hooks WooCommerce's own "
-"variation events."
-msgstr ""
-"Tak. Front-end to czysty JavaScript, który podpina się pod własne zdarzenia "
-"odmian WooCommerce."
+#. Found in description list item.
+msgid "Focus-visible rings, sufficient contrast, reduced-motion friendly, no layout shift."
+msgstr "Widoczne obramowanie fokusa, wystarczający kontrast, poszanowanie ograniczonego ruchu, brak przeskoków układu."
 
-msgid ""
-"Yes. Swatches use radiogroup semantics, arrow-key navigation and visible "
-"focus rings."
-msgstr ""
-"Tak. Próbki wykorzystują semantykę radiogroup, nawigację klawiszami strzałek"
-" i widoczne obramowanie fokusu."
+#. Found in description list item.
+msgid "Keyboard operable (radiogroup semantics, arrow keys) and screen-reader labelled."
+msgstr "Obsługa klawiaturą (semantyka radiogroup, strzałki) i etykiety dla czytników ekranu."
 
-msgid ""
-"Yes. Swatches stay in the native variations form with touch-friendly "
-"targets; no separate mobile app or script framework is required."
-msgstr ""
-"Tak. Próbki pozostają w natywnym formularzu odmian, z celami wygodnymi w "
-"dotyku; nie jest wymagana osobna aplikacja mobilna ani framework skryptowy."
+#. Found in description list item.
+msgid "Wires into WooCommerce's native variations form, no jQuery, vanilla JS."
+msgstr "Wpina się w natywny formularz wariantów WooCommerce, bez jQuery, czysty JavaScript."
 
-msgid ""
-"Yes. This plugin is compatible with WordPress Multisite. Network activate it"
-" or activate it on individual sites; each site keeps its own settings and "
-"data."
-msgstr ""
-"Tak. Ta wtyczka jest kompatybilna z WordPress Multisite. Włącz ją dla całej "
-"sieci lub w poszczególnych witrynach; każda witryna zachowuje własne "
-"ustawienia i dane."
+#. Found in description list item.
+msgid "Per-term colour (<code>sanitize_hex_color</code>) and custom label, stored as term meta."
+msgstr "Kolor dla terminu (<code>sanitize_hex_color</code>) i własna etykieta, zapisywane jako meta terminu."
 
-msgid ""
-"1. Colour and button swatches on a single product page.\n"
-"2. The Swatch settings screen under the WooCommerce menu."
-msgstr ""
-"1. Próbki kolorów i przycisków na stronie pojedynczego produktu.\n"
-"2. Ekran ustawień Swatch w menu WooCommerce."
+#. Found in description list item.
+msgid "Per-attribute type selection on the global attribute screen."
+msgstr "Wybór typu dla każdego atrybutu na ekranie atrybutów globalnych."
 
-msgid ""
-"Swatch does not connect to any external services. It makes no outbound HTTP "
-"requests, loads no remote scripts, fonts or CDN assets, and sends no "
-"telemetry or analytics. There is no account or API key."
-msgstr ""
-"Swatch nie łączy się z żadnymi usługami zewnętrznymi. Nie wysyła żadnych "
-"wychodzących żądań HTTP, nie ładuje zdalnych skryptów, czcionek ani zasobów "
-"CDN i nie wysyła żadnej telemetrii ani danych analitycznych. Nie ma konta "
-"ani klucza API."
+#. Found in description list item.
+msgid "Colour and button/label swatch types."
+msgstr "Typy próbników: kolor oraz przycisk z etykietą."
 
-msgid ""
-"Everything is stored in your own database: the swatch type per attribute, "
-"the global defaults and a schema version are kept in the "
-"`swatch_attribute_types`, `swatch_settings` and `swatch_db_version` options,"
-" and each term's colour and label are stored as the `swatch_color` and "
-"`swatch_label` term meta on your WooCommerce attribute terms. The plugin "
-"sends no email."
-msgstr ""
-"Wszystko jest przechowywane w Twojej własnej bazie danych: typ próbki dla "
-"każdego atrybutu, globalne wartości domyślne i wersja schematu są zapisane w"
-" opcjach `swatch_attribute_types`, `swatch_settings` i `swatch_db_version`, "
-"a kolor i etykieta każdego terminu są przechowywane jako meta terminu "
-"`swatch_color` i `swatch_label` w terminach atrybutów WooCommerce. Wtyczka "
-"nie wysyła wiadomości e-mail."
+#. Found in description header.
+msgid "Translations"
+msgstr "Tłumaczenia"
 
-msgid ""
-"Plogins Swatch includes Polish, German and Spanish translations for the "
-"plugin interface. The text domain is `plogins-swatch`, so WordPress.org "
-"language packs can also override or extend these bundled translations."
-msgstr ""
-"Plogins Swatch zawiera polskie, niemieckie i hiszpańskie tłumaczenia "
-"interfejsu wtyczki. Domena tekstowa to `plogins-swatch`, więc pakiety "
-"językowe z WordPress.org mogą też nadpisywać lub rozszerzać te dołączone "
-"tłumaczenia."
+#. Found in description header.
+msgid "External Services"
+msgstr "Usługi zewnętrzne"
 
-msgid ""
-"* Added bundled Polish, German and Spanish translations for the plugin "
-"interface."
-msgstr ""
-"* Dodano dołączone polskie, niemieckie i hiszpańskie tłumaczenia interfejsu "
-"wtyczki."
+#. Screenshot description.
+msgid "The Swatch settings screen under the WooCommerce menu."
+msgstr "Ekran ustawień Swatch w menu WooCommerce."
 
-msgid "* First stable release."
-msgstr "* Pierwsza stabilna wersja."
+#. Screenshot description.
+msgid "Colour and button swatches on a single product page."
+msgstr "Próbniki kolorów i przycisków na stronie produktu."
 
-msgid ""
-"* Renamed to Plogins Swatch for WooCommerce for a more distinctive plugin "
-"name."
-msgstr ""
-"* Zmieniono nazwę na Plogins Swatch dla WooCommerce, aby uzyskać bardziej "
-"charakterystyczną nazwę wtyczki."
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Initial release."
+msgstr "Pierwsze wydanie."
 
-msgid ""
-"* Swatch group filters `swatch/swatch_group_vars` and "
-"`swatch/swatch_group_classes` for PRO sizing and shapes."
-msgstr ""
-"* Filtry grup próbek `swatch/swatch_group_vars` i "
-"`swatch/swatch_group_classes` dla rozmiarów i kształtów PRO."
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Add <code>swatch/variation_gallery</code> filter and expose <code>swatch_variation_gallery</code> on variation JSON for add-ons."
+msgstr "Dodano filtr <code>swatch/variation_gallery</code> i udostępniono <code>swatch_variation_gallery</code> w JSON-ie wariantu na potrzeby dodatków."
 
-msgid ""
-"* Per-swatch filters (`swatch/product_swatch_html`, "
-"`swatch/archive_swatch_html`) and `swatch/swatch_items` for PRO tooltips and"
-" add-ons."
-msgstr ""
-"* Filtry dla poszczególnych próbek (`swatch/product_swatch_html`, "
-"`swatch/archive_swatch_html`) i `swatch/swatch_items` dla podpowiedzi i "
-"dodatków PRO."
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Add optional archive-loop swatch preview via <code>swatch/archive_enabled</code> and <code>swatch/archive_html</code> filters for add-ons."
+msgstr "Dodano opcjonalny podgląd próbników na listach archiwum przez filtry <code>swatch/archive_enabled</code> i <code>swatch/archive_html</code> na potrzeby dodatków."
 
-msgid ""
-"* Add optional archive-loop swatch preview via `swatch/archive_enabled` and "
-"`swatch/archive_html` filters for add-ons."
-msgstr ""
-"* Dodaje opcjonalny podgląd próbek w pętli archiwum przez filtry "
-"`swatch/archive_enabled` i `swatch/archive_html` dla dodatków."
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Per-swatch filters (<code>swatch/product_swatch_html</code>, <code>swatch/archive_swatch_html</code>) and <code>swatch/swatch_items</code> for PRO tooltips and add-ons."
+msgstr "Filtry dla pojedynczego próbnika (<code>swatch/product_swatch_html</code>, <code>swatch/archive_swatch_html</code>) oraz <code>swatch/swatch_items</code> na potrzeby dymków PRO i dodatków."
 
-msgid ""
-"* Add `swatch/variation_gallery` filter and expose "
-"`swatch_variation_gallery` on variation JSON for add-ons."
-msgstr ""
-"* Dodaje filtr `swatch/variation_gallery` i udostępnia "
-"`swatch_variation_gallery` w JSON odmiany dla dodatków."
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Swatch group filters <code>swatch/swatch_group_vars</code> and <code>swatch/swatch_group_classes</code> for PRO sizing and shapes."
+msgstr "Filtry grupy próbników <code>swatch/swatch_group_vars</code> i <code>swatch/swatch_group_classes</code> na potrzeby rozmiarów i kształtów w PRO."
 
-msgid "* Initial release."
-msgstr "* Pierwsze wydanie."
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Renamed to Plogins Swatch for WooCommerce for a more distinctive plugin name."
+msgstr "Zmiana nazwy na Plogins Swatch for WooCommerce, żeby nazwa wtyczki była bardziej rozpoznawalna."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "First stable release."
+msgstr "Pierwsze stabilne wydanie."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Added bundled Polish, German and Spanish translations for the plugin interface."
+msgstr "Dodano dołączone tłumaczenia interfejsu wtyczki: polskie, niemieckie i hiszpańskie."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Translations: completed Polish, German and Spanish for the PRO upgrade panel."
+msgstr "Tłumaczenia: uzupełniono polskie, niemieckie i hiszpańskie dla panelu aktualizacji do PRO."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Fixed the PRO promo on the settings screen quoting a price in PLN. PRO is priced and charged in EUR, so an admin on a Polish site was shown a zloty amount and then billed in euro, and the zloty figure was a fixed conversion that drifted from the real charge as the rate moved. The promo now shows the euro price that is actually taken."
+msgstr "Poprawiono promocję PRO na ekranie ustawień, która podawała cenę w złotych. PRO jest wyceniane i pobierane w euro, więc administrator na polskiej stronie widział kwotę w złotych, a płacił w euro, przy czym kwota w złotych wynikała ze stałego przelicznika i rozjeżdżała się z faktyczną opłatą wraz z kursem. Promocja pokazuje teraz cenę w euro, która jest rzeczywiście pobierana."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Tested against WordPress 7.1. Verified by activating this build on a clean 7.1 install with WooCommerce 11.1, not by editing the header."
+msgstr "Przetestowano z WordPress 7.1. Sprawdzone przez aktywację tej wersji na czystej instalacji 7.1 z WooCommerce 11.1, a nie przez zmianę nagłówka."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Renamed to Plogins Swatch - Variation Swatches for WooCommerce so the name leads with the brand rather than a generic word, which is what the WordPress.org plugin review team asks for. The plugin slug is unchanged."
+msgstr "Zmiana nazwy na Plogins Swatch - Variation Swatches for WooCommerce, żeby nazwa zaczynała się od marki, a nie od ogólnego słowa, o co prosi zespół recenzentów wtyczek WordPress.org. Slug wtyczki pozostaje bez zmian."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Colour and label swatches render in listings exactly as they do on the product page. Image swatches in listings are what the paid edition adds on top."
+msgstr "Próbniki kolorów i etykiet renderują się na listach dokładnie tak, jak na stronie produktu. Próbniki z obrazkami na listach to jest to, co dokłada wersja płatna."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "New: <strong>Swatches in the shop loop</strong>, a setting on the Swatch screen. The archive renderer was always in this plugin, complete and working, but it was held shut by a hardcoded value that only the paid add-on ever flipped. That makes it a built-in feature the plugin refused to run, which the WordPress.org guidelines do not allow, so it is a setting now. Off by default, because it changes how your shop page looks."
+msgstr "Nowe: <strong>Próbki na listach produktów</strong>, ustawienie na ekranie Swatch. Renderer archiwum był w tej wtyczce od zawsze, kompletny i działający, ale trzymała go zamkniętym sztywna wartość, którą przestawiał wyłącznie płatny dodatek. To czyni z niego wbudowaną funkcję, której wtyczka odmawiała uruchomienia, na co wytyczne WordPress.org nie pozwalają, więc teraz jest to ustawienie. Domyślnie wyłączone, bo zmienia wygląd strony sklepu."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Changed: both switches in that section tie their help text to the checkbox with <code>aria-describedby</code>, so a screen reader reads the explanation with the control."
+msgstr "Zmiana: oba przełączniki w tej sekcji wiążą swój tekst pomocy z polem wyboru przez <code>aria-describedby</code>, więc czytnik ekranu odczytuje wyjaśnienie razem z kontrolką."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Changed: <strong>Swatches in the shop loop</strong> now shows that it hangs off the master switch above it. With <strong>Enable swatches</strong> off, the row goes quiet and says the listings will not render swatches yet, rather than taking a tick that does nothing. The state is rendered from the saved settings, so it is correct with JavaScript switched off, and the box stays reachable and saveable either way."
+msgstr "Zmiana: <strong>Próbki na listach produktów</strong> pokazuje teraz, że zależy od przełącznika nadrzędnego powyżej. Przy wyłączonym <strong>Włącz próbniki</strong> wiersz wycisza się i informuje, że listy nie będą jeszcze renderować próbników, zamiast przyjmować zaznaczenie, które nic nie robi. Stan jest renderowany z zapisanych ustawień, więc jest poprawny także przy wyłączonym JavaScripcie, a pole pozostaje dostępne i zapisywalne w obu przypadkach."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Fixed: the PRO notice on the settings screen still sold shop-loop swatches as a paid feature. They have been in the free plugin since 1.0.8, behind the Swatches in the shop loop checkbox. What PRO adds there is the term image in place of the colour chip, and the notice now says so."
+msgstr "Poprawka: komunikat PRO na ekranie ustawień wciąż sprzedawał próbniki na listach sklepu jako funkcję płatną. Są w darmowej wtyczce od 1.0.8, za polem wyboru Próbki na listach produktów. PRO dokłada tam obrazek terminu zamiast kropki koloru i komunikat teraz tak mówi."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Fixed: deleting the plugin left the per-user \"dismiss\" flag from the PRO notice in the database. Uninstall now removes it for every user, not just the one who dismissed it."
+msgstr "Poprawka: usunięcie wtyczki zostawiało w bazie flagę odrzucenia komunikatu PRO, zapisaną per użytkownik. Deinstalacja usuwa ją teraz dla każdego użytkownika, nie tylko dla tego, który komunikat odrzucił."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Changed: Polish, German and Spanish are complete again at 52 of 52 strings. Ten strings, the whole shop-listing section among them, had no translation in any locale."
+msgstr "Zmiana: polski, niemiecki i hiszpański są znowu kompletne, 52 z 52 stringów. Dziesięć stringów, w tym cała sekcja list sklepu, nie miało tłumaczenia w żadnym języku."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Changed: the features list now mentions swatches in shop and category listings. They arrived in 1.0.8 and the description never said so."
+msgstr "Zmiana: lista funkcji wymienia teraz próbniki na listach sklepu i kategorii. Pojawiły się w 1.0.8, a opis nigdy o tym nie mówił."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Fixed: the link to the attributes screen had an arrow glyph inside the translated string, which made the arrow every translator's problem rather than the layout's."
+msgstr "Poprawka: odnośnik do ekranu atrybutów miał znak strzałki wewnątrz tłumaczonego tekstu, co czyniło ze strzałki problem każdego tłumacza zamiast problemu układu."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Fixed: the installation steps told you to upload a <code>swatch</code> folder. The package has unpacked to <code>plogins-swatch</code> since the build started taking the folder name from the text domain, so following the readme put the plugin somewhere WordPress would not find it."
+msgstr "Poprawka: instrukcja instalacji kazała wgrać katalog <code>swatch</code>. Paczka rozpakowuje się do <code>plogins-swatch</code>, odkąd build bierze nazwę katalogu z text domain, więc trzymanie się readme umieszczało wtyczkę tam, gdzie WordPress by jej nie znalazł."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Fixed: arrow glyphs in the admin menu paths, and in the strings handed to translators. An arrow inside a translatable string makes the glyph every translator's problem and changes the layout in any locale that drops it."
+msgstr "Poprawka: znaki strzałek w ścieżkach menu administratora i w tekstach przekazywanych tłumaczom. Strzałka wewnątrz tłumaczonego tekstu czyni z tego znaku problem każdego tłumacza i zmienia układ w każdym języku, który ją pominie."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is."
+msgstr "Poprawka: promocja aktualizacji do PRO sprzedawała dalej osobom, które już kupiły wersję płatną. Odrzucić dało się tylko baner, więc promocja w panelu bocznym i karty zablokowanych funkcji chodziły za płacącym klientem bez końca. Promocja sprawdza teraz, czy wersja płatna jest aktywna, i ustępuje, kiedy jest."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Note: an inline colour that is not a hex value is dropped by WordPress when the markup is filtered, so a callback returning <code>rgb(...)</code> loses that colour. Colours saved on an attribute term are unaffected: they go through <code>sanitize_hex_color()</code> on the way in and on the way out."
+msgstr "Uwaga: kolor podany w atrybucie inline, który nie jest wartością szesnastkową, zostaje usunięty przez WordPressa przy filtrowaniu znaczników, więc callback zwracający <code>rgb(...)</code> traci ten kolor. Nie dotyczy to kolorów zapisanych przy terminie atrybutu: te przechodzą przez <code>sanitize_hex_color()</code> przy zapisie i przy odczycie."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Security (low): swatch markup is now passed through <code>wp_kses()</code> with an explicit allowlist at the point it is printed. Every renderer escapes the values it writes, but each one ends in a filter, so what actually reached the page was whatever the last callback returned. An add-on, or anything else hooking those filters, could put unescaped markup on a storefront page. The allowlist covers the elements and attributes the swatches use, including <code>img</code> for the paid edition's image swatches and <code>data-*</code> for the values the script reads."
+msgstr "Bezpieczeństwo (niski priorytet): znaczniki próbników przechodzą teraz przez <code>wp_kses()</code> z jawną listą dozwolonych elementów w miejscu, w którym są drukowane. Każdy renderer escapuje wartości, które zapisuje, ale każdy kończy się filtrem, więc na stronę trafiało to, co zwrócił ostatni callback. Dodatek, albo cokolwiek innego podpiętego pod te filtry, mógł umieścić nieescapowane znaczniki na stronie sklepu. Lista dozwolonych obejmuje elementy i atrybuty używane przez próbniki, w tym <code>img</code> dla próbników z obrazkami w wersji płatnej i <code>data-*</code> dla wartości odczytywanych przez skrypt."

@@ -34,10 +34,10 @@ El código fuente completo está en GitHub en https://github.com/wppoland/plogin
 
 == Installation ==
 
-1. Sube el plugin a `/wp-content/plugins/swatch` o instálalo desde Plugins → Añadir nuevo.
+1. Sube el plugin a `/wp-content/plugins/swatch` o instálalo desde Plugins > Añadir nuevo.
 2. Actívalo. WooCommerce debe estar activo.
-3. Ve a WooCommerce → Swatch para ajustar los valores por defecto.
-4. En Productos → Atributos, define un color de muestra o una etiqueta en cada término de atributo.
+3. Ve a WooCommerce > Swatch para ajustar los valores por defecto.
+4. En Productos > Atributos, define un color de muestra o una etiqueta en cada término de atributo.
 
 == Frequently Asked Questions ==
 
