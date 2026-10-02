@@ -4,7 +4,7 @@ Tags: woocommerce, variation swatches, color swatches, variations, product attri
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.17
+Stable tag: 1.0.18
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -91,6 +91,10 @@ Everything is stored in your own database: the swatch type per attribute, the gl
 Plogins Swatch is fully translatable and ships the `plogins-swatch.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.18 =
+* Fixed: out-of-combination swatches were never disabled and the "Clear" link left the old swatches highlighted. WooCommerce fires its variation events through jQuery, which a native event listener never receives, so the swatches missed every update. They now subscribe through WooCommerce's own jQuery.
+* Fixed: adding or saving any attribute term stored a black swatch colour, because a colour field always submits a value. A term you never gave a colour then showed a black dot, and a colour attribute could no longer fall back to the dropdown. A "No colour" checkbox now keeps a term without one; picking a colour unticks it. Terms saved black by earlier versions keep that colour until you tick "No colour" on them.
 
 = 1.0.17 =
 * The upgrade notice's "Coming soon" and "Get notified" labels are English source strings for every language; Polish sites used to get their own Polish source text, which translators in other languages then saw untranslated.

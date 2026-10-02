@@ -11,8 +11,9 @@ defined('ABSPATH') || exit;
 /**
  * Optional archive-loop swatch preview for variable products.
  *
- * Rendering is off by default. Add-ons (e.g. Swatch Pro) enable it through the
- * `swatch/archive_enabled` filter and may enhance markup via `swatch/archive_html`.
+ * Rendering follows the merchant's "Swatches in the shop loop" setting, off by
+ * default. Add-ons may still override it per product through the
+ * `swatch/archive_enabled` filter and enhance markup via `swatch/archive_html`.
  */
 final class ArchiveRenderer implements HasHooks
 {
