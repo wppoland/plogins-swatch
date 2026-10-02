@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Swatch - Variation Swatches for WooCommerce 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/swatch\n"
-"POT-Creation-Date: 2026-09-26T04:48:59+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-swatch\n"
+"POT-Creation-Date: 2026-10-02T10:50:47+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:22:56+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -78,27 +78,27 @@ msgstr ""
 msgid "How this attribute renders on the product page."
 msgstr "Cómo se representa este atributo en la página del producto."
 
-#: src/Admin/AttributeFields.php:133 src/Admin/AttributeFields.php:156
+#: src/Admin/AttributeFields.php:133 src/Admin/AttributeFields.php:157
 msgid "Swatch colour"
 msgstr "color de muestra"
 
-#: src/Admin/AttributeFields.php:136 src/Admin/AttributeFields.php:160
+#: src/Admin/AttributeFields.php:137 src/Admin/AttributeFields.php:162
 msgid "Used when this attribute is shown as colour swatches."
 msgstr "Se utiliza cuando este atributo se muestra como muestras de color."
 
-#: src/Admin/AttributeFields.php:139 src/Admin/AttributeFields.php:164
+#: src/Admin/AttributeFields.php:140 src/Admin/AttributeFields.php:166
 msgid "Swatch label"
 msgstr "etiqueta de muestra"
 
-#: src/Admin/AttributeFields.php:141 src/Admin/AttributeFields.php:167
+#: src/Admin/AttributeFields.php:142 src/Admin/AttributeFields.php:169
 msgid "Optional short label for button swatches. Defaults to the term name."
 msgstr ""
 "Etiqueta corta opcional para muestras de botones. El valor predeterminado es "
 "el nombre del término."
 
-#: src/Admin/ProUpsell.php:85
-msgid "Wkrótce"
-msgstr "Próximamente"
+#: src/Admin/AttributeFields.php:183
+msgid "No colour"
+msgstr ""
 
 #: src/Admin/ProUpsell.php:85
 msgid "Coming soon"
@@ -113,10 +113,6 @@ msgstr "desde %1$s%2$d/año"
 #: src/Admin/ProUpsell.php:100
 msgid "Upgrade to PRO"
 msgstr "Mejora a PRO"
-
-#: src/Admin/ProUpsell.php:101
-msgid "Powiadom mnie"
-msgstr "Avísame"
 
 #: src/Admin/ProUpsell.php:101
 msgid "Get notified"
@@ -299,3 +295,9 @@ msgstr ""
 #: src/Admin/Settings.php:218
 msgid "Products > Attributes"
 msgstr "Productos > Atributos"
+
+#~ msgid "Wkrótce"
+#~ msgstr "Próximamente"
+
+#~ msgid "Powiadom mnie"
+#~ msgstr "Avísame"
