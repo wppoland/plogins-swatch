@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Swatch - Variation Swatches for WooCommerce 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/swatch\n"
-"POT-Creation-Date: 2026-09-26T04:48:59+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-swatch\n"
+"POT-Creation-Date: 2026-10-02T10:50:47+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:22:56+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: German <de@li.org>\n"
@@ -78,27 +78,27 @@ msgstr ""
 msgid "How this attribute renders on the product page."
 msgstr "Wie dieses Attribut auf der Produktseite dargestellt wird."
 
-#: src/Admin/AttributeFields.php:133 src/Admin/AttributeFields.php:156
+#: src/Admin/AttributeFields.php:133 src/Admin/AttributeFields.php:157
 msgid "Swatch colour"
 msgstr "Musterfarbe"
 
-#: src/Admin/AttributeFields.php:136 src/Admin/AttributeFields.php:160
+#: src/Admin/AttributeFields.php:137 src/Admin/AttributeFields.php:162
 msgid "Used when this attribute is shown as colour swatches."
 msgstr "Wird verwendet, wenn dieses Attribut als Farbfelder angezeigt wird."
 
-#: src/Admin/AttributeFields.php:139 src/Admin/AttributeFields.php:164
+#: src/Admin/AttributeFields.php:140 src/Admin/AttributeFields.php:166
 msgid "Swatch label"
 msgstr "Musteretikett"
 
-#: src/Admin/AttributeFields.php:141 src/Admin/AttributeFields.php:167
+#: src/Admin/AttributeFields.php:142 src/Admin/AttributeFields.php:169
 msgid "Optional short label for button swatches. Defaults to the term name."
 msgstr ""
 "Optionales Kurzetikett für Knopfmuster. Standardmäßig wird der Begriffsname "
 "verwendet."
 
-#: src/Admin/ProUpsell.php:85
-msgid "Wkrótce"
-msgstr "Demnächst"
+#: src/Admin/AttributeFields.php:183
+msgid "No colour"
+msgstr ""
 
 #: src/Admin/ProUpsell.php:85
 msgid "Coming soon"
@@ -113,10 +113,6 @@ msgstr "ab %1$s%2$d/Jahr"
 #: src/Admin/ProUpsell.php:100
 msgid "Upgrade to PRO"
 msgstr "Auf PRO upgraden"
-
-#: src/Admin/ProUpsell.php:101
-msgid "Powiadom mnie"
-msgstr "Benachrichtige mich"
 
 #: src/Admin/ProUpsell.php:101
 msgid "Get notified"
@@ -297,3 +293,9 @@ msgstr ""
 #: src/Admin/Settings.php:218
 msgid "Products > Attributes"
 msgstr "Produkte > Attribute"
+
+#~ msgid "Wkrótce"
+#~ msgstr "Demnächst"
+
+#~ msgid "Powiadom mnie"
+#~ msgstr "Benachrichtige mich"
