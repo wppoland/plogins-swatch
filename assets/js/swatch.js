@@ -11,8 +11,10 @@
  *           are (not) part of a valid combination;
  *       `reset_data` / `reset_image` -> clear the selection.
  *
- * No jQuery: we use native DOM APIs and listen for the jQuery-triggered custom
- * events on the form element (they bubble as native events on modern WC).
+ * No jQuery of our own: the script is native DOM. WooCommerce fires its
+ * variation events with jQuery's trigger(), which never reaches a native
+ * addEventListener, so those events are subscribed through the jQuery that
+ * WooCommerce's own variations script already loaded.
  *
  * Accessibility: each group is a radiogroup; swatches are role="radio" and are
  * operable with the arrow keys, Home/End and Space/Enter.
@@ -157,18 +159,18 @@
 			});
 
 			// Reflect external changes to the select (e.g. WooCommerce reset).
-			select.addEventListener('change', function () {
+			onWc(select, 'change', function () {
 				setSelected(group, select, select.value);
 			});
 
 			setSelected(group, select, select.value);
 		});
 
-		// WooCommerce variation lifecycle events bubble to the form.
-		form.addEventListener('woocommerce_update_variation_values', function () {
+		// WooCommerce variation lifecycle events.
+		onWc(form, 'woocommerce_update_variation_values', function () {
 			syncEnabledStates(form);
 		});
-		form.addEventListener('reset_data', function () {
+		onWc(form, 'reset_data', function () {
 			groups.forEach(function (group) {
 				var select = document.getElementById(group.getAttribute('data-swatch-for'));
 				if (select) {
@@ -176,6 +178,19 @@
 				}
 			});
 		});
+
+		// WooCommerce may have pruned the options before this deferred script ran.
+		syncEnabledStates(form);
+	}
+
+	// Listen for an event whether it was dispatched natively or with jQuery's
+	// trigger(), which only reaches handlers bound through jQuery.
+	function onWc(el, name, handler) {
+		if (window.jQuery) {
+			window.jQuery(el).on(name, handler);
+		} else {
+			el.addEventListener(name, handler);
+		}
 	}
 
 	function init() {

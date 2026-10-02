@@ -132,7 +132,8 @@ final class AttributeFields implements HasHooks
         <div class="form-field">
             <label for="swatch_color"><?php esc_html_e('Swatch colour', 'plogins-swatch'); ?></label>
             <?php wp_nonce_field('swatch_term_fields', 'swatch_term_fields_nonce'); ?>
-            <input type="color" name="swatch_color" id="swatch_color" value="#000000" />
+            <input type="color" name="swatch_color" id="swatch_color" value="#000000" oninput="this.form.swatch_color_none.checked = false;" />
+            <?php $this->renderNoColorToggle(true); ?>
             <p class="description"><?php esc_html_e('Used when this attribute is shown as colour swatches.', 'plogins-swatch'); ?></p>
         </div>
         <div class="form-field">
@@ -156,7 +157,8 @@ final class AttributeFields implements HasHooks
             <th scope="row"><label for="swatch_color"><?php esc_html_e('Swatch colour', 'plogins-swatch'); ?></label></th>
             <td>
                 <?php wp_nonce_field('swatch_term_fields', 'swatch_term_fields_nonce'); ?>
-                <input type="color" name="swatch_color" id="swatch_color" value="<?php echo esc_attr('' !== $color ? $color : '#000000'); ?>" />
+                <input type="color" name="swatch_color" id="swatch_color" value="<?php echo esc_attr('' !== $color ? $color : '#000000'); ?>" oninput="this.form.swatch_color_none.checked = false;" />
+                <?php $this->renderNoColorToggle('' === $color); ?>
                 <p class="description"><?php esc_html_e('Used when this attribute is shown as colour swatches.', 'plogins-swatch'); ?></p>
             </td>
         </tr>
@@ -167,6 +169,19 @@ final class AttributeFields implements HasHooks
                 <p class="description"><?php esc_html_e('Optional short label for button swatches. Defaults to the term name.', 'plogins-swatch'); ?></p>
             </td>
         </tr>
+        <?php
+    }
+
+    /**
+     * Checkbox that keeps a term without a colour. Picking a colour unticks it.
+     */
+    private function renderNoColorToggle(bool $checked): void
+    {
+        ?>
+        <label for="swatch_color_none">
+            <input type="checkbox" name="swatch_color_none" id="swatch_color_none" value="1" <?php checked($checked); ?> />
+            <?php esc_html_e('No colour', 'plogins-swatch'); ?>
+        </label>
         <?php
     }
 
@@ -187,7 +202,11 @@ final class AttributeFields implements HasHooks
             return;
         }
 
-        if (isset($_POST['swatch_color'])) {
+        // A colour input always submits a value (#000000 when untouched), so
+        // "no colour" is its own checkbox; without it every saved term turned black.
+        if (! empty($_POST['swatch_color_none'])) {
+            $this->data->setTermColor($termId, '');
+        } elseif (isset($_POST['swatch_color'])) {
             $this->data->setTermColor($termId, sanitize_text_field(wp_unslash($_POST['swatch_color'])));
         }
 
