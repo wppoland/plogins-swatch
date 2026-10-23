@@ -22,6 +22,8 @@
 (function () {
 	'use strict';
 
+	var separator = (window.swatchConfig && window.swatchConfig.separator) || ': ';
+
 	function hideSelect(select) {
 		// Keep it in the DOM and functional, just visually hidden + out of tab order.
 		select.classList.add('swatch-hidden-select');
@@ -34,7 +36,31 @@
 		return Array.prototype.slice.call(group.querySelectorAll('.swatch'));
 	}
 
+	// The chosen value printed beside the attribute label ("Colour: Red"), so a
+	// colour or image swatch says in words what it is. Created once per group.
+	function valueLabel(form, group, select) {
+		if (group.swatchValueEl !== undefined) {
+			return group.swatchValueEl;
+		}
+		var label = form.querySelector('label[for="' + cssEscape(select.id) + '"]');
+		var el = null;
+		if (label) {
+			el = document.createElement('span');
+			el.className = 'swatch-selected-value';
+			el.setAttribute('aria-live', 'polite');
+			label.parentNode.insertBefore(el, label.nextSibling);
+		}
+		group.swatchValueEl = el;
+		return el;
+	}
+
 	function setSelected(group, select, value) {
+		if (group.swatchValueEl) {
+			var option = value !== '' ? select.options[select.selectedIndex] : null;
+			var text = option ? option.text : '';
+			group.swatchValueEl.textContent = text ? separator + text : '';
+		}
+
 		buttons(group).forEach(function (btn) {
 			var on = btn.getAttribute('data-swatch-value') === value && value !== '';
 			btn.setAttribute('aria-checked', on ? 'true' : 'false');
@@ -145,6 +171,7 @@
 			}
 
 			hideSelect(select);
+			valueLabel(form, group, select);
 
 			group.addEventListener('click', function (e) {
 				var btn = e.target.closest('.swatch');
