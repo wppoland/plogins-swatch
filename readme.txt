@@ -4,12 +4,12 @@ Tags: woocommerce, variation swatches, color swatches, variations, product attri
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.18
+Stable tag: 1.0.19
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Replace WooCommerce variation dropdowns with accessible colour and label swatches that wire straight into the native variations form.
+Let shoppers pick colours and sizes with a click: swatches replace the variation dropdowns, and the chosen value shows in words.
 
 == Description ==
 
@@ -23,6 +23,7 @@ The full source lives on GitHub at [github.com/wppoland/plogins-swatch](https://
 
 * Colour and button/label swatch types.
 * Per-attribute type selection on the global attribute screen.
+* The chosen value shows beside the attribute label, as in "Color: Navy", and screen readers announce it.
 * Per-term colour (`sanitize_hex_color`) and custom label, stored as term meta.
 * Wires into WooCommerce's native variations form, no jQuery, vanilla JS.
 * Keyboard operable (radiogroup semantics, arrow keys) and screen-reader labelled.
@@ -79,6 +80,7 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 1. Colour and button swatches on a single product page.
 2. The Swatch settings screen under the WooCommerce menu.
+3. After a click, the chosen value shows beside each label: "Color: Navy", "Size: M".
 
 == External Services ==
 
@@ -91,6 +93,9 @@ Everything is stored in your own database: the swatch type per attribute, the gl
 Plogins Swatch is fully translatable and ships the `plogins-swatch.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.19 =
+* New: the chosen value shows beside the attribute label, as in "Colour: Red", so a colour or image swatch also says its name in words. It clears with "Clear" and follows WooCommerce when it restores a default choice, and screen readers announce the change.
 
 = 1.0.18 =
 * Fixed: out-of-combination swatches were never disabled and the "Clear" link left the old swatches highlighted. WooCommerce fires its variation events through jQuery, which a native event listener never receives, so the swatches missed every update. They now subscribe through WooCommerce's own jQuery.

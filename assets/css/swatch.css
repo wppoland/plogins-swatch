@@ -273,3 +273,7 @@
 	min-width: var(--swatch-min-width);
 	padding-inline: 10px;
 }
+
+.swatch-selected-value {
+	font-weight: normal;
+}
