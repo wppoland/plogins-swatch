@@ -65,6 +65,15 @@ final class FrontendRenderer implements HasHooks
             \Swatch\VERSION,
             ['in_footer' => true, 'strategy' => 'defer'],
         );
+
+        wp_localize_script(
+            'swatch',
+            'swatchConfig',
+            [
+                /* translators: Separator between an attribute label and the value the shopper chose, as in "Colour: Red". Keep the spaces your language needs. */
+                'separator' => _x(': ', 'attribute label separator', 'plogins-swatch'),
+            ],
+        );
     }
 
     /**

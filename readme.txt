@@ -4,7 +4,7 @@ Tags: woocommerce, variation swatches, color swatches, variations, product attri
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.18
+Stable tag: 1.0.19
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -91,6 +91,9 @@ Everything is stored in your own database: the swatch type per attribute, the gl
 Plogins Swatch is fully translatable and ships the `plogins-swatch.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.19 =
+* New: the chosen value shows beside the attribute label, as in "Colour: Red", so a colour or image swatch also says its name in words. It clears with "Clear" and follows WooCommerce when it restores a default choice, and screen readers announce the change.
 
 = 1.0.18 =
 * Fixed: out-of-combination swatches were never disabled and the "Clear" link left the old swatches highlighted. WooCommerce fires its variation events through jQuery, which a native event listener never receives, so the swatches missed every update. They now subscribe through WooCommerce's own jQuery.
