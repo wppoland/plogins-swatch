@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Swatch - Variation Swatches for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-swatch\n"
-"POT-Creation-Date: 2026-10-02T10:50:47+00:00\n"
+"POT-Creation-Date: 2026-10-23T11:49:44+00:00\n"
 "PO-Revision-Date: 2026-06-15 10:00+0000\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -290,6 +290,12 @@ msgstr ""
 #: src/Admin/Settings.php:218
 msgid "Products > Attributes"
 msgstr "Produkty > Atrybuty"
+
+#. translators: Separator between an attribute label and the value the shopper chose, as in "Colour: Red". Keep the spaces your language needs.
+#: src/Service/FrontendRenderer.php:74
+msgctxt "attribute label separator"
+msgid ": "
+msgstr ""
 
 #~ msgid "Wkrótce"
 #~ msgstr "Wkrótce"
