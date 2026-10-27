@@ -36,13 +36,20 @@ The full source lives on GitHub at [github.com/wppoland/plogins-swatch](https://
 
 == Swatch Pro ==
 
-Swatch Pro is a separate paid plugin that works on top of Swatch. It adds:
+Swatch Pro is a separate paid plugin that extends Swatch:
 
-* Image swatches
-* Per-variation gallery
-* Image swatches in the shop loop
-* Rich tooltips
-* Custom sizes and shapes
+| Feature | Free | Pro |
+|:--- |:---:|:---:|
+| Colour and button swatches | Yes | Yes |
+| Type per attribute | Yes | Yes |
+| Colour and label per term | Yes | Yes |
+| Native variations form | Yes | Yes |
+| Keyboard operable | Yes | Yes |
+| Image swatches | - | Yes |
+| Per-variation gallery | - | Yes |
+| Image swatches in the shop loop | - | Yes |
+| Rich tooltips | - | Yes |
+| Custom sizes and shapes | - | Yes |
 
 The free edition is not a trial and its features stay available without a time limit.
 
