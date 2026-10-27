@@ -4,7 +4,7 @@ Tags: woocommerce, variation swatches, color swatches, variations, product attri
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.19
+Stable tag: 1.0.20
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -34,6 +34,22 @@ The full source lives on GitHub at [github.com/wppoland/plogins-swatch](https://
 
 **Self-contained.** No external services, no account, no third-party dependencies.
 
+== Swatch Pro ==
+
+Swatch Pro is a separate paid plugin that works on top of Swatch. It adds:
+
+* Image swatches
+* Per-variation gallery
+* Image swatches in the shop loop
+* Rich tooltips
+* Custom sizes and shapes
+
+The free edition is not a trial and its features stay available without a time limit.
+
+* **Swatch Pro** - [plogins.com/plogins-swatch-pro/](https://plogins.com/plogins-swatch-pro/)
+* **Compare editions and pricing** - [plogins.com/plogins-swatch-pro/pricing/](https://plogins.com/plogins-swatch-pro/pricing/)
+* **PRO documentation** - [plogins.com/plogins-swatch-pro/docs/](https://plogins.com/plogins-swatch-pro/docs/)
+
 == Installation ==
 
 1. Install from **Plugins > Add New** by searching for *Plogins Swatch*, or upload the `plogins-swatch` folder to `/wp-content/plugins/`.
@@ -49,6 +65,7 @@ The full source lives on GitHub at [github.com/wppoland/plogins-swatch](https://
 * **Plugin page**: [plogins.com/plogins-swatch/](https://plogins.com/plogins-swatch/)
 * **Source code**: [github.com/wppoland/plogins-swatch](https://github.com/wppoland/plogins-swatch)
 * **Bug reports and feature requests**: [github.com/wppoland/plogins-swatch/issues](https://github.com/wppoland/plogins-swatch/issues)
+* **Swatch Pro**: [plogins.com/plogins-swatch-pro/](https://plogins.com/plogins-swatch-pro/)
 
 
 = Does it require WooCommerce? =
@@ -93,6 +110,9 @@ Everything is stored in your own database: the swatch type per attribute, the gl
 Plogins Swatch is fully translatable and ships the `plogins-swatch.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.20 =
+* Readme only: a PRO section with links to the paid edition.
 
 = 1.0.19 =
 * New: the chosen value shows beside the attribute label, as in "Colour: Red", so a colour or image swatch also says its name in words. It clears with "Clear" and follows WooCommerce when it restores a default choice, and screen readers announce the change.
