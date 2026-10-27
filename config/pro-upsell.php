@@ -12,6 +12,8 @@ defined('ABSPATH') || exit;
 return [
     'name'       => 'Swatch Pro',
     'url'        => 'https://plogins.com/plogins-swatch-pro/pricing/',
+    'campaign'   => 'plogins-swatch',
+    'locales'    => ['pl', 'de', 'es'],
     'sellable'   => true,
     'price_from' => 19,
     'currency'   => 'EUR',

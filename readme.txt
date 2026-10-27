@@ -4,7 +4,7 @@ Tags: woocommerce, variation swatches, color swatches, variations, product attri
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.20
+Stable tag: 1.0.21
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -36,20 +36,23 @@ The full source lives on GitHub at [github.com/wppoland/plogins-swatch](https://
 
 == Swatch Pro ==
 
-Swatch Pro is a separate paid plugin that extends Swatch:
+Swatch Pro is a separate paid plugin that extends Swatch.
 
-| Feature | Free | Pro |
-|:--- |:---:|:---:|
-| Colour and button swatches | Yes | Yes |
-| Type per attribute | Yes | Yes |
-| Colour and label per term | Yes | Yes |
-| Native variations form | Yes | Yes |
-| Keyboard operable | Yes | Yes |
-| Image swatches | - | Yes |
-| Per-variation gallery | - | Yes |
-| Image swatches in the shop loop | - | Yes |
-| Rich tooltips | - | Yes |
-| Custom sizes and shapes | - | Yes |
+Included in Swatch:
+
+* Colour and button swatches
+* Type per attribute
+* Colour and label per term
+* Native variations form
+* Keyboard operable
+
+Swatch Pro adds:
+
+* Image swatches
+* Per-variation gallery
+* Image swatches in the shop loop
+* Rich tooltips
+* Custom sizes and shapes
 
 The free edition is not a trial and its features stay available without a time limit.
 
@@ -117,6 +120,10 @@ Everything is stored in your own database: the swatch type per attribute, the gl
 Plogins Swatch is fully translatable and ships the `plogins-swatch.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.21 =
+* The Upgrade to PRO links open the pricing page in the admin's language where plogins.com has one, and tell plogins.com which plugin the visit came from (utm_source, utm_medium and utm_campaign in the link). Nothing is sent from your site.
+* Readme: the PRO section lists what the free plugin includes and what the paid edition adds as two lists, which WordPress.org can display (it does not display tables).
 
 = 1.0.20 =
 * Readme only: a PRO section with links to the paid edition.
