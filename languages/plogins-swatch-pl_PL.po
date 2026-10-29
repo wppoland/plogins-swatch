@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Swatch - Variation Swatches for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-swatch\n"
-"POT-Creation-Date: 2026-10-23T11:49:44+00:00\n"
+"POT-Creation-Date: 2026-10-29T13:50:35+00:00\n"
 "PO-Revision-Date: 2026-06-15 10:00+0000\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -100,48 +100,48 @@ msgstr ""
 msgid "No colour"
 msgstr ""
 
-#: src/Admin/ProUpsell.php:85
+#: src/Admin/ProUpsell.php:110
 msgid "Coming soon"
 msgstr "Wkrótce"
 
 #. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:91
+#: src/Admin/ProUpsell.php:116
 #, php-format
 msgid "from %1$s%2$d/yr"
 msgstr "od %1$s%2$d/rok"
 
-#: src/Admin/ProUpsell.php:100
+#: src/Admin/ProUpsell.php:125
 msgid "Upgrade to PRO"
 msgstr "Przejdź na PRO"
 
-#: src/Admin/ProUpsell.php:101
+#: src/Admin/ProUpsell.php:126
 msgid "Get notified"
 msgstr "Powiadom mnie"
 
-#: src/Admin/ProUpsell.php:131
+#: src/Admin/ProUpsell.php:156
 msgid "Permission denied."
 msgstr "Brak uprawnień."
 
 #. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:161
+#: src/Admin/ProUpsell.php:186
 #, php-format
 msgid "Do more with %s"
 msgstr "Zrób więcej dzięki %s"
 
-#: src/Admin/ProUpsell.php:168
+#: src/Admin/ProUpsell.php:193
 msgid "Dismiss this notice"
 msgstr "Odrzuć to powiadomienie"
 
-#: src/Admin/ProUpsell.php:190
+#: src/Admin/ProUpsell.php:215
 msgid "Unlock every PRO feature"
 msgstr "Odblokuj wszystkie funkcje PRO"
 
-#: src/Admin/ProUpsell.php:203
+#: src/Admin/ProUpsell.php:228
 msgid "one licence, every PRO feature"
 msgstr "jedna licencja, wszystkie funkcje PRO"
 
 #. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:222
+#: src/Admin/ProUpsell.php:247
 #, php-format
 msgid "What %s adds"
 msgstr "Co dodaje %s"
@@ -291,8 +291,48 @@ msgstr ""
 msgid "Products > Attributes"
 msgstr "Produkty > Atrybuty"
 
+#: src/Admin/Settings.php:225
+msgid "Ecosystem integrations"
+msgstr ""
+
+#: src/Admin/Settings.php:229
+msgid "Sieve (Faceted Filters)"
+msgstr ""
+
+#: src/Admin/Settings.php:233
+msgid ""
+"Sieve is active. Its swatch filters show the colour set here for any term "
+"that has no Sieve colour of its own."
+msgstr ""
+
+#. translators: %s: partner plugin name, linked to its search on the Add Plugins screen.
+#: src/Admin/Settings.php:240
+#, php-format
+msgid ""
+"Install %s to let shoppers filter products by the swatch colours you set "
+"here."
+msgstr ""
+
+#: src/Admin/Settings.php:249
+msgid "Peek (Product Preview)"
+msgstr ""
+
+#: src/Admin/Settings.php:253
+msgid ""
+"Peek is active. Variable products opened in its quick view show the same "
+"swatches as the product page."
+msgstr ""
+
+#. translators: %s: partner plugin name, linked to its search on the Add Plugins screen.
+#: src/Admin/Settings.php:260
+#, php-format
+msgid ""
+"Install %s to let shoppers pick swatches in a quick view without leaving the "
+"shop page."
+msgstr ""
+
 #. translators: Separator between an attribute label and the value the shopper chose, as in "Colour: Red". Keep the spaces your language needs.
-#: src/Service/FrontendRenderer.php:74
+#: src/Service/FrontendRenderer.php:78
 msgctxt "attribute label separator"
 msgid ": "
 msgstr ""
