@@ -234,7 +234,13 @@ final class Settings implements HasHooks
                                         </p>
                                     <?php else : ?>
                                         <p class="description">
-                                            <?php esc_html_e('Install Sieve (Faceted Filtering for WooCommerce) to let shoppers filter products by the swatch colours you set here.', 'plogins-swatch'); ?>
+                                            <?php
+                                            printf(
+                                                /* translators: %s: partner plugin name, linked to its search on the Add Plugins screen. */
+                                                esc_html__('Install %s to let shoppers filter products by the swatch colours you set here.', 'plogins-swatch'),
+                                                '<a href="' . esc_url(admin_url('plugin-install.php?s=' . rawurlencode('Sieve - Faceted Filter for WooCommerce') . '&tab=search&type=term')) . '">' . esc_html('Sieve - Faceted Filter for WooCommerce') . '</a>'
+                                            );
+                                            ?>
                                         </p>
                                     <?php endif; ?>
                                 </td>
