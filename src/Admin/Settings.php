@@ -230,11 +230,11 @@ final class Settings implements HasHooks
                                 <td>
                                     <?php if (class_exists('\Sieve\Plugin')) : ?>
                                         <p class="description" style="color:#007017;font-weight:600;">
-                                            <?php esc_html_e('Sieve is active. Swatch colors and images are automatically imported and rendered in faceted filters.', 'plogins-swatch'); ?>
+                                            <?php esc_html_e('Sieve is active. Its swatch filters show the colour set here for any term that has no Sieve colour of its own.', 'plogins-swatch'); ?>
                                         </p>
                                     <?php else : ?>
                                         <p class="description">
-                                            <?php esc_html_e('Install Sieve (Faceted Filtering for WooCommerce) to let shoppers filter products by the swatch colors and images you configure here.', 'plogins-swatch'); ?>
+                                            <?php esc_html_e('Install Sieve (Faceted Filtering for WooCommerce) to let shoppers filter products by the swatch colours you set here.', 'plogins-swatch'); ?>
                                         </p>
                                     <?php endif; ?>
                                 </td>
