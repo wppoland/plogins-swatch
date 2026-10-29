@@ -34,6 +34,10 @@ The full source lives on GitHub at [github.com/wppoland/plogins-swatch](https://
 
 **Self-contained.** No external services, no account, no third-party dependencies.
 
+= Works with other Plogins plugins =
+
+* [Peek - Product Preview for WooCommerce](https://plogins.com/plogins-peek/) - variable products opened in Peek's quick view show the same swatches as the product page, with no setting.
+
 == Swatch Pro ==
 
 Swatch Pro is a separate paid plugin that extends Swatch.
@@ -98,6 +102,10 @@ Yes. Swatches use radiogroup semantics, arrow-key navigation and visible focus r
 
 Yes. Swatches stay in the native variations form with touch-friendly targets; no separate mobile app or script framework is required.
 
+
+= Does it work with Peek quick view? =
+
+Yes, with no setting. Swatch loads its files wherever Peek loads its quick view, so a variable product opened there shows the same swatches as on the product page. Picking a swatch in the quick view changes only the quick view's form.
 
 = Does this plugin work on WordPress Multisite? =
 
