@@ -4,7 +4,7 @@ Tags: woocommerce, variation swatches, color swatches, variations, product attri
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.22
+Stable tag: 1.0.23
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -120,6 +120,10 @@ Everything is stored in your own database: the swatch type per attribute, the gl
 Plogins Swatch is fully translatable and ships the `plogins-swatch.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.23 =
+* Peek quick view: variable products opened in a quick view show swatches, styled and working, instead of the plain dropdowns. Settings say whether Peek is active.
+* Swatches find their dropdown inside their own form, so a quick view opened on a product page no longer drives the page's form behind it.
 
 = 1.0.22 =
 * Settings: a new Ecosystem integrations section says whether Sieve is active and that Sieve's swatch filters can use the colours set here.

@@ -18,6 +18,10 @@
  *
  * Accessibility: each group is a radiogroup; swatches are role="radio" and are
  * operable with the arrow keys, Home/End and Space/Enter.
+ *
+ * Forms that arrive later, such as the one in Peek's quick view, are wired when
+ * Peek fires `peek:quick-view-loaded`. Selects are looked up inside their own
+ * form, because the modal can repeat the ids of the product page behind it.
  */
 (function () {
 	'use strict';
@@ -84,6 +88,10 @@
 		return String(value).replace(/["\\\]]/g, '\\$&');
 	}
 
+	function selectFor(form, group) {
+		return form.querySelector('select[id="' + cssEscape(group.getAttribute('data-swatch-for')) + '"]');
+	}
+
 	function chooseValue(group, select, value) {
 		// Toggle off when re-clicking the active swatch.
 		if (select.value === value) {
@@ -140,7 +148,7 @@
 		// WooCommerce updates each <select> option's disabled flag for the
 		// current combination; mirror that onto the swatches.
 		form.querySelectorAll('.swatch-group[data-swatch-for]').forEach(function (group) {
-			var select = document.getElementById(group.getAttribute('data-swatch-for'));
+			var select = selectFor(form, group);
 			if (!select) {
 				return;
 			}
@@ -165,7 +173,7 @@
 		}
 
 		groups.forEach(function (group) {
-			var select = document.getElementById(group.getAttribute('data-swatch-for'));
+			var select = selectFor(form, group);
 			if (!select || select.getAttribute('data-swatch-bound')) {
 				return;
 			}
@@ -199,7 +207,7 @@
 		});
 		onWc(form, 'reset_data', function () {
 			groups.forEach(function (group) {
-				var select = document.getElementById(group.getAttribute('data-swatch-for'));
+				var select = selectFor(form, group);
 				if (select) {
 					setSelected(group, select, select.value);
 				}
@@ -223,6 +231,10 @@
 	function init() {
 		document.querySelectorAll('form.variations_form').forEach(initForm);
 	}
+
+	document.addEventListener('peek:quick-view-loaded', function (e) {
+		e.target.querySelectorAll('form.variations_form').forEach(initForm);
+	});
 
 	if (document.readyState === 'loading') {
 		document.addEventListener('DOMContentLoaded', init);
