@@ -36,16 +36,20 @@ final class FrontendRenderer implements HasHooks
         }
 
         add_filter('woocommerce_dropdown_variation_attribute_options_html', [$this, 'renderSwatches'], 20, 2);
-        add_action('wp_enqueue_scripts', [$this, 'enqueueAssets']);
+        // Priority 20: after Peek's priority-10 enqueue, so its script is visible here.
+        add_action('wp_enqueue_scripts', [$this, 'enqueueAssets'], 20);
     }
 
     /**
-     * Enqueue swatch assets only on single product pages that carry a variations
-     * form. Registered up front so they are available, then printed on demand.
+     * Enqueue swatch assets on single product pages, and on any page where Peek
+     * loads its quick view, whose modal renders the same variations form.
      */
     public function enqueueAssets(): void
     {
-        if (! function_exists('is_product') || ! is_product()) {
+        $onProduct = function_exists('is_product') && is_product();
+        $quickView = did_action('peek/booted') > 0 && wp_script_is('peek', 'enqueued');
+
+        if (! $onProduct && ! $quickView) {
             return;
         }
 

@@ -245,6 +245,26 @@ final class Settings implements HasHooks
                                     <?php endif; ?>
                                 </td>
                             </tr>
+                            <tr>
+                                <th scope="row"><?php esc_html_e('Peek (Product Preview)', 'plogins-swatch'); ?></th>
+                                <td>
+                                    <?php if (did_action('peek/booted') > 0) : ?>
+                                        <p class="description" style="color:#007017;font-weight:600;">
+                                            <?php esc_html_e('Peek is active. Variable products opened in its quick view show the same swatches as the product page.', 'plogins-swatch'); ?>
+                                        </p>
+                                    <?php else : ?>
+                                        <p class="description">
+                                            <?php
+                                            printf(
+                                                /* translators: %s: partner plugin name, linked to its search on the Add Plugins screen. */
+                                                esc_html__('Install %s to let shoppers pick swatches in a quick view without leaving the shop page.', 'plogins-swatch'),
+                                                '<a href="' . esc_url(admin_url('plugin-install.php?s=' . rawurlencode('Peek - Product Preview for WooCommerce') . '&tab=search&type=term')) . '">' . esc_html('Peek - Product Preview for WooCommerce') . '</a>'
+                                            );
+                                            ?>
+                                        </p>
+                                    <?php endif; ?>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </section>
