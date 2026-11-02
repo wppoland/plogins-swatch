@@ -275,7 +275,40 @@ final class Settings implements HasHooks
                 <?php $this->proUpsell()->aside(); ?>
             </div>
 
-            <?php $this->proUpsell()->cards(); ?>
+            <?php
+            $this->renderCompanionCard();
+            $this->proUpsell()->cards();
+            ?>
+        </div>
+        <?php
+    }
+
+    /**
+     * Cross-recommendation card for sister plugins (Marks - Sale & Stock Badges).
+     * Strictly scoped to the Swatch settings screen per WordPress.org Guideline 11.
+     */
+    private function renderCompanionCard(): void
+    {
+        $isMarksActive = defined('\\Marks\\VERSION') || (function_exists('is_plugin_active') && (is_plugin_active('marks/plogins-sale-stock-badges.php') || is_plugin_active('plogins-sale-stock-badges/plogins-sale-stock-badges.php')));
+
+        ?>
+        <div class="card" style="max-width: 800px; margin-top: 24px; padding: 18px 22px;">
+            <h2 class="title" style="margin-top: 0; font-size: 15px;"><?php echo esc_html__('Complementary integration: Marks - Sale & Stock Badges for WooCommerce', 'plogins-swatch'); ?></h2>
+            <p style="color: #50575e; line-height: 1.5;">
+                <?php echo esc_html__('Pair variation swatches with eye-catching product badges (sale percentage, new arrival, low stock) to highlight key products across shop archives and single product pages.', 'plogins-swatch'); ?>
+            </p>
+            <?php if ($isMarksActive) : ?>
+                <p style="color: #007017; font-weight: 600; margin-bottom: 0;">
+                    <span class="dashicons dashicons-yes-alt" style="vertical-align: text-bottom;"></span>
+                    <?php echo esc_html__('Marks is active.', 'plogins-swatch'); ?>
+                </p>
+            <?php else : ?>
+                <p style="margin-bottom: 0;">
+                    <a href="<?php echo esc_url(admin_url('plugin-install.php?s=' . rawurlencode('Marks - Sale & Stock Badges for WooCommerce') . '&tab=search&type=term')); ?>" class="button button-secondary">
+                        <?php echo esc_html__('Explore Marks Badges', 'plogins-swatch'); ?> &rarr;
+                    </a>
+                </p>
+            <?php endif; ?>
         </div>
         <?php
     }
