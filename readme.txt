@@ -4,7 +4,7 @@ Tags: woocommerce, variation swatches, color swatches, variations, product attri
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.25
+Stable tag: 1.0.26
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -57,6 +57,7 @@ Swatch Pro adds:
 * Image swatches in the shop loop
 * Rich tooltips
 * Custom sizes and shapes
+* Linked products
 
 The free edition is not a trial and its features stay available without a time limit.
 
@@ -128,6 +129,9 @@ Everything is stored in your own database: the swatch type per attribute, the gl
 Plogins Swatch is fully translatable and ships the `plogins-swatch.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.26 =
+* Readme and settings screen: PRO features documented.
 
 = 1.0.25 =
 * Fixed: deleting the plugin on a multisite network now removes its settings from every site, not only the main one.

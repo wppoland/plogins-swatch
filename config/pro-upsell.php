@@ -42,5 +42,9 @@ return [
             'en' => ['title' => 'Custom sizes and shapes', 'desc' => 'Small/large swatches and circle, square, rounded or pill shapes per global attribute.'],
             'pl' => ['title' => 'Własne rozmiary i kształty', 'desc' => 'Małe/duże próbki oraz koło, kwadrat, zaokrąglony lub pigułka per atrybut globalny.'],
         ],
+        [
+            'en' => ['title' => 'Linked products', 'desc' => 'Sell each colour as a separate product: products in one group show each other as linked colour tiles above the add to cart form.'],
+            'pl' => ['title' => 'Powiązane produkty', 'desc' => 'Każdy kolor jako osobny produkt: produkty z jednej grupy pokazują się nawzajem jako kafelki kolorów z linkiem, nad formularzem dodania do koszyka.'],
+        ],
     ],
 ];
