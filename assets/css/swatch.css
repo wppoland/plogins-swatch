@@ -240,15 +240,30 @@
 	}
 }
 
-@media (prefers-color-scheme: dark) {
+/* Dark tokens follow the page's color-scheme (set by the theme), not the OS. */
+@supports (color: light-dark(white, black)) {
 	.swatch-group {
-		--swatch-border: #6b737c;
-		--swatch-border-selected: #f0f0f1;
-		--swatch-fg: #f0f0f1;
-		--swatch-bg: #1d2327;
-		--swatch-card: #1d2327;
-		/* A touch brighter so the marker ring keeps its bite on dark cards. */
-		--swatch-ink: var(--wp--preset--color--vivid-red, #ff6a3d);
+		--swatch-border: light-dark(#8b8f96, #6b737c);
+		--swatch-border-selected: light-dark(#1f2328, #f0f0f1);
+		--swatch-fg: light-dark(#1f2328, #f0f0f1);
+		--swatch-bg: light-dark(#fff, #1d2327);
+		--swatch-card: light-dark(var(--wp--preset--color--base, #fff), #1d2327);
+		--swatch-ink: light-dark(var(--wp--preset--color--vivid-red, #e2542c), var(--wp--preset--color--vivid-red, #ff6a3d));
+	}
+}
+
+/* Fallback for browsers without light-dark(): keep the OS-based dark styling. */
+@supports not (color: light-dark(white, black)) {
+	@media (prefers-color-scheme: dark) {
+		.swatch-group {
+			--swatch-border: #6b737c;
+			--swatch-border-selected: #f0f0f1;
+			--swatch-fg: #f0f0f1;
+			--swatch-bg: #1d2327;
+			--swatch-card: #1d2327;
+			/* A touch brighter so the marker ring keeps its bite on dark cards. */
+			--swatch-ink: var(--wp--preset--color--vivid-red, #ff6a3d);
+		}
 	}
 }
 
