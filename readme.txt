@@ -4,7 +4,7 @@ Tags: woocommerce, variation swatches, color swatches, variations, product attri
 Requires at least: 6.5
 Tested up to: 7.2
 Requires PHP: 8.1
-Stable tag: 1.0.28
+Stable tag: 1.0.29
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -28,7 +28,7 @@ The full source lives on GitHub at [github.com/wppoland/plogins-swatch](https://
 * Wires into WooCommerce's native variations form, no jQuery, vanilla JS.
 * Keyboard operable (radiogroup semantics, arrow keys) and screen-reader labelled.
 * Focus-visible rings, sufficient contrast, reduced-motion friendly, no layout shift.
-* Graceful fallback to the standard dropdown when an attribute has no swatch data.
+* Graceful fallback to the standard dropdown when a colour attribute has no colours set.
 * Swatches in shop and category listings too, off by default so your shop page does not change without you asking.
 * Settings page under WooCommerce: enable/disable, default swatch type and the shop-listing switch.
 
@@ -129,6 +129,9 @@ Everything is stored in your own database: the swatch type per attribute, the gl
 Plogins Swatch is fully translatable and ships the `plogins-swatch.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.29 =
+* Settings help text and readme say which attributes fall back to the dropdown: a Colour attribute whose terms have no colour set. A Button attribute always shows its term names as pills.
 
 = 1.0.28 =
 * Plugins list shows a shortcut to the settings screen.

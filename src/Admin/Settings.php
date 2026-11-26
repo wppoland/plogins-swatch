@@ -212,7 +212,7 @@ final class Settings implements HasHooks
                                         <span class="swatch-preview__pill"><?php esc_html_e('Large', 'plogins-swatch'); ?></span>
                                     </div>
 
-                                    <p class="description" id="swatch_default_type_desc"><?php esc_html_e('Applied to any attribute you have not given its own type. “Colour” renders colour dots (you set a colour per term); “Button / label” renders the term name as a pill. Either way, an attribute with no colours configured falls back to the dropdown automatically, so this choice never breaks a product.', 'plogins-swatch'); ?></p>
+                                    <p class="description" id="swatch_default_type_desc"><?php esc_html_e('Applied to any attribute you have not given its own type. “Colour” renders colour dots (you set a colour per term); “Button / label” renders the term name as a pill. A Colour attribute whose terms have no colour set falls back to the dropdown automatically, so this choice never breaks a product.', 'plogins-swatch'); ?></p>
                                 </td>
                             </tr>
                         </tbody>
