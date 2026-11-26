@@ -253,18 +253,12 @@ msgid "Large"
 msgstr "Groß"
 
 #: src/Admin/Settings.php:215
-#, fuzzy
 msgid ""
 "Applied to any attribute you have not given its own type. “Colour” renders "
 "colour dots (you set a colour per term); “Button / label” renders the term "
 "name as a pill. A Colour attribute whose terms have no colour set falls back "
 "to the dropdown automatically, so this choice never breaks a product."
 msgstr ""
-"Wird auf jedes Attribut angewendet, dem du keinen eigenen Typ zugewiesen "
-"haben. „Farbe“ stellt Farbpunkte dar (Du legst eine Farbe pro Begriff fest); "
-"„Button/Label“ gibt den Begriffsnamen als Pille wieder. In jedem Fall fällt "
-"ein Attribut ohne konfigurierte Farben automatisch auf das Dropdown-Menü "
-"zurück, sodass diese Auswahl niemals ein Produkt beschädigt."
 
 #: src/Admin/Settings.php:223
 msgid "Per-attribute setup"
