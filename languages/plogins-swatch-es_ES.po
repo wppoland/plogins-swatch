@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Swatch - Variation Swatches for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-swatch\n"
-"POT-Creation-Date: 2026-10-29T13:50:35+00:00\n"
+"POT-Creation-Date: 2026-11-26T13:48:03+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:22:56+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -56,12 +56,12 @@ msgid "Use plugin default"
 msgstr "Usar el valor predeterminado del plugin"
 
 #: src/Admin/AttributeFields.php:72 src/Admin/AttributeFields.php:93
-#: src/Admin/Settings.php:187
+#: src/Admin/Settings.php:199
 msgid "Button / label"
 msgstr "Botón/etiqueta"
 
 #: src/Admin/AttributeFields.php:73 src/Admin/AttributeFields.php:94
-#: src/Admin/Settings.php:188
+#: src/Admin/Settings.php:200
 msgid "Colour"
 msgstr "Color"
 
@@ -146,15 +146,15 @@ msgstr "una licencia, todas las funciones PRO"
 msgid "What %s adds"
 msgstr "Lo que añade %s"
 
-#: src/Admin/Settings.php:74
+#: src/Admin/Settings.php:50 src/Admin/Settings.php:86
 msgid "Swatch Settings"
 msgstr "Configuración de muestra"
 
-#: src/Admin/Settings.php:75
+#: src/Admin/Settings.php:87
 msgid "Swatch"
 msgstr "Swatch"
 
-#: src/Admin/Settings.php:116
+#: src/Admin/Settings.php:128
 msgid ""
 "Swatch turns WooCommerce variation dropdowns into accessible colour dots and "
 "labelled buttons, so shoppers pick a variation in one tap instead of "
@@ -167,11 +167,11 @@ msgstr ""
 "selección. Funciona desde el primer momento, las configuraciones a "
 "continuación son solo para ajustes finos."
 
-#: src/Admin/Settings.php:123
+#: src/Admin/Settings.php:135
 msgid "Storefront display"
 msgstr "escaparate"
 
-#: src/Admin/Settings.php:124
+#: src/Admin/Settings.php:136
 msgid ""
 "Controls whether swatches appear on single product pages, and what an "
 "unconfigured attribute looks like."
@@ -179,19 +179,19 @@ msgstr ""
 "Controla si aparecen muestras en páginas de productos individuales y cómo se "
 "ve un atributo no configurado."
 
-#: src/Admin/Settings.php:130
+#: src/Admin/Settings.php:142
 msgid "Enable swatches"
 msgstr "Habilitar muestras"
 
-#: src/Admin/Settings.php:132
+#: src/Admin/Settings.php:144
 msgid "On by default"
 msgstr "Activado de forma predeterminada"
 
-#: src/Admin/Settings.php:146
+#: src/Admin/Settings.php:158
 msgid "Show swatches on product pages."
 msgstr "Muestre muestras en las páginas de productos."
 
-#: src/Admin/Settings.php:148
+#: src/Admin/Settings.php:160
 msgid ""
 "When off, shoppers see the standard WooCommerce variation dropdowns and no "
 "swatch styles or scripts load, nothing is lost, the look just reverts to "
@@ -202,17 +202,17 @@ msgstr ""
 "muestras. No se pierde nada, el aspecto vuelve al predeterminado y se "
 "conservan los colores y las etiquetas guardados en cada término."
 
-#: src/Admin/Settings.php:161
+#: src/Admin/Settings.php:173
 msgid "Swatches in the shop loop"
 msgstr "Muestras en los listados de productos"
 
-#: src/Admin/Settings.php:173
+#: src/Admin/Settings.php:185
 msgid "Also show swatches under products in shop and category listings."
 msgstr ""
 "Mostrar también las muestras debajo de los productos en la tienda y en los "
 "listados de categorías."
 
-#: src/Admin/Settings.php:175
+#: src/Admin/Settings.php:187
 msgid ""
 "Off by default because it changes how your shop page looks. Colour and label "
 "swatches render here exactly as they do on the product page."
@@ -221,7 +221,7 @@ msgstr ""
 "Las muestras de color y de etiqueta se muestran aquí igual que en la página "
 "del producto."
 
-#: src/Admin/Settings.php:177
+#: src/Admin/Settings.php:189
 msgid ""
 "Swatches are off above, so nothing renders in the shop loop yet. This choice "
 "is still saved and takes effect the moment you switch swatches on."
@@ -230,36 +230,37 @@ msgstr ""
 "se muestra nada. Esta opción se guarda igualmente y se aplica en cuanto "
 "actives las muestras."
 
-#: src/Admin/Settings.php:183
+#: src/Admin/Settings.php:195
 msgid "Default swatch type"
 msgstr "Tipo de muestra predeterminado"
 
-#: src/Admin/Settings.php:191
+#: src/Admin/Settings.php:203
 msgid "Default"
 msgstr "Por defecto"
 
-#: src/Admin/Settings.php:195
+#: src/Admin/Settings.php:207
 msgid "Colour:"
 msgstr "Color:"
 
-#: src/Admin/Settings.php:198
+#: src/Admin/Settings.php:210
 msgid "Button:"
 msgstr "Botón:"
 
-#: src/Admin/Settings.php:199
+#: src/Admin/Settings.php:211
 msgid "Small"
 msgstr "Pequeño"
 
-#: src/Admin/Settings.php:200
+#: src/Admin/Settings.php:212
 msgid "Large"
 msgstr "Grande"
 
-#: src/Admin/Settings.php:203
+#: src/Admin/Settings.php:215
+#, fuzzy
 msgid ""
 "Applied to any attribute you have not given its own type. “Colour” renders "
 "colour dots (you set a colour per term); “Button / label” renders the term "
-"name as a pill. Either way, an attribute with no colours configured falls "
-"back to the dropdown automatically, so this choice never breaks a product."
+"name as a pill. A Colour attribute whose terms have no colour set falls back "
+"to the dropdown automatically, so this choice never breaks a product."
 msgstr ""
 "Se aplica a cualquier atributo al que no le hayas dado su propio tipo. "
 "“Color” representa puntos de color (estableces un color por término); "
@@ -268,11 +269,11 @@ msgstr ""
 "automáticamente al menú desplegable, por lo que esta elección nunca rompe un "
 "producto."
 
-#: src/Admin/Settings.php:211
+#: src/Admin/Settings.php:223
 msgid "Per-attribute setup"
 msgstr "Configuración por atributo"
 
-#: src/Admin/Settings.php:212
+#: src/Admin/Settings.php:224
 msgid ""
 "Colours and labels live with each attribute, not here, so they stay correct "
 "as your catalogue grows."
@@ -281,7 +282,7 @@ msgstr ""
 "mantienen correctos a medida que crece su catálogo."
 
 #. translators: %s: link to the WooCommerce Attributes screen.
-#: src/Admin/Settings.php:217
+#: src/Admin/Settings.php:229
 #, php-format
 msgid ""
 "Set a swatch colour or label on each term under %s. Override the default "
@@ -292,48 +293,67 @@ msgstr ""
 "el tipo predeterminado por atributo en la misma pantalla. Todo lo que no "
 "esté configurado utiliza el valor predeterminado anterior."
 
-#: src/Admin/Settings.php:218
+#: src/Admin/Settings.php:230
 msgid "Products > Attributes"
 msgstr "Productos > Atributos"
 
-#: src/Admin/Settings.php:225
+#: src/Admin/Settings.php:237
 msgid "Ecosystem integrations"
 msgstr ""
 
-#: src/Admin/Settings.php:229
+#: src/Admin/Settings.php:241
 msgid "Sieve (Faceted Filters)"
 msgstr ""
 
-#: src/Admin/Settings.php:233
+#: src/Admin/Settings.php:245
 msgid ""
 "Sieve is active. Its swatch filters show the colour set here for any term "
 "that has no Sieve colour of its own."
 msgstr ""
 
 #. translators: %s: partner plugin name, linked to its search on the Add Plugins screen.
-#: src/Admin/Settings.php:240
+#: src/Admin/Settings.php:252
 #, php-format
 msgid ""
 "Install %s to let shoppers filter products by the swatch colours you set "
 "here."
 msgstr ""
 
-#: src/Admin/Settings.php:249
+#: src/Admin/Settings.php:261
 msgid "Peek (Product Preview)"
 msgstr ""
 
-#: src/Admin/Settings.php:253
+#: src/Admin/Settings.php:265
 msgid ""
 "Peek is active. Variable products opened in its quick view show the same "
 "swatches as the product page."
 msgstr ""
 
 #. translators: %s: partner plugin name, linked to its search on the Add Plugins screen.
-#: src/Admin/Settings.php:260
+#: src/Admin/Settings.php:272
 #, php-format
 msgid ""
 "Install %s to let shoppers pick swatches in a quick view without leaving the "
 "shop page."
+msgstr ""
+
+#: src/Admin/Settings.php:308
+msgid "Complementary integration: Marks - Sale & Stock Badges for WooCommerce"
+msgstr ""
+
+#: src/Admin/Settings.php:310
+msgid ""
+"Pair variation swatches with eye-catching product badges (sale percentage, "
+"new arrival, low stock) to highlight key products across shop archives and "
+"single product pages."
+msgstr ""
+
+#: src/Admin/Settings.php:315
+msgid "Marks is active."
+msgstr ""
+
+#: src/Admin/Settings.php:320
+msgid "Explore Marks Badges"
 msgstr ""
 
 #. translators: Separator between an attribute label and the value the shopper chose, as in "Colour: Red". Keep the spaces your language needs.
