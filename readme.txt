@@ -53,7 +53,7 @@ Included in Swatch:
 Swatch Pro adds:
 
 * Image swatches
-* Per-variation gallery
+* Per-variation gallery (WooCommerce before 11.1)
 * Image swatches in the shop loop
 * Rich tooltips
 * Custom sizes and shapes
