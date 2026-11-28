@@ -27,8 +27,8 @@ return [
             'pl' => ['title' => 'Próbki obrazkowe', 'desc' => 'Obraz per termin atrybutu renderowany jako miniatura próbki na karcie produktu.'],
         ],
         [
-            'en' => ['title' => 'Per-variation gallery', 'desc' => 'Extra gallery images per variation with a thumbnail strip below the main gallery.'],
-            'pl' => ['title' => 'Galeria per wariant', 'desc' => 'Dodatkowe obrazy galerii per wariant z paskiem miniatur pod główną galerią.'],
+            'en' => ['title' => 'Per-variation gallery (WooCommerce before 11.1)', 'desc' => 'Extra gallery images per variation with a thumbnail strip below the main gallery. From WooCommerce 11.1 its own variation gallery field does this, and galleries already set keep working.'],
+            'pl' => ['title' => 'Galeria per wariant (WooCommerce przed 11.1)', 'desc' => 'Dodatkowe obrazy galerii per wariant z paskiem miniatur pod główną galerią. Od WooCommerce 11.1 robi to własne pole galerii wariantu WooCommerce, a już przypisane obrazy działają dalej.'],
         ],
         [
             'en' => ['title' => 'Image swatches in the shop loop', 'desc' => 'Swap the colour chip for the term image on shop, category, tag and search listings. The loop swatches themselves are free since Swatch 1.0.8; this adds the image.'],
